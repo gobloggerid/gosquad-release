@@ -1,0 +1,401 @@
+{
+    "generalHelp": [
+        "GENERAL INFORMATION ABOUT GOSQUAD:",
+        "Author: goblogger/soyaboy/n00bility.",
+        "Owner: May differ from author.",
+        "This script is inspired, influenced, and contains (by)",
+        "the works of (skillful) modders. Check /help credit.",
+        "Want to use this script?",
+        "Visit our official Discord channel.",
+        "Official Discord: www.cutt.cx/gosquad.",
+        "Official Youtube: www.youtube.com/@goblogger98"
+    ],
+    "guideHelp": [
+        "/help general: shows general information about Gosquad.",
+        "/help rules: shows rules in Gosquad.",
+        "/help report: shows how to report violation.",
+        "/help code: shows codes for icons, flags and symbols.",
+        "/<command> help: shows help for specific command.",
+        "E.g. /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement OR /<command> access.",
+        "Checks a command's price, minimum level to run it,",
+        "& min role to run it for free. E.g. /kill requirement."
+    ],
+    "creditHelp": [
+        "Eric Froemling for creating BombSquad;",
+        "Players involved in the improvement of BombSquad;",
+        "Mr. Smoothy, BCS, and all contributors;",
+        "BombDash and all contributors,",
+        "PatronModz, EraOS, JoseAngel, Vladdos,",
+        "Sebastian2059, ZackerTz, Freaku, Mattz,",
+        "Froshlee, HeyFang, Mikirog, Snowee, Itsre,",
+        "Brostos, Loupie, BrotherBord, SoK, Emperor;",
+        "Dliwk, Cross Joy, FluffyPal, Vortex, Zeenppay;",
+        "Plasma Boson, Myth B, Mrmaxmeier, Awesome Logic,",
+        "All modders and players whose code, logic, and ideas",
+        "are used in gosquad's minigames, core, and features;",
+        "And especially all gosquad owners and players 🚀🚘",
+        "Last but not least: Renata, Hafsah, Aura, Sita.",
+        "Pls be kind to each other 😁. We make a good team 🥳🫂🥰."
+    ],
+    "reportHelp": [
+        "The most important thing about reporting is accuracy.",
+        "You must have evidence to prove your claim.",
+        "At least one video or screenshot is required.",
+        "The evidence must show the violation clearly.",
+        "Visit our Discord for more information."
+    ],
+    "rulesHelp": [
+        "Basic rules:",
+        "Always respect each other.",
+        "No bad words on chat, name, tag, etc..",
+        "Don't team up in FFA server.",
+        "Don't betray in Team server.",
+        "Don't create a rule that doesn't exist",
+        "Complete rules would be on our Discord server.",
+        "Note: server owners may have different/additional rules."
+    ],
+    "flagCodesHelp": [
+        "\\algeria, \\argentina, \\australia, \\brazil,",
+        "\\canada, \\chile, \\china, \\czech,",
+        "\\egypt, \\china, \\czech, \\egypt,",
+        "\\france, \\germany, \\india, \\indonesia,",
+        "Visit Discord for the complete list."
+    ],
+    "iconCodesHelp": [
+        "\\crown, \\dragon, \\eyeball, \\fireball,",
+        "\\fedora, \\helmet, \\hal, \\heart,",
+        "\\moon, \\mushroom, \\ninja, \\skull,",
+        "\\spider, \\viking, \\yinyang, \\santa,",
+        "\\potato, \\palm, \\glove, \\bombsquad.",
+        "Visit discord for the complete list."
+    ],
+    "symbolCodesHelp": [
+        "\\logo, \\trophy, \\medal, \\medal2",
+        "\\medal3, \\band, \\band2, \\token",
+        "\\ticket, \\party, \\up, \\down",
+        "\\left, \\right, \\top, \\bottom",
+        "Visit Discord for the complete list."
+    ],
+    "achievementCmdHelp": [
+        "/achievement: checks self achievements.",
+        "/achievement show: displays achievement publicly.",
+        "/achievement <cl>: checks player's achievement."
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: bans player for 2 days using coins.",
+        "/ban <cl> 2 <reason>: bans player for 2 days using admin.",
+        "/ban <cl1> <cl2>: bans 2 players at once.",
+        "/ban all 2: bans all players for 2 days.",
+        "<cl> is player's client id. Type /cl to check it.",
+        "Also can use local id, account id, name, account name.",
+        "/ban sita haf 2: bans sita, hafsah for 2 days.",
+        "/ban <scope> remove <cl>: unbans player.",
+        "/ban <scope> status <cl>: checks player's ban status.",
+        "<scope> can be global, ffa, or team.",
+        "/recent: checks recent players' client ids.",
+        "/find <name>: finds player identity."
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: hides server from the public party list."
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: unbans self from the scope bans.",
+        "<scope> can be global, ffa, or team.",
+        "/unban team: If banned from team server.",
+        "/unban <scope> status: checks self ban status."
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: shows server in the public party list."
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: runs command on self.",
+        "/<cmd> all: runs command on all.",
+        "/<cmd> team: runs command on teammates.",
+        "/<cmd> noteam: runs command on opponents.",
+        "/<cmd> <id1> <id2>: runs command on 2 players at once.",
+        "<id> is player's index. Type /id to check it.",
+        "You also can use name as replacement for <id>.",
+        "/<cmd> sita aur: runs command on sita, aura."
+    ],
+    "coinCmdHelp": [
+        "/coin: checks self coins.",
+        "/coin show: displays coins publicly.",
+        "/coin <cl>: checks player's coins.",
+        "/coin transfer <cl> <amount>: transfers coins.",
+        "/coin convert <amount>: converts coins to score.",
+        "/coin history: reads transactions history."
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: checks server's coins.",
+        "/coin transaction: reads server's transaction history.",
+        "/coin add <cl> <amount>: add coins to player.",
+        "Note: coins will be taken from server's coin."
+    ],
+    "commandCmdHelp": [
+        "/command regular: shows regular commands.",
+        "/command fun: shows fun commands.",
+        "/command cheat: shows cheat commands.",
+        "/command manage: shows management commands.",
+        "/command history: reads command history.",
+        "/command alias <cmd>: shows aliases of command.",
+        "/command info <cmd>: shows basic info of command.",
+        "Free access needs reason, otherwise will use coins.",
+        "E.g. /end Type whatever valid reason here."
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: sets new alias.",
+        "/command delalias <alias>: deletes alias.",
+        "/command level <cmd> <level>: sets cmd min level.",
+        "/command price <cmd> <price>: sets cmd price.",
+        "/command role <cmd> <role>: sets cmd free access role.",
+        "Note: not every command has free access role."
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: adds spark effect to inventory.",
+        "/effect add spark 3: extends spark validity by 3 days.",
+        "/effect price: checks effect price.",
+        "/effect limit: checks max effect.",
+        "/effect <cl>: check player's effects.",
+        "/effect remove 2: removes 2nd effect from inventory."
+    ],
+    "funCmdHelp": [
+        "/<cmd>: runs command on self.",
+        "/<cmd> all: runs command on all.",
+        "/<cmd> team: runs command on teammates.",
+        "/<cmd> noteam: runs command on opponents.",
+        "/<cmd> <id1> <id2>: runs command on 2 players at once.",
+        "<id> is player's index. Type /id to check it.",
+        "You also can use name as replacement for <id>.",
+        "/<cmd> haf aur: runs command on hafsah, aura.",
+        "Some commands need extra argument, otherwise: random.",
+        "Example: /color all red. 'Red' is extra argument."
+    ],
+    "helpCmdIconHelp": [
+        "Just type '\\' followed by an available code. Example:",
+        "\\crownChampion -> Make a text like this: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: shows sample icon codes.",
+        "/help code symbol: shows sample symbol codes.",
+        "/help code flag: shows sample flag codes.",
+        "Visit Discord for the complete list."
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: hides role from public for 2 days.",
+        "/hide list: checks what items that can be hidden.",
+        "/show role: shows role back."
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: creates a new hidden item.",
+        "/hide delete <item>: deletes a hidden item."
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: runs command on 2 random players.",
+        "/<cmd> all: runs command on all.",
+        "/<cmd> team: runs command on teammates.",
+        "/<cmd> noteam: runs command on opponents.",
+        "/<cmd> id1 id2: runs command on 2 players at once.",
+        "<id> is player's index. Type /id to check it.",
+        "You also can use name as replacement for <id>.",
+        "/<cmd> sita haf: runs command on sita, hafsah",
+        "/<cmd> 4: runs command on 4 random players."
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: adds crown icon to inventory.",
+        "/icon add \\indonesia: adds Indonesian flag 2 days.",
+        "/icon price: checks icon price.",
+        "/icon limit: checks max icon number and length.",
+        "/icon <cl>: check player's icons.",
+        "/icon remove 2: removes 2nd icon from inventory."
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: kicks player from server using coins.",
+        "/kick <cl> <reason>: kicks player using admin.",
+        "/kick <cl1> <cl2>: kicks 2 players at once.",
+        "/kick all: kicks all players from server.",
+        "<cl> is player's client id. Type /cl to check it.",
+        "Also can use local id, account id, name, account name.",
+        "/kick sita haf aur: kicks sita, hafsah, aura."
+    ],
+    "languageCmdHelp": [
+        "/language english: sets language to english.",
+        "/language list: lists available languages.",
+        "Language support may be limited to help only.",
+        "Only a few languages may be available.",
+        "Language other than english may be outdated.",
+        "Please help us to translate it."
+    ],
+    "levelCmdHelp": [
+        "/level: checks self level.",
+        "/level upgrade: upgrades level using coins.",
+        "Or let it upgrades automatically with score.",
+        "/level show: displays level publicly.",
+        "/level <cl>: checks player's level.",
+        "/level convert <number>: trades number of levels with coins."
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: Updates level (use server's coin).",
+        "YOU MAY WANT TO WARN PLAYERS ABOUT THIS:",
+        "Ranking dropped below 70th > Downgrade by 1 level (max).",
+        "Ranking dropped below 150th > Downgrade by 2 levels (max).",
+        "Ranking dropped below 250th > Downgrade by 3 levels (max)."
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: list player indexes",
+        "/clientid OR /cl: list client IDs",
+        "/accountid OR /ad: list account IDs",
+        "/accountname OR /an: list account names"
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: mutes player for 2 days using coins.",
+        "/mute <cl> 2 <reason>: mutes for 2 days using admin.",
+        "/mute <cl1> <cl2> 2: mutes 2 players at once.",
+        "/mute all 2: mutes all players for 2 days.",
+        "<cl> is player's client id. Type /cl to check it.",
+        "Also can use local id, account id, name, account name.",
+        "/mute sita aur 2: mutes sita, aura for 2 days.",
+        "/mute remove <cl>: unmutes player.",
+        "/mute status <cl>: checks player's mute status.",
+        "/recent: checks recent players' client ids.",
+        "/find <name>: finds player identity."
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: disables server's chat feature."
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: unmutes self.",
+        "/unmute status: checks self mute status."
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: enables server's chat feature."
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: validates self current password.",
+        "/password remove <password>: removes self password.",
+        "/password set <new-pass> <old-pass>: changes password.",
+        "default old-password is gosquad.",
+        "Min password is 4 characters, max is 16.",
+        "Forgot password? Contact co/owners."
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: Checks player's password",
+        "/password reset <cl>: removes player's password."
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: adds taobao pet to inventory.",
+        "/pet add taobao 3: extends taobao validity by 3 days.",
+        "/pet price: checks pet price.",
+        "/pet limit: checks max pet number.",
+        "/pet <cl>: check player's pets.",
+        "/pet remove 2: removes 2nd pet from inventory."
+    ],
+    "pingCmdHelp": [
+        "/ping: checks self ping.",
+        "/ping show: displays ping publicly.",
+        "/ping <cl>: checks player's ping.",
+        "/ping all: checks all players' pings."
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: removes player to lobby using coins.",
+        "/remove <id> <reason>: removes player using admin.",
+        "/remove <id1> <id2>: removes 2 players at once.",
+        "/remove all: removes all players to lobby.",
+        "<id> is player's index. Type /id to check it.",
+        "You also can use name as replacement for <id>.",
+        "/remove sita haf aur: removes sita, hafsah, aura."
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: checks player's roles.",
+        "/role price: check roles' prices and details.",
+        "/role add admin 1: makes self admin for 1 month.",
+        "/role remove admin: removes role admin.",
+        "/role tag admin cool: overrides admin's default tag to cool.",
+        "/role remtag admin: changes admin's tag back to default.",
+        "/role anim admin right: changes admin's role animation to right."
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: makes player admin role for 7 days.",
+        "/role revoke <cl> admin: takes player's admin role.",
+        "/role create staff: creates role staff.",
+        "/role delete staff: delete role staff.",
+        "/role eligible <cl> true: makes player eligible for admin.",
+        "/role deftag owner cool: changes default owner tag to cool.",
+        "/role import: make self as owner (please read hint)."
+    ],
+    "statsCmdHelp": [
+        "/stats: checks self stats.",
+        "/stats show: displays stats publicly.",
+        "/stats convert <score>: trades stats score with coins.",
+        "Watch your betrayal counts. You may get banned."
+    ],
+    "statusCmdHelp": [
+        "/status: checks self status.",
+        "/status show: displays status publicly.",
+        "/status <clid>: checks player's status."
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: adds trophy symbol to inventory.",
+        "/symbol price: checks symbol price.",
+        "/symbol limit: checks max symbol number and length.",
+        "/symbol <cl>: check player's symbols.",
+        "/symbol remove 2: removes 2nd symbol from inventory.",
+        "Emoji/smiley is also suitable for symbol."
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: adds 'Winner' tag to inventory.",
+        "/tag add \"Top Win\": quotes it to use space.",
+        "/tag price: checks tag price.",
+        "/tag limit: checks max tag number and length.",
+        "/tag <cl>: checks player's tags.",
+        "/tag remove 2: removes 2nd tag from inventory.",
+        "/tag color 1 red: changes 1st tag color to red.",
+        "Available tag colors:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: disables player's kickvote for 2 days.",
+        "/voteoff <cl> 2 <reason>: disables for 2 days using admin.",
+        "/voteoff <cl1> <cl2>: disables 2 players at once.",
+        "/voteoff all 2: disables all players for 2 days.",
+        "<cl> is player's client id. Type /cl to check it.",
+        "Also can use local id, account id, name, account name.",
+        "/voteoff haf aur 2: disables hafsah, aura for 2 days.",
+        "/voteoff remove <cl>: enables player's kickvote.",
+        "/voteoff status <cl>: checks player's kickvote status.",
+        "/recent: checks recent players' client ids.",
+        "/find <name>: finds player identity."
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: disables server's kickvote feature."
+    ],
+    "voteonCmdHelp": [
+        "/voteon: enables self kickvote.",
+        "/voteon status: checks self kickvote status."
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: enables server's kickvote feature."
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: disables player's msgvote for 2 days.",
+        "/mvoteoff <cl> 2 <reason>: disables for 2 days using admin.",
+        "/mvoteoff <cl1> <cl2> 2: disables 2 players at once.",
+        "/mvoteoff all 2: disables all players for 2 days.",
+        "<cl> is player's client id. Type /cl to check it.",
+        "Also can use local id, account id, name, account name.",
+        "/mvoteoff sita aur 2: disables sita, aura for 2 days.",
+        "/mvoteoff remove <cl>: enables player's msgvote.",
+        "/mvoteoff status <cl>: checks player's msgvote status.",
+        "/recent: checks recent players' client ids.",
+        "/find <name>: finds player identity."
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: disables server's msgvote feature."
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: enables self msgvote.",
+        "/mvoteon status: checks self msgvote status."
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: enables server's msgvote feature."
+    ]
+}

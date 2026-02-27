@@ -1,0 +1,22 @@
+{
+    "color_texture": "pixieColor",
+    "color_mask": "bombColor",
+    "icon_texture": "pixieIcon",
+    "icon_mask_texture": "pixieIconColorMask",
+    "head": "pixieHead",
+    "torso": "pixieTorso",
+    "pelvis": "pixiePelvis",
+    "upper_arm": "pixieUpperArm",
+    "forearm": "pixieForeArm",
+    "hand": "pixieHand",
+    "upper_leg": "zoeUpperLeg",
+    "lower_leg": "pixieLowerLeg",
+    "toes_mesh": "pixieToes",
+    "jump_sounds": ["pixie1", "pixie2", "pixie3", "pixie4"],
+    "attack_sounds": ["pixie1", "pixie2", "pixie3", "pixie4"],
+    "impact_sounds": ["pixieHit1", "pixieHit2"],
+    "death_sounds": ["pixieDeath"],
+    "pickup_sounds": ["pixie1", "pixie2", "pixie3", "pixie4"],
+    "fall_sounds": ["pixieFall"],
+    "style": "female"
+}

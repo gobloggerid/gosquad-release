@@ -1,0 +1,22 @@
+{
+    "color_mask": "zoeColorMask",
+    "color_texture": "bonesColor",
+    "head": "bonesHead",
+    "hand": "kronkHand",
+    "torso": "bonesTorso",
+    "pelvis": "hairTuft4",
+    "upper_arm": "ninjaUpperArm",
+    "forearm": "melForeArm",
+    "upper_leg": "cyborgUpperLeg",
+    "lower_leg": "bearLowerLeg",
+    "toes_mesh": "bonesToes",
+    "jump_sounds": ["bones1", "bones2", "bones3", "wizard1", "wizard2", "wizard3", "wizard4"],
+    "attack_sounds": ["bones1", "bones2", "bones3", "wizard1", "wizard2", "wizard3", "wizard4"],
+    "impact_sounds": ["bones1", "bones2", "bones3", "wizardHit1", "wizardHit2"],
+    "death_sounds": ["bonesDeath", "wizardDeath"],
+    "pickup_sounds": ["bones1", "bones2", "bones3", "wizard1", "wizard2", "wizard3", "wizard4"],
+    "fall_sounds": ["bonesFall", "wizardFall"],
+    "icon_texture": "bonesIcon",
+    "icon_mask_texture": "bonesIconColorMask",
+    "style": "agent"
+}

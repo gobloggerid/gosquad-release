@@ -1,0 +1,22 @@
+{
+    "color_mask": "egg2",
+    "color_texture": "ninjaColor",
+    "head": "ninjaHead",
+    "hand": "penguinHand",
+    "torso": "cyborgTorso",
+    "pelvis": "aliPelvis",
+    "upper_arm": "wing",
+    "forearm": "cyborgForeArm",
+    "upper_leg": "penguinUpperLeg",
+    "lower_leg": "agentLowerLeg",
+    "toes_mesh": "jackToes",
+    "jump_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "attack_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "impact_sounds": ["ninjaHit1", "ninjaHit2", "ninjaHit3", "ninjaHit4", "ninjaHit5", "ninjaHit6", "ninjaHit7", "ninjaHit8"],
+    "death_sounds": ["ninjaDeath1"],
+    "pickup_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "fall_sounds": ["ninjaFall1"],
+    "icon_texture": "ninjaIcon",
+    "icon_mask_texture": "ninjaIconColorMask",
+    "style": "ninja"
+}

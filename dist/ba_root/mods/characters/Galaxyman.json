@@ -1,0 +1,22 @@
+{
+    "color_mask": "cyborgColorMask",
+    "color_texture": "egg3",
+    "head": "bomb",
+    "hand": "wizardHand",
+    "torso": "bunnyTorso",
+    "pelvis": "kronkPelvis",
+    "upper_arm": "cyborgUpperArm",
+    "forearm": "wizardForeArm",
+    "upper_leg": "wizardUpperLeg",
+    "lower_leg": "wizardLowerLeg",
+    "toes_mesh": "wizardToes",
+    "jump_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05"],
+    "attack_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05"],
+    "impact_sounds": ["frostyHit01", "frostyHit02", "frostyHit03"],
+    "death_sounds": ["frostyDeath"],
+    "pickup_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05"],
+    "fall_sounds": ["frostyFall"],
+    "icon_texture": "logo",
+    "icon_mask_texture": "empty",
+    "style": "cyborg"
+}

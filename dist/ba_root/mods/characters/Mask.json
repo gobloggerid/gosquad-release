@@ -1,0 +1,22 @@
+{
+    "color_texture": "rgbStripes",
+    "color_mask": "kronkColorMask",
+    "icon_texture": "frostyIcon",
+    "icon_mask_texture": "frostyIconColorMask",
+    "head": "frostyHead",
+    "torso": "santaTorso",
+    "pelvis": "hairTuft4",
+    "upper_arm": "melUpperArm",
+    "forearm": "bunnyForeArm",
+    "hand": "pixieHand",
+    "upper_leg": "ninjaUpperLeg",
+    "lower_leg": "aliLowerLeg",
+    "toes_mesh": "kronkToes",
+    "jump_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05", "penguin1", "penguin2", "penguin3", "penguin4"],
+    "attack_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05", "penguin1", "penguin2", "penguin3", "penguin4"],
+    "impact_sounds": ["frostyHit01", "frostyHit02", "frostyHit03", "penguinHit1", "penguinHit2"],
+    "death_sounds": ["frostyDeath", "penguinDeath"],
+    "pickup_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05", "penguin1", "penguin2", "penguin3", "penguin4"],
+    "fall_sounds": ["frostyFall", "penguinFall"],
+    "style": "penguin"
+}

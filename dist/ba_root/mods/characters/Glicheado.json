@@ -1,0 +1,22 @@
+{
+    "color_texture": "rgbStripes",
+    "color_mask": "bonesColorMask",
+    "icon_texture": "ninjaIcon",
+    "icon_mask_texture": "ninjaIconColorMask",
+    "head": "zoeHead",
+    "torso": "wizardTorso",
+    "pelvis": "hairTuft4",
+    "upper_arm": "wizardUpperArm",
+    "forearm": "bunnyForeArm",
+    "hand": "neoSpazHand",
+    "upper_leg": "kronkUpperLeg",
+    "lower_leg": "bunnyLowerLeg",
+    "toes_mesh": "kronkToes",
+    "jump_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "attack_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "impact_sounds": ["ninjaHit1", "ninjaHit2", "ninjaHit3", "ninjaHit4", "ninjaHit5", "ninjaHit6", "ninjaHit7", "ninjaHit8"],
+    "death_sounds": ["ninjaDeath1"],
+    "pickup_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "fall_sounds": ["ninjaFall1"],
+    "style": "bunny"
+}

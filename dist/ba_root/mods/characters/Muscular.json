@@ -1,0 +1,22 @@
+{
+    "color_mask": "bombColor",
+    "color_texture": "wizardColor",
+    "head": "wizardHead",
+    "hand": "kronkHand",
+    "torso": "ninjaTorso",
+    "pelvis": "wizardPelvis",
+    "upper_arm": "kronkUpperArm",
+    "forearm": "kronkForeArm",
+    "upper_leg": "wizardUpperLeg",
+    "lower_leg": "wizardLowerLeg",
+    "toes_mesh": "wizardToes",
+    "jump_sounds": ["wizard1", "wizard2", "wizard3", "wizard4"],
+    "attack_sounds": ["wizard1", "wizard2", "wizard3", "wizard4"],
+    "impact_sounds": ["wizardHit1", "wizardHit2"],
+    "death_sounds": ["wizardDeath"],
+    "pickup_sounds": ["wizard1", "wizard2", "wizard3", "wizard4"],
+    "fall_sounds": ["wizardFall"],
+    "icon_texture": "wizardIcon",
+    "icon_mask_texture": "wizardIconColorMask",
+    "style": "kronk"
+}

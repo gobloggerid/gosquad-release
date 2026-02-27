@@ -1,0 +1,22 @@
+{
+    "color_texture": "jackColor",
+    "color_mask": "santaColorMask",
+    "icon_texture": "jackIcon",
+    "icon_mask_texture": "jackIconColorMask",
+    "head": "frostyHead",
+    "torso": "santaTorso",
+    "pelvis": "penguinPelvis",
+    "upper_arm": "melUpperArm",
+    "forearm": "wizardForeArm",
+    "hand": "neoSpazHand",
+    "upper_leg": "wizardUpperLeg",
+    "lower_leg": "jackLowerLeg",
+    "toes_mesh": "aliToes",
+    "jump_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05", "bear1", "bear2", "bear3", "bear4"],
+    "attack_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05", "bear1", "bear2", "bear3", "bear4"],
+    "impact_sounds": ["frostyHit01", "frostyHit02", "frostyHit03", "bearHit1", "bearHit2"],
+    "death_sounds": ["frostyDeath", "bearDeath"],
+    "pickup_sounds": ["frosty01", "frosty02", "frosty03", "frosty04", "frosty05", "bear1", "bear2", "bear3", "bear4"],
+    "fall_sounds": ["frostyFall", "bearFall"],
+    "style": "mel"
+}

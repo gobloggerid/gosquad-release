@@ -1,0 +1,22 @@
+{
+    "color_texture": "bonesColor",
+    "color_mask": "ninjaColorMask",
+    "icon_texture": "ninjaIcon",
+    "icon_mask_texture": "ninjaIconColorMask",
+    "head": "cyborgHead",
+    "torso": "kronkTorso",
+    "pelvis": "bunnyPelvis",
+    "upper_arm": "wizardUpperArm",
+    "forearm": "cyborgForeArm",
+    "hand": "bearHand",
+    "upper_leg": "bunnyUpperLeg",
+    "lower_leg": "jackLowerLeg",
+    "toes_mesh": "ninjaToes",
+    "jump_sounds": ["mel01", "mel02", "mel03", "mel04", "mel05", "mel06", "mel07", "mel08", "mel09", "mel10"],
+    "attack_sounds": ["mel01", "mel02", "mel03", "mel04", "mel05", "mel06", "mel07", "mel08", "mel09", "mel10"],
+    "impact_sounds": ["mel01", "mel02", "mel03", "mel04", "mel05", "mel06", "mel07", "mel08", "mel09", "mel10"],
+    "death_sounds": ["ninjaDeath1"],
+    "pickup_sounds": ["mel01", "mel02", "mel03", "mel04", "mel05", "mel06", "mel07", "mel08", "mel09", "mel10"],
+    "fall_sounds": ["ninjaFall1"],
+    "style": "santa"
+}

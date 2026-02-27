@@ -1,0 +1,22 @@
+{
+    "color_texture": "zoeColor",
+    "color_mask": "zoeColorMask",
+    "icon_texture": "crossOut",
+    "icon_mask_texture": "empty",
+    "head": "kronkHead",
+    "torso": "cyborgTorso",
+    "pelvis": "ninjaPelvis",
+    "upper_arm": "bunnyUpperArm",
+    "forearm": "bunnyForeArm",
+    "hand": "zoeHand",
+    "upper_leg": "penguinUpperLeg",
+    "lower_leg": "penguinLowerLeg",
+    "toes_mesh": "pixieToes",
+    "jump_sounds": ["jack01", "jack02", "jack03", "jack04", "jack05", "jack06", "bones1", "bones2", "bones3"],
+    "attack_sounds": ["jack01", "jack02", "jack03", "jack04", "jack05", "jack06", "bones1", "bones2", "bones3"],
+    "impact_sounds": ["jackHit01", "jackHit02", "jackHit03", "jackHit04", "jackHit05", "jackHit06", "jackHit07", "bones1", "bones2", "bones3"],
+    "death_sounds": ["jackDeath01", "bonesDeath"],
+    "pickup_sounds": ["jack01", "jack02", "jack03", "jack04", "jack05", "jack06", "bones1", "bones2", "bones3"],
+    "fall_sounds": ["jackFall01", "bonesFall"],
+    "style": "agent"
+}

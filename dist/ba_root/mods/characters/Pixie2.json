@@ -1,0 +1,22 @@
+{
+    "color_mask": "agentColorMask",
+    "color_texture": "pixieColor",
+    "head": "pixieHead",
+    "hand": "pixieHand",
+    "torso": "pixieTorso",
+    "pelvis": "pixiePelvis",
+    "upper_arm": "pixieUpperArm",
+    "forearm": "bonesForeArm",
+    "upper_leg": "pixieUpperLeg",
+    "lower_leg": "pixieLowerLeg",
+    "toes_mesh": "pixieToes",
+    "jump_sounds": ["pixie1", "pixie2", "pixie3", "pixie4"],
+    "attack_sounds": ["pixie1", "pixie2", "pixie3", "pixie4"],
+    "impact_sounds": ["pixieHit1", "pixieHit2"],
+    "death_sounds": ["pixieDeath"],
+    "pickup_sounds": ["pixie1", "pixie2", "pixie3", "pixie4"],
+    "fall_sounds": ["pixieFall"],
+    "icon_texture": "pixieIcon",
+    "icon_mask_texture": "pixieIconColorMask",
+    "style": "pixie"
+}

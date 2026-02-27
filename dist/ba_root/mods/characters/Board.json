@@ -1,0 +1,22 @@
+{
+    "color_mask": "bombColor",
+    "color_texture": "jackColor",
+    "head": "jackHead",
+    "hand": "bearHand",
+    "torso": "wizardTorso",
+    "pelvis": "penguinPelvis",
+    "upper_arm": "zoeUpperArm",
+    "forearm": "wizardForeArm",
+    "upper_leg": "wizardUpperLeg",
+    "lower_leg": "wizardLowerLeg",
+    "toes_mesh": "bunnyToes",
+    "jump_sounds": ["jack01", "jack02", "jack03", "jack04", "jack05", "jack06", "bear1", "bear2", "bear3", "bear4"],
+    "attack_sounds": ["jack01", "jack02", "jack03", "jack04", "jack05", "jack06", "bear1", "bear2", "bear3", "bear4"],
+    "impact_sounds": ["jackHit01", "jackHit02", "jackHit03", "jackHit04", "jackHit05", "jackHit06", "jackHit07", "bearHit1", "bearHit2"],
+    "death_sounds": ["jackDeath01", "bearDeath"],
+    "pickup_sounds": ["jack01", "jack02", "jack03", "jack04", "jack05", "jack06", "bear1", "bear2", "bear3", "bear4"],
+    "fall_sounds": ["jackFall01", "bearFall"],
+    "icon_texture": "jackIcon",
+    "icon_mask_texture": "jackIconColorMask",
+    "style": "frosty"
+}

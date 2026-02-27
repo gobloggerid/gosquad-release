@@ -1,0 +1,22 @@
+{
+    "color_texture": "aliColor",
+    "color_mask": "egg1",
+    "icon_texture": "landMineLit",
+    "icon_mask_texture": "empty",
+    "head": "landMine",
+    "torso": "zoeTorso",
+    "pelvis": "cyborgPelvis",
+    "upper_arm": "ninjaUpperArm",
+    "forearm": "wizardForeArm",
+    "hand": "penguinHand",
+    "upper_leg": "bunnyUpperLeg",
+    "lower_leg": "jackLowerLeg",
+    "toes_mesh": "santaToes",
+    "jump_sounds": ["penguin1", "penguin2", "penguin3", "penguin4", "bones1", "bones2", "bones3"],
+    "attack_sounds": ["penguin1", "penguin2", "penguin3", "penguin4", "bones1", "bones2", "bones3"],
+    "impact_sounds": ["penguinHit1", "penguinHit2", "bones1", "bones2", "bones3"],
+    "death_sounds": ["penguinDeath", "bonesDeath"],
+    "pickup_sounds": ["penguin1", "penguin2", "penguin3", "penguin4", "bones1", "bones2", "bones3"],
+    "fall_sounds": ["penguinFall", "bonesFall"],
+    "style": "bones"
+}

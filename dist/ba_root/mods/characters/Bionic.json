@@ -1,0 +1,22 @@
+{
+    "color_texture": "explosion",
+    "color_mask": "neoSpazColorMask",
+    "icon_texture": "neoSpazIcon",
+    "icon_mask_texture": "neoSpazIconColorMask",
+    "head": "neoSpazHead",
+    "torso": "bonesTorso",
+    "pelvis": "neoSpazPelvis",
+    "upper_arm": "neoSpazUpperArm",
+    "forearm": "jackForeArm",
+    "hand": "santaHand",
+    "upper_leg": "cyborgUpperLeg",
+    "lower_leg": "wizardLowerLeg",
+    "toes_mesh": "pixieToes",
+    "jump_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4", "spazJump01", "spazJump02", "spazJump03", "spazJump04"],
+    "attack_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4", "spazAttack01", "spazAttack02", "spazAttack03", "spazAttack04"],
+    "impact_sounds": ["cyborgHit1", "cyborgHit2", "spazImpact01", "spazImpact02", "spazImpact03", "spazImpact04"],
+    "death_sounds": ["cyborgDeath", "spazDeath01"],
+    "pickup_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4", "spazPickup01"],
+    "fall_sounds": ["cyborgFall", "spazFall01"],
+    "style": "pirate"
+}

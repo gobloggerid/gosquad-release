@@ -1,0 +1,22 @@
+{
+    "color_texture": "rgbStripes",
+    "color_mask": "santaColorMask",
+    "icon_texture": "bunnyIcon",
+    "icon_mask_texture": "bunnyIconColorMask",
+    "head": "bunnyHead",
+    "torso": "bunnyTorso",
+    "pelvis": "bunnyPelvis",
+    "upper_arm": "bunnyUpperArm",
+    "forearm": "bunnyForeArm",
+    "hand": "pixieHand",
+    "upper_leg": "bunnyUpperLeg",
+    "lower_leg": "bunnyLowerLeg",
+    "toes_mesh": "ninjaToes",
+    "jump_sounds": ["bunny1", "bunny2", "bunny3", "bunny4"],
+    "attack_sounds": ["bunny1", "bunny2", "bunny3", "bunny4"],
+    "impact_sounds": ["bunnyHit1", "bunnyHit2"],
+    "death_sounds": ["bunnyDeath"],
+    "pickup_sounds": ["bunny1", "bunny2", "bunny3", "bunny4"],
+    "fall_sounds": ["bunnyFall"],
+    "style": "bunny"
+}

@@ -1,0 +1,22 @@
+{
+    "color_texture": "aliColor",
+    "color_mask": "ninjaColorMask",
+    "icon_texture": "ninjaIcon",
+    "icon_mask_texture": "ninjaIconColorMask",
+    "head": "ninjaHead",
+    "torso": "kronkTorso",
+    "pelvis": "bunnyPelvis",
+    "upper_arm": "pixieUpperArm",
+    "forearm": "bearForeArm",
+    "hand": "neoSpazHand",
+    "upper_leg": "agentUpperLeg",
+    "lower_leg": "frostyLowerLeg",
+    "toes_mesh": "aliToes",
+    "jump_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4"],
+    "attack_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4"],
+    "impact_sounds": ["cyborgHit1", "cyborgHit2"],
+    "death_sounds": ["cyborgDeath"],
+    "pickup_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4"],
+    "fall_sounds": ["cyborgFall"],
+    "style": "pirate"
+}

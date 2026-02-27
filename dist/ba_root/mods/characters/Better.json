@@ -1,0 +1,22 @@
+{
+    "color_texture": "bunnyColor",
+    "color_mask": "egg1",
+    "icon_texture": "powerupImpactBombs",
+    "icon_mask_texture": "empty",
+    "head": "impactBomb",
+    "torso": "kronkTorso",
+    "pelvis": "bunnyPelvis",
+    "upper_arm": "ninjaUpperArm",
+    "forearm": "bearForeArm",
+    "hand": "penguinHand",
+    "upper_leg": "agentUpperLeg",
+    "lower_leg": "frostyLowerLeg",
+    "toes_mesh": "santaToes",
+    "jump_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4", "bear1", "bear2", "bear3", "bear4"],
+    "attack_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4", "bear1", "bear2", "bear3", "bear4"],
+    "impact_sounds": ["cyborgHit1", "cyborgHit2", "bearHit1", "bearHit2"],
+    "death_sounds": ["cyborgDeath", "bearDeath"],
+    "pickup_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4", "bear1", "bear2", "bear3", "bear4"],
+    "fall_sounds": ["cyborgFall", "bearFall"],
+    "style": "bones"
+}

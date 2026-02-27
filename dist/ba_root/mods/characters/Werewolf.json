@@ -1,0 +1,22 @@
+{
+    "color_mask": "cyborgColorMask",
+    "color_texture": "bearColor",
+    "head": "bearHead",
+    "hand": "bunnyHand",
+    "torso": "ninjaTorso",
+    "pelvis": "kronkPelvis",
+    "upper_arm": "neoSpazUpperArm",
+    "forearm": "santaForeArm",
+    "upper_leg": "aliUpperLeg",
+    "lower_leg": "neoSpazLowerLeg",
+    "toes_mesh": "zoeToes",
+    "jump_sounds": ["bear1", "bear2", "bear3", "bear4"],
+    "attack_sounds": ["bear1", "bear2", "bear3", "bear4"],
+    "impact_sounds": ["bearHit1", "bearHit2"],
+    "death_sounds": ["bearDeath"],
+    "pickup_sounds": ["bear1", "bear2", "bear3", "bear4"],
+    "fall_sounds": ["bearFall"],
+    "icon_texture": "bearIcon",
+    "icon_mask_texture": "bearColorMask",
+    "style": "kronk"
+}

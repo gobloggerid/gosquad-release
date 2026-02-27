@@ -1,0 +1,60 @@
+# start a new session
+- tmux new -s <session-name>
+
+# list sessions
+- tmux list-sessions
+
+# kill session
+- tmux kill-session -t <session-name>
+
+# attach to session
+- tmux attach-session -t <session-name-or-id>
+
+# attach to last session
+- ctrl-b a
+
+# detach from session
+- tmux detach-client
+- tmux detach
+- ctrl-b d
+
+# list windows
+- tmux list-windows
+
+# create a new window
+- tmux new-window
+
+# split window horizontally
+- tmux split-window -h
+
+# split window vertically
+- tmux split-window -v
+
+# switch to window
+- tmux select-window -t <window-number>
+
+# kill window
+- tmux kill-window -t <window-number-or-name>
+
+# create/navigate between windows
+- ctrl-b c
+- ctrl-b n/p
+
+# rename window
+- tmux rename-window <new-name>
+- ctrl-b ,
+
+# close current pane
+- exit
+
+# navigate panes
+- ctrl-b o
+
+# resize pane
+- ctrl-b <arrow-key>
+
+# scroll mode
+- ctrl-b [
+
+# exit scroll mode
+- q

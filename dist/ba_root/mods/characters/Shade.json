@@ -1,0 +1,22 @@
+{
+    "color_mask": "kronkColorMask",
+    "color_texture": "bonesColor",
+    "head": "bonesHead",
+    "hand": "neoSpazHand",
+    "torso": "kronkTorso",
+    "pelvis": "bonesPelvis",
+    "upper_arm": "kronkUpperArm",
+    "forearm": "wizardForeArm",
+    "upper_leg": "ninjaUpperLeg",
+    "lower_leg": "neoSpazLowerLeg",
+    "toes_mesh": "aliToes",
+    "jump_sounds": ["agent1", "agent2", "agent3", "agent4", "santa01", "santa02", "santa03", "santa04", "santa05"],
+    "attack_sounds": ["agent1", "agent2", "agent3", "agent4", "santa01", "santa02", "santa03", "santa04", "santa05"],
+    "impact_sounds": ["agentHit1", "agentHit2", "santaHit01", "santaHit02", "santaHit03", "santaHit04"],
+    "death_sounds": ["agentDeath", "santaDeath"],
+    "pickup_sounds": ["agent1", "agent2", "agent3", "agent4", "santa01", "santa02", "santa03", "santa04", "santa05"],
+    "fall_sounds": ["agentFall", "santaFall"],
+    "icon_texture": "bonesIcon",
+    "icon_mask_texture": "bonesIconColorMask",
+    "style": "bones"
+}

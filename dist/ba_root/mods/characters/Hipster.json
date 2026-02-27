@@ -1,0 +1,22 @@
+{
+    "color_mask": "agentColorMask",
+    "color_texture": "agentColor",
+    "head": "pixieHead",
+    "hand": "bearHand",
+    "torso": "agentTorso",
+    "pelvis": "neoSpazPelvis",
+    "upper_arm": "zoeUpperArm",
+    "forearm": "neoSpazForeArm",
+    "upper_leg": "frostyUpperLeg",
+    "lower_leg": "wizardLowerLeg",
+    "toes_mesh": "jackToes",
+    "jump_sounds": ["agent1", "agent2", "agent3", "agent4"],
+    "attack_sounds": ["agent1", "agent2", "agent3", "agent4"],
+    "impact_sounds": ["agentHit1", "agentHit2"],
+    "death_sounds": ["agentDeath"],
+    "pickup_sounds": ["agent1", "agent2", "agent3", "agent4"],
+    "fall_sounds": ["agentFall"],
+    "icon_texture": "agentIcon",
+    "icon_mask_texture": "agentIconColorMask",
+    "style": "bones"
+}

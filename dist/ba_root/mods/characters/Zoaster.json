@@ -1,0 +1,22 @@
+{
+    "color_texture": "zoeColor",
+    "color_mask": "zoeColorMask",
+    "icon_texture": "zoeIcon",
+    "icon_mask_texture": "zoeIconColorMask",
+    "head": "zoeHead",
+    "torso": "kronkTorso",
+    "pelvis": "bearPelvis",
+    "upper_arm": "cyborgUpperArm",
+    "forearm": "wizardForeArm",
+    "hand": "pixieHand",
+    "upper_leg": "agentUpperLeg",
+    "lower_leg": "wizardLowerLeg",
+    "toes_mesh": "melToes",
+    "jump_sounds": ["zoeJump01", "zoeJump02", "zoeJump03"],
+    "attack_sounds": ["zoeAttack01", "zoeAttack02", "zoeAttack03", "zoeAttack04"],
+    "impact_sounds": ["zoeImpact01", "zoeImpact02", "zoeImpact03", "zoeImpact04"],
+    "death_sounds": ["zoeDeath01"],
+    "pickup_sounds": ["zoePickup01"],
+    "fall_sounds": ["zoeFall01"],
+    "style": "female"
+}

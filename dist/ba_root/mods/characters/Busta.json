@@ -1,0 +1,22 @@
+{
+    "color_texture": "aliColor",
+    "color_mask": "ninjaColorMask",
+    "icon_texture": "ninjaIcon",
+    "icon_mask_texture": "ninjaIconColorMask",
+    "head": "ninjaHead",
+    "torso": "zoeTorso",
+    "pelvis": "ninjaPelvis",
+    "upper_arm": "ninjaUpperArm",
+    "forearm": "ninjaForeArm",
+    "hand": "ninjaHand",
+    "upper_leg": "bunnyUpperLeg",
+    "lower_leg": "ninjaLowerLeg",
+    "toes_mesh": "aliToes",
+    "jump_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "attack_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "impact_sounds": ["ninjaHit1", "ninjaHit2", "ninjaHit3", "ninjaHit4", "ninjaHit5", "ninjaHit6", "ninjaHit7", "ninjaHit8"],
+    "death_sounds": ["ninjaDeath1"],
+    "pickup_sounds": ["ninjaAttack1", "ninjaAttack2", "ninjaAttack3", "ninjaAttack4", "ninjaAttack5", "ninjaAttack6", "ninjaAttack7"],
+    "fall_sounds": ["ninjaFall1"],
+    "style": "santa"
+}

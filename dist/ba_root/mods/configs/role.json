@@ -1,0 +1,52 @@
+{
+    "author": {
+        "tag": "AUTHOR",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "owner": {
+        "tag": "OWNER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "coowner": {
+        "tag": "CO-OWNER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "manager": {
+        "tag": "MANAGER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "admin": {
+        "tag": "ADMIN",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "mod": {
+        "tag": "MODERATOR",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "vvip": {
+        "tag": "VVIPLAYER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "vip": {
+        "tag": "VIPLAYER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "top": {
+        "tag": "TOP MEMBER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    },
+    "member": {
+        "tag": "MEMBER",
+        "tagColor": [1, 1, 1],
+        "animation": "classic"
+    }
+}

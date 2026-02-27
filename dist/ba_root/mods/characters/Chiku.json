@@ -1,0 +1,22 @@
+{
+    "color_texture": "aliColor",
+    "color_mask": "penguinIconColorMask",
+    "icon_texture": "aliIcon",
+    "icon_mask_texture": "aliIconColorMask",
+    "head": "aliHead",
+    "torso": "jackTorso",
+    "pelvis": "neoSpazTorso",
+    "upper_arm": "pixieUpperArm",
+    "forearm": "cyborgForeArm",
+    "hand": "neoSpazHand",
+    "upper_leg": "jackUpperLeg",
+    "lower_leg": "neoSpazLowerLeg",
+    "toes_mesh": "melToes",
+    "jump_sounds": ["ali1", "ali2", "ali3", "ali4", "penguin1", "penguin2", "penguin3", "penguin4"],
+    "attack_sounds": ["ali1", "ali2", "ali3", "ali4", "penguin1", "penguin2", "penguin3", "penguin4"],
+    "impact_sounds": ["aliHit1", "aliHit2", "penguinHit1", "penguinHit2"],
+    "death_sounds": ["aliDeath", "penguinDeath"],
+    "pickup_sounds": ["ali1", "ali2", "ali3", "ali4"],
+    "fall_sounds": ["aliFall", "penguinFall"],
+    "style": "female"
+}

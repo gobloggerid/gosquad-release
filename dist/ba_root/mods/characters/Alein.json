@@ -1,0 +1,22 @@
+{
+    "color_mask": "agentColorMask",
+    "color_texture": "ninjaColor",
+    "head": "bonesHead",
+    "hand": "hairTuft3",
+    "torso": "wizardTorso",
+    "pelvis": "hairTuft4",
+    "upper_arm": "wizardUpperArm",
+    "forearm": "wizardForeArm",
+    "upper_leg": "cyborgUpperLeg",
+    "lower_leg": "bonesLowerLeg",
+    "toes_mesh": "bonesToes",
+    "jump_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "attack_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "impact_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "death_sounds": ["kronkDeath"],
+    "pickup_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "fall_sounds": ["kronkFall"],
+    "icon_texture": "crossOut",
+    "icon_mask_texture": "empty",
+    "style": "agent"
+}

@@ -1,0 +1,22 @@
+{
+    "color_mask": "santaColorMask",
+    "color_texture": "aliColor",
+    "head": "santaHead",
+    "hand": "hairTuft3",
+    "torso": "aliTorso",
+    "pelvis": "bunnyPelvis",
+    "upper_arm": "aliUpperArm",
+    "forearm": "aliForeArm",
+    "upper_leg": "aliUpperLeg",
+    "lower_leg": "aliLowerLeg",
+    "toes_mesh": "aliToes",
+    "jump_sounds": ["santa01", "santa02", "santa03", "santa04", "santa05"],
+    "attack_sounds": ["santa01", "santa02", "santa03", "santa04", "santa05"],
+    "impact_sounds": ["santaHit01", "santaHit02", "santaHit03", "santaHit04"],
+    "death_sounds": ["santaDeath"],
+    "pickup_sounds": ["santa01", "santa02", "santa03", "santa04", "santa05"],
+    "fall_sounds": ["santaFall"],
+    "icon_texture": "santaIcon",
+    "icon_mask_texture": "santaColorMask",
+    "style": "bones"
+}

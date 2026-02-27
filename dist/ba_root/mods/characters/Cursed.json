@@ -1,0 +1,22 @@
+{
+    "color_texture": "powerupCurse",
+    "color_mask": "empty",
+    "icon_texture": "powerupCurse",
+    "icon_mask_texture": "empty",
+    "head": "powerupSimple",
+    "torso": "buttonNull",
+    "pelvis": "buttonNull",
+    "upper_arm": "buttonNull",
+    "forearm": "buttonNull",
+    "hand": "neoSpazHand",
+    "upper_leg": "buttonNull",
+    "lower_leg": "buttonNull",
+    "toes_mesh": "buttonNull",
+    "jump_sounds": ["powerup01"],
+    "attack_sounds": ["powerup01"],
+    "impact_sounds": ["powerdown01"],
+    "death_sounds": ["powerdown01"],
+    "pickup_sounds": ["ticking"],
+    "fall_sounds": ["powerdown01"],
+    "style": "frosty"
+}

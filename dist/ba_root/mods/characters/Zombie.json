@@ -1,0 +1,22 @@
+{
+    "color_texture": "agentColor",
+    "color_mask": "pixieColorMask",
+    "icon_texture": "crossOut",
+    "icon_mask_texture": "empty",
+    "head": "zoeHead",
+    "torso": "bonesTorso",
+    "pelvis": "pixiePelvis",
+    "upper_arm": "frostyUpperArm",
+    "forearm": "frostyForeArm",
+    "hand": "bonesHand",
+    "upper_leg": "bonesUpperLeg",
+    "lower_leg": "pixieLowerLeg",
+    "toes_mesh": "bonesToes",
+    "jump_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "attack_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "impact_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "death_sounds": ["kronkDeath"],
+    "pickup_sounds": ["kronk1", "kronk2", "kronk3", "kronk4", "kronk5", "kronk6", "kronk7", "kronk8", "kronk9", "kronk10"],
+    "fall_sounds": ["kronkFall"],
+    "style": "kronk"
+}

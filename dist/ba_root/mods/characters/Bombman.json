@@ -1,0 +1,22 @@
+{
+    "color_mask": "pixieColorMask",
+    "color_texture": "powerupCurse",
+    "head": "bomb",
+    "hand": "melHand",
+    "torso": "zoeTorso",
+    "pelvis": "penguinPelvis",
+    "upper_arm": "aliUpperArm",
+    "forearm": "pixieForeArm",
+    "upper_leg": "bonesUpperLeg",
+    "lower_leg": "penguinLowerLeg",
+    "toes_mesh": "aliToes",
+    "jump_sounds": ["bombDrop01", "bombDrop02"],
+    "attack_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4"],
+    "impact_sounds": ["cyborgHit1", "cyborgHit2"],
+    "death_sounds": ["cyborgDeath", "bearDeath"],
+    "pickup_sounds": ["cyborg1", "cyborg2", "cyborg3", "cyborg4"],
+    "fall_sounds": ["cyborgFall", "bearFall"],
+    "icon_texture": "ouyaOButton",
+    "icon_mask_texture": "empty",
+    "style": "frosty"
+}
