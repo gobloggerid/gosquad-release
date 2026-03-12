@@ -46,6 +46,7 @@ if [[ ! -d "$DATA_DIR" ]]; then
 fi
 
 echo "Preparing necessary files..."
+sleep 2
 echo ""
 
 cp --update --verbose --target-directory ./ "$SEED_DIR/gosquad_server"
@@ -164,4 +165,4 @@ echo "✅ Packages installation complete!"
 echo ""
 
 echo "✅ The system will reboot to take effect. Please reconnect."
-sleep 2
+sleep 4

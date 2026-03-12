@@ -8,6 +8,15 @@ __pycache__/
 /gosquad_server
 dist/gosquad_headless
 dist/gosquad_headless_aarch64
+dist/ba_data/python-site-packages/*
+!dist/ba_data/python-site-packages/
+!dist/ba_data/python-site-packages/certifi/
+!dist/ba_data/python-site-packages/certifi/**
+!dist/ba_data/python-site-packages/urllib3/
+!dist/ba_data/python-site-packages/urllib3/**
+!dist/ba_data/python-site-packages/typing_extensions.py
+dist/ba_data/python-site-packages/**/__pycache__/
+dist/ba_data/python-site-packages/**/*.pyc
 dist/ba_root/*
 !dist/ba_root/*/
 !dist/ba_root/*/*
