@@ -57,11 +57,13 @@ class SnakeMine(Bomb):
 
     @override
     def handlemessage(self, msg: Any) -> Any:
-        assert not self.expired
+        if self.expired:
+            return None
         if isinstance(msg, bs.HitMessage):
-            pass
+            return None
         else:
-            super().handlemessage(msg)
+            return super().handlemessage(msg)
+        return None
 
 
 # ba_meta export bascenev1.GameActivity
@@ -257,26 +259,38 @@ class SnakeGame(bs.TeamGameActivity[Player, Team]):
             print('Exception -> ' + str(e))
 
     def spawn_mine(self, player: Player):
-        if not player.actor or not player.actor.node:
+        if self.has_ended():
             return
 
-        if player.team.score >= self._score_to_win:
+        actor = player.actor
+        if actor is None or actor.node is None or not actor.node.exists():
+            return
+        if not actor.is_alive():
             return
 
-        pos = player.actor.node.position
+        if self._score_to_win is None or player.team.score >= self._score_to_win:
+            return
+
+        pos = actor.node.position
         mine = SnakeMine(
             position=(pos[0], pos[1] + 2.0, pos[2]),
         ).autoretain()
-        bs.timer(0.5, mine.arm)
+        bs.timer(0.5, babase.WeakCallStrict(mine.arm))
 
         player.mines.append(mine)
+        player.mines = [m for m in player.mines if m and not m.expired]
         if len(player.mines) > 15:
-            for m in player.mines:
-                m.handlemessage(bs.DieMessage())
-                player.mines.remove(m)
-                break
+            old_mine = player.mines.pop(0)
+            if old_mine and not old_mine.expired:
+                old_mine.handlemessage(bs.DieMessage())
 
         self.handlemessage(ScoreMessage(player))
+
+    def _clear_player_mines(self, player: Player) -> None:
+        for mine in list(player.mines):
+            if mine and not mine.expired:
+                mine.handlemessage(bs.DieMessage())
+        player.mines.clear()
 
     def handlemessage(self, msg: Any) -> Any:
         if isinstance(msg, bs.PlayerDiedMessage):
@@ -284,6 +298,7 @@ class SnakeGame(bs.TeamGameActivity[Player, Team]):
             super().handlemessage(msg)
 
             player = msg.getplayer(Player)
+            self._clear_player_mines(player)
             self.respawn_player(player)
 
             player.actived = None
@@ -300,6 +315,15 @@ class SnakeGame(bs.TeamGameActivity[Player, Team]):
         else:
             return super().handlemessage(msg)
         return None
+
+    def on_player_leave(self, player: Player) -> None:
+        self._clear_player_mines(player)
+        super().on_player_leave(player)
+
+    def on_end(self) -> None:
+        for player in self.players:
+            self._clear_player_mines(player)
+        super().on_end()
 
     def _update_scoreboard(self) -> None:
         for team in self.teams:

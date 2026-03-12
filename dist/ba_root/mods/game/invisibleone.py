@@ -1,4 +1,5 @@
 # Released under the MIT License. See LICENSE for details.
+# Modified for gosquad server by n00bility
 #
 """Provides the chosen-one mini-game."""
 
@@ -377,7 +378,7 @@ class InvisibleOneGame(bs.TeamGameActivity[Player, Team]):
                 # )
 
     def _turn_invisible(self, player: Player) -> None:
-        from bascenev1lib.actor.extraspaz import turn_invisible
+        from code.internal.actor.extraspaz import turn_invisible
 
         if player.actor:
             turn_invisible(player.actor)

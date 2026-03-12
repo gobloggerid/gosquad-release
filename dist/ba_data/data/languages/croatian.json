@@ -1751,6 +1751,7 @@
       "Can't link 2 diamond league accounts.": "Nije moguće spojiti 2 računa dijamantne lige.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Nije moguće spojiti; prešlo bi maksimum od ${COUNT} spojenih računa.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Varanje detektirano; rekordi i nagrade suspendirani na ${COUNT} dana.",
+      "Connection rejected.": "Veza odbijena.",
       "Could not establish a secure connection.": "Ne moguće uspostaviti sigurnu vezu.",
       "Daily maximum reached.": "Dnevni maksimu predzen",
       "Daily sign-in reward": "Dnevna nagrada za prijavu",

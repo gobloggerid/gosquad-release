@@ -1738,6 +1738,7 @@
       "Can't link 2 diamond league accounts.": "Can't be joinin' 2 diamond league accounts, matey.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Can’t link; would be over ${COUNT} mateys linked accounts.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Cheatin' be detected; scores an' booty suspended fer ${COUNT} days.",
+      "Connection rejected.": "Connection be rejected arr!",
       "Could not establish a secure connection.": "Couldn’t forge a trusty link, matey.",
       "Daily maximum reached.": "Arrr, daily max be hit!",
       "Daily sign-in reward": "Reward fer daily boardin' the ship",

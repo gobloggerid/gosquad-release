@@ -1720,6 +1720,7 @@
       "Can't link 2 diamond league accounts.": "No se pueden vincular 2 cuentas de liga diamante.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "No se pudo vincular; sobrepasaría el máximo de cuentas vinculadas de ${COUNT}.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Trampa detectada; puntajes y premios suspendidos por ${COUNT} días.",
+      "Connection rejected.": "Conexión rechazada.",
       "Could not establish a secure connection.": "No se pudo establecer una conexión segura.",
       "Daily maximum reached.": "Máximo diario conseguido.",
       "Daily sign-in reward": "Recompensa por iniciar sesión diariamente",

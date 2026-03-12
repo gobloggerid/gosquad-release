@@ -1,7 +1,8 @@
 # Porting made easier by baport.(https://github.com/bombsquad-community/baport)
 # Made by Froshlee14
-# Ported by: Freaku / @[Just] Freak#4999
-# Edited by goblogger
+# Ported by Freaku / @[Just] Freak#4999
+# Ported to api 9 by n00bility
+# Modified for gosquad server by n00bility
 
 # ba_meta require api 9
 from __future__ import annotations
@@ -48,7 +49,7 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
     ) -> list[babase.Setting]:
         settings = [
             bs.IntSetting(
-                'Score to Win',
+                'Score to Win Per Player',
                 min_value=1,
                 default=3,
                 increment=1,
@@ -96,7 +97,10 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
         self._scoreboard = Scoreboard()
         self._dingsound = bs.getsound('dingSmall')
         self._epic_mode = bool(settings['Epic Mode'])
-        self._score_to_win = int(settings['Score to Win'])
+        self._score_to_win: int | None = None
+        self._score_to_win_per_player = int(
+            settings['Score to Win Per Player']
+        )
         self._time_limit = float(settings['Time Limit'])
 
         # Base class overrides.
@@ -104,16 +108,63 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
         self.default_music = (
             bs.MusicType.EPIC if self._epic_mode else bs.MusicType.TO_THE_DEATH
         )
+
+        self._block_wall_regions: list[bs.NodeActor] = []
+
+        # Deny access to the raised safe platform.
+        self._block_wall_pos = (-0.0, 4.6, 7.0)
+        self._block_wall_pos_2 = (-0.0, 7.6, -6.1)
+        self._block_wall_scale = (28, 12, 0.5)
+
         self._scoreRegionMaterial = bs.Material()
         self._scoreRegionMaterial.add_actions(
             conditions=('they_have_material', shared.player_material),
             actions=(
                 ('modify_part_collision', 'collide', True),
                 ('modify_part_collision', 'physical', False),
-                ('call', 'at_connect', self._onPlayerScores),
+                ('call', 'at_connect', self._on_player_scores),
             ),
         )
         self.first_time = True
+
+        self.block_player_region_material = bs.Material()
+        self.block_player_region_material.add_actions(
+            conditions=('they_have_material', shared.player_material),
+            actions=(
+                ('modify_part_collision', 'collide', True),
+                ('modify_part_collision', 'physical', True),
+            ),
+        )
+
+    def on_transition_in(self) -> None:
+        super().on_transition_in()
+
+        self._block_wall_regions.append(
+            bs.NodeActor(
+                bs.newnode(
+                    'region',
+                    attrs={
+                        'position': self._block_wall_pos,
+                        'scale': self._block_wall_scale,
+                        'type': 'box',
+                        'materials': [self.block_player_region_material],
+                    },
+                )
+            )
+        )
+        self._block_wall_regions.append(
+            bs.NodeActor(
+                bs.newnode(
+                    'region',
+                    attrs={
+                        'position': self._block_wall_pos_2,
+                        'scale': self._block_wall_scale,
+                        'type': 'box',
+                        'materials': [self.block_player_region_material],
+                    },
+                )
+            )
+        )
 
     def get_instance_description(self) -> str | Sequence:
         return 'Get to the other side ${ARG1} times', self._score_to_win
@@ -152,9 +203,12 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
                 'size': [2.0, 0.1, 11.8],
             },
         )
-        self.isUpdatingMines = False
+        self.is_updating_mines = False
         self._scoreSound = bs.getsound('dingSmall')
         self.setup_standard_time_limit(self._time_limit)
+        self._score_to_win = self._score_to_win_per_player * max(
+            1, max((len(t.players) for t in self.teams), default=0)
+        )
 
         self._update_scoreboard()
         for p in self.players:
@@ -180,11 +234,11 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
             )
         )
         self.mines = []
-        self.spawnMines()
+        self.spawn_mines()
         bs.timer(2.5, self.start)
 
     def start(self):
-        bs.timer(random.randrange(3, 7), self.doRandomLighting)
+        bs.timer(random.randrange(3, 7), self.do_random_lighting)
         bs.animate_array(
             bs.getactivity().globalsnode,
             'tint',
@@ -192,9 +246,9 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
             {0: (0.5, 0.5, 0.5), 2: (0.2, 0.2, 0.2)},
         )
 
-    def doRandomLighting(self):
-        bs.timer(random.randrange(3, 7), self.doRandomLighting)
-        if self.isUpdatingMines:
+    def do_random_lighting(self):
+        bs.timer(random.randrange(3, 7), self.do_random_lighting)
+        if self.is_updating_mines:
             return
         bs.animate_array(
             bs.getactivity().globalsnode,
@@ -203,32 +257,32 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
             {0: (0.5, 0.5, 0.5), 0.8: (0.2, 0.2, 0.2)},
         )
 
-    def spawnMines(self):
+    def spawn_mines(self):
         delay = 0
         xs = [10, 8, 6, 4, 2, 0, -2, -4, -6, -8, -10]
         for x in xs:
             for i in range(3):
                 pos = (x, 1, random.randrange(-5, 6))
-                bs.timer(delay, babase.CallStrict(self.doMine, pos))
+                bs.timer(delay, babase.CallStrict(self.do_mine, pos))
                 delay += 0.075
-        bs.timer(2.48, self.stopUpdateMines)
+        bs.timer(2.48, self.stop_update_mines)
 
-    def stopUpdateMines(self):
-        self.isUpdatingMines = False
+    def stop_update_mines(self):
+        self.is_updating_mines = False
         self.first_time = False
 
-    def updateMines(self):
-        if self.isUpdatingMines:
+    def update_mines(self):
+        if self.is_updating_mines:
             return
-        self.isUpdatingMines = True
+        self.is_updating_mines = True
         for m in self.mines:
-            m.node.delete()
+            if m.node:
+                m.node.delete()
         self.mines = []
-        self.spawnMines()
+        self.spawn_mines()
 
-    def doMine(self, pos):
-        bomb_type = random.choice(['land_mine', 'land_mine', 'land_trap'])
-        b = Bomb(position=pos, bomb_type=bomb_type).autoretain()
+    def do_mine(self, pos):
+        b = Bomb(position=pos, bomb_type='land_mine').autoretain()
         b.arm()
         self.mines.append(b)
 
@@ -240,13 +294,15 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
             self.spawn_with_delay(player)
 
     def spawn_with_delay(self, player: Player):
+        if self.has_ended() or self.expired or not player.exists():
+            return None
         spaz = self.spawn_player_spaz(player)
         position = (-12.4, 1, random.randrange(-5, 5))
         spaz.connect_controls_to_player(enable_punch=False, enable_bomb=False)
         spaz.handlemessage(bs.StandMessage(position, random.uniform(0, 360)))
         return spaz
 
-    def _onPlayerScores(self):
+    def _on_player_scores(self):
         try:
             player = (
                 bs.getcollision()
@@ -267,12 +323,11 @@ class DarkFieldGame(bs.TeamGameActivity[Player, Team]):
                 {0: (0.5, 0.5, 0.5), 2.8: (0.2, 0.2, 0.2)},
             )
             self._update_scoreboard()
-            # player.actor.handlemessage(bs.DieMessage(how=bs.DeathType.REACHED_GOAL))
             position = (-12.4, 1, random.randrange(-5, 5))
             player.actor.handlemessage(
                 bs.StandMessage(position, random.uniform(0, 360))
             )
-            self.updateMines()
+            self.update_mines()
             self._update_scoreboard()
 
             # If someone has won, set a timer to end shortly.

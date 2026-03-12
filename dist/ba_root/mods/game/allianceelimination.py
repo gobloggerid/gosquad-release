@@ -1,5 +1,5 @@
 # Released under the MIT License. See LICENSE for details.
-# Modified for gosquad server by goblogger.
+# Modified for gosquad server by n00bility.
 #
 """Elimination mini-game."""
 

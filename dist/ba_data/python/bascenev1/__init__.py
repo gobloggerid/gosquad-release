@@ -86,10 +86,7 @@ from _bascenev1 import (
     emitfx,
     end_host_scanning,
     get_chat_messages,
-    get_client_ip_address,
     get_client_ping,
-    get_client_port,
-    get_client_public_device_uuid,
     get_connection_to_host_info,
     get_connection_to_host_info_2,
     get_foreground_host_activity,
@@ -140,7 +137,6 @@ from _bascenev1 import (
     SessionPlayer,
     set_admins,
     set_authenticate_clients,
-    set_client_kick_voting_enabled,
     set_debug_speed_exponent,
     set_enable_default_kick_voting,
     set_internal_music,
@@ -163,11 +159,7 @@ from _bascenev1 import (
 )
 from bascenev1._activity import Activity
 from bascenev1._activitytypes import JoinActivity, ScoreScreenActivity
-from bascenev1._actor import (
-    Actor,
-    ActorMode,
-    SmashActorMode,
-)
+from bascenev1._actor import Actor
 from bascenev1._campaign import init_campaigns, Campaign
 from bascenev1._collision import Collision, getcollision
 from bascenev1._coopgame import CoopGameActivity
@@ -190,7 +182,6 @@ from bascenev1._gameutils import (
     cameraflash,
     GameTip,
     get_trophy_string,
-    set_allow_kick_idle_players,
     show_damage_count,
     Time,
 )
@@ -220,10 +211,6 @@ from bascenev1._messages import (
     ShouldShatterMessage,
     StandMessage,
     ThawMessage,
-    DisorientMessage,
-    ShatterMessage,
-    TextMessage,
-    UniteMessage,
     UNHANDLED,
 )
 from bascenev1._multiteamsession import (
@@ -271,8 +258,6 @@ __all__ = [
     'ActivityData',
     'ActivityNotFoundError',
     'Actor',
-    'ActorMode',
-    'SmashActorMode',
     'animate',
     'animate_array',
     'add_clean_frame_callback',
@@ -345,10 +330,7 @@ __all__ = [
     'GameResults',
     'GameTip',
     'get_chat_messages',
-    'get_client_ip_address',
     'get_client_ping',
-    'get_client_port',
-    'get_client_public_device_uuid',
     'get_connection_to_host_info',
     'get_connection_to_host_info_2',
     'get_default_free_for_all_playlist',
@@ -460,7 +442,7 @@ __all__ = [
     'set_admins',
     'set_analytics_screen',
     'set_authenticate_clients',
-    'set_client_kick_voting_enabled',
+    'set_debug_speed_exponent',
     'set_debug_speed_exponent',
     'set_enable_default_kick_voting',
     'set_internal_music',
@@ -480,7 +462,6 @@ __all__ = [
     'setmusic',
     'Setting',
     'ShouldShatterMessage',
-    'set_allow_kick_idle_players',
     'show_damage_count',
     'Sound',
     'StandLocation',
@@ -504,10 +485,6 @@ __all__ = [
     'WeakCallPartial',
     'WeakCallStrict',
     'WinnerGroup',
-    'DisorientMessage',
-    'ShatterMessage',
-    'TextMessage',
-    'UniteMessage',
 ]
 
 # Sanity check: we want to keep ballistica's dependencies and

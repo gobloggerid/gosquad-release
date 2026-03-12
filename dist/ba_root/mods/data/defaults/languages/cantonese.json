@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: 顯示 Gosquad 一般資訊。",
+        "/help rules: 顯示 Gosquad 規則。",
+        "/help report: 顯示點樣舉報違規。",
+        "/help code: 顯示圖示、旗幟、符號代碼。",
+        "/<command> help: 顯示指定指令幫助。",
+        "例如: /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement 或 /<command> access.",
+        "查看指令價格、最低等級，",
+        "同埋免費使用嘅最低身分組。例: /kill requirement."
+    ],
+    "reportHelp": [
+        "舉報最重要係準確。",
+        "你必須有證據支持你嘅說法。",
+        "至少需要一段影片或截圖。",
+        "證據要清楚顯示違規。",
+        "更多資訊請到 Discord。"
+    ],
+    "rulesHelp": [
+        "基本規則:",
+        "請互相尊重。",
+        "聊天、名稱、標籤等禁止粗口。",
+        "FFA 伺服器禁止組隊。",
+        "Team 伺服器禁止背叛。",
+        "唔好編造不存在嘅規則。",
+        "完整規則喺 Discord。",
+        "注意: 伺服器擁有者可能有唔同/額外規則。"
+    ],
+    "achievementCmdHelp": [
+        "/achievement: 查看自己嘅成就。",
+        "/achievement show: 公開顯示成就。",
+        "/achievement <cl>: 查看玩家成就。"
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: 用硬幣封禁 2 日。",
+        "/ban <cl> 2 <reason>: 用 admin 封禁 2 日。",
+        "/ban <cl1> <cl2>: 同時封禁 2 個玩家。",
+        "/ban all 2: 封禁所有玩家 2 日。",
+        "<cl> 係玩家 client id。輸入 /cl 查看。",
+        "亦可用 local id、account id、name、account name。",
+        "/ban sita haf 2: 封禁 sita、hafsah 2 日。",
+        "/ban <scope> remove <cl>: 解封玩家。",
+        "/ban <scope> status <cl>: 查看封禁狀態。",
+        "<scope> 可為 global、ffa 或 team。",
+        "/recent: 查看近期玩家 client id。",
+        "/find <name>: 查找玩家身份。"
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: 由公開派對名單隱藏伺服器。"
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: 從該範圍解封自己。",
+        "<scope> 可為 global、ffa 或 team。",
+        "/unban team: 如果喺 team 伺服器被封。",
+        "/unban <scope> status: 查看自己嘅封禁狀態。"
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: 喺公開派對名單顯示伺服器。"
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: 對自己執行指令。",
+        "/<cmd> all: 對所有人執行。",
+        "/<cmd> team: 對隊友執行。",
+        "/<cmd> noteam: 對對手執行。",
+        "/<cmd> <id1> <id2>: 同時對 2 人執行。",
+        "<id> 係玩家索引。輸入 /id 查看。",
+        "亦可用名稱代替 <id>。",
+        "/<cmd> sita aur: 對 sita、aura 執行。"
+    ],
+    "coinCmdHelp": [
+        "/coin: 查看自己嘅硬幣。",
+        "/coin show: 公開顯示硬幣。",
+        "/coin <cl>: 查看玩家硬幣。",
+        "/coin transfer <cl> <amount>: 轉移硬幣。",
+        "/coin convert <amount>: 將硬幣換成分數。",
+        "/coin history: 讀取交易記錄。"
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: 查看伺服器硬幣。",
+        "/coin transaction: 讀取伺服器交易記錄。",
+        "/coin add <cl> <amount>: 為玩家加硬幣。",
+        "注意: 硬幣會由伺服器扣除。"
+    ],
+    "commandCmdHelp": [
+        "/command regular: 顯示一般指令。",
+        "/command fun: 顯示趣味指令。",
+        "/command cheat: 顯示作弊指令。",
+        "/command manage: 顯示管理指令。",
+        "/command history: 讀取指令歷史。",
+        "/command alias <cmd>: 顯示指令別名。",
+        "/command info <cmd>: 顯示基本資訊。",
+        "免費存取需要原因，否則用硬幣。",
+        "例: /end 輸入有效原因。"
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: 設定新別名。",
+        "/command delalias <alias>: 刪除別名。",
+        "/command level <cmd> <level>: 設定最低等級。",
+        "/command price <cmd> <price>: 設定指令價格。",
+        "/command role <cmd> <role>: 設定免費存取身分組。",
+        "注意: 並非每個指令都有免費身分組。"
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: 將 spark 效果加入背包。",
+        "/effect add spark 3: 延長 spark 3 日。",
+        "/effect price: 查看效果價格。",
+        "/effect limit: 查看效果上限。",
+        "/effect <cl>: 查看玩家效果。",
+        "/effect remove 2: 移除第 2 個效果。"
+    ],
+    "funCmdHelp": [
+        "/<cmd>: 對自己執行指令。",
+        "/<cmd> all: 對所有人執行。",
+        "/<cmd> team: 對隊友執行。",
+        "/<cmd> noteam: 對對手執行。",
+        "/<cmd> <id1> <id2>: 同時對 2 人執行。",
+        "<id> 係玩家索引。輸入 /id 查看。",
+        "亦可用名稱代替 <id>。",
+        "/<cmd> haf aur: 對 hafsah、aura 執行。",
+        "部分指令需要額外參數，否則: random。",
+        "例: /color all red. 'Red' 係額外參數。"
+    ],
+    "helpCmdIconHelp": [
+        "輸入 '\\' 再加代碼。例:",
+        "\\crownChampion -> 生成文字: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: 顯示圖示代碼例子。",
+        "/help code symbol: 顯示符號代碼例子。",
+        "/help code flag: 顯示旗幟代碼例子。",
+        "完整清單請到 Discord。"
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: 隱藏身分組 2 日。",
+        "/hide list: 查看可隱藏項目。",
+        "/show role: 顯示身分組。"
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: 建立新隱藏項目。",
+        "/hide delete <item>: 刪除隱藏項目。"
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: 對 2 名隨機玩家執行。",
+        "/<cmd> all: 對所有人執行。",
+        "/<cmd> team: 對隊友執行。",
+        "/<cmd> noteam: 對對手執行。",
+        "/<cmd> id1 id2: 同時對 2 人執行。",
+        "<id> 係玩家索引。輸入 /id 查看。",
+        "亦可用名稱。",
+        "/<cmd> sita haf: 對 sita、hafsah 執行",
+        "/<cmd> 4: 對 4 名隨機玩家執行。"
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: 加入 crown 圖示到背包。",
+        "/icon add \\indonesia: 加入 Indonesia 旗幟 2 日。",
+        "/icon price: 查看圖示價格。",
+        "/icon limit: 查看圖示數量與長度上限。",
+        "/icon <cl>: 查看玩家圖示。",
+        "/icon remove 2: 移除第 2 個圖示。"
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: 用硬幣踢出玩家。",
+        "/kick <cl> <reason>: 用 admin 踢出玩家。",
+        "/kick <cl1> <cl2>: 同時踢出 2 人。",
+        "/kick all: 踢出所有玩家。",
+        "<cl> 係玩家 client id。輸入 /cl 查看。",
+        "亦可用 local id、account id、name、account name。",
+        "/kick sita haf aur: 踢出 sita、hafsah、aura。"
+    ],
+    "languageCmdHelp": [
+        "/language english: 設定語言為 english。",
+        "/language list: 列出可用語言。",
+        "語言支援可能只限於 help。",
+        "可能只有少數語言可用。",
+        "非 english 的語言可能過時。",
+        "請幫忙翻譯。"
+    ],
+    "levelCmdHelp": [
+        "/level: 查看自己嘅等級。",
+        "/level upgrade: 用硬幣升級等級。",
+        "或用分數自動升級。",
+        "/level show: 公開顯示等級。",
+        "/level <cl>: 查看玩家等級。",
+        "/level convert <number>: 用等級換硬幣。"
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: 更新等級(使用伺服器硬幣)。",
+        "你可能要提醒玩家:",
+        "排名低於 70 > 降 1 級(上限)。",
+        "排名低於 150 > 降 2 級(上限)。",
+        "排名低於 250 > 降 3 級(上限)。"
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: 列出玩家索引",
+        "/clientid OR /cl: 列出 client IDs",
+        "/accountid OR /ad: 列出 account IDs",
+        "/accountname OR /an: 列出 account 名稱",
+        "/myid: 查看你嘅身份: Local ID, Account Name, Account ID",
+        "/myid <show>: 公開顯示你嘅身份。",
+        "可以用 locid (Local ID) 做幾乎所有事",
+        "而唔使 clientid。例: 轉硬幣、封禁玩家。"
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: 用硬幣禁言 2 日。",
+        "/mute <cl> 2 <reason>: 用 admin 禁言 2 日。",
+        "/mute <cl1> <cl2> 2: 同時禁言 2 人。",
+        "/mute all 2: 禁言所有玩家 2 日。",
+        "<cl> 係玩家 client id。輸入 /cl 查看。",
+        "亦可用 local id、account id、name、account name。",
+        "/mute sita aur 2: 禁言 sita、aura 2 日。",
+        "/mute remove <cl>: 解除禁言。",
+        "/mute status <cl>: 查看禁言狀態。",
+        "/recent: 查看近期玩家 client id。",
+        "/find <name>: 查找玩家身份。"
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: 停用伺服器聊天。"
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: 解除自己禁言。",
+        "/unmute status: 查看自己禁言狀態。"
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: 啟用伺服器聊天。"
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: 驗證目前密碼。",
+        "/password remove <password>: 移除密碼。",
+        "/password set <new-pass> <old-pass>: 變更密碼。",
+        "預設舊密碼係 gosquad。",
+        "最少 4 字元，最多 16。",
+        "忘記密碼? 聯絡 co/owners。"
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: 檢查玩家密碼",
+        "/password reset <cl>: 移除玩家密碼。"
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: 加入 taobao 寵物到背包。",
+        "/pet add taobao 3: 延長 taobao 3 日。",
+        "/pet price: 查看寵物價格。",
+        "/pet limit: 查看寵物上限。",
+        "/pet <cl>: 查看玩家寵物。",
+        "/pet remove 2: 移除第 2 個寵物。"
+    ],
+    "pingCmdHelp": [
+        "/ping: 查看自己 ping。",
+        "/ping show: 公開顯示 ping。",
+        "/ping <cl>: 查看玩家 ping。",
+        "/ping all: 查看所有玩家 ping。"
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: 用硬幣將玩家送回大廳。",
+        "/remove <id> <reason>: 用 admin 送回大廳。",
+        "/remove <id1> <id2>: 同時送回 2 人。",
+        "/remove all: 送回所有玩家。",
+        "<id> 係玩家索引。輸入 /id 查看。",
+        "亦可用名稱。",
+        "/remove sita haf aur: 送回 sita、hafsah、aura。"
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: 查看玩家身分組。",
+        "/role price: 查看身分組價格同細節。",
+        "/role add admin 1: 令你成為 admin 1 個月。",
+        "/role remove admin: 移除 admin 身分組。",
+        "/role tag admin cool: 將 admin 預設標籤改為 cool。",
+        "/role remtag admin: 還原 admin 標籤。",
+        "/role anim admin right: 將 admin 動畫改為 right。"
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: 給玩家 admin 7 日。",
+        "/role revoke <cl> admin: 撤銷玩家 admin。",
+        "/role create staff: 建立 staff 身分組。",
+        "/role delete staff: 刪除 staff 身分組。",
+        "/role eligible <cl> true: 令玩家可獲得 admin。",
+        "/role deftag owner cool: 將 owner 預設標籤改為 cool。",
+        "/role import: 令你成為 owner (請讀提示)。"
+    ],
+    "statsCmdHelp": [
+        "/stats: 查看自己 stats。",
+        "/stats show: 公開顯示 stats。",
+        "/stats convert <score>: 用 stats 分數換硬幣。",
+        "留意背叛次數，可能會被封禁。"
+    ],
+    "statusCmdHelp": [
+        "/status: 查看自己狀態。",
+        "/status show: 公開顯示狀態。",
+        "/status <clid>: 查看玩家狀態。"
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: 加入 trophy 符號到背包。",
+        "/symbol price: 查看符號價格。",
+        "/symbol limit: 查看符號數量與長度上限。",
+        "/symbol <cl>: 查看玩家符號。",
+        "/symbol remove 2: 移除第 2 個符號。",
+        "Emoji/表情也可作為符號。"
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: 加入 'Winner' 標籤到背包。",
+        "/tag add \"Top Win\": 用引號來使用空格。",
+        "/tag price: 查看標籤價格。",
+        "/tag limit: 查看標籤數量與長度上限。",
+        "/tag <cl>: 查看玩家標籤。",
+        "/tag remove 2: 移除第 2 個標籤。",
+        "/tag color 1 red: 將第 1 個標籤顏色改為 red。",
+        "可用標籤顏色:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: 停用玩家 kickvote 2 日。",
+        "/voteoff <cl> 2 <reason>: 用 admin 停用 2 日。",
+        "/voteoff <cl1> <cl2>: 同時停用 2 人。",
+        "/voteoff all 2: 停用所有人 2 日。",
+        "<cl> 係玩家 client id。輸入 /cl 查看。",
+        "亦可用 local id、account id、name、account name。",
+        "/voteoff haf aur 2: 停用 hafsah、aura 2 日。",
+        "/voteoff remove <cl>: 啟用玩家 kickvote。",
+        "/voteoff status <cl>: 查看 kickvote 狀態。",
+        "/recent: 查看近期玩家 client id。",
+        "/find <name>: 查找玩家身份。"
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: 停用伺服器 kickvote。"
+    ],
+    "voteonCmdHelp": [
+        "/voteon: 啟用自己 kickvote。",
+        "/voteon status: 查看自己 kickvote 狀態。"
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: 啟用伺服器 kickvote。"
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: 停用玩家 msgvote 2 日。",
+        "/mvoteoff <cl> 2 <reason>: 用 admin 停用 2 日。",
+        "/mvoteoff <cl1> <cl2> 2: 同時停用 2 人。",
+        "/mvoteoff all 2: 停用所有人 2 日。",
+        "<cl> 係玩家 client id。輸入 /cl 查看。",
+        "亦可用 local id、account id、name、account name。",
+        "/mvoteoff sita aur 2: 停用 sita、aura 2 日。",
+        "/mvoteoff remove <cl>: 啟用玩家 msgvote。",
+        "/mvoteoff status <cl>: 查看 msgvote 狀態。",
+        "/recent: 查看近期玩家 client id。",
+        "/find <name>: 查找玩家身份。"
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: 停用伺服器 msgvote。"
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: 啟用自己 msgvote。",
+        "/mvoteon status: 查看自己 msgvote 狀態。"
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: 啟用伺服器 msgvote。"
+    ]
+}

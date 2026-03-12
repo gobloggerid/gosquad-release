@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: Gosquad பற்றிய பொது தகவலை காட்டும்.",
+        "/help rules: Gosquad விதிகளை காட்டும்.",
+        "/help report: மீறலை எப்படி report செய்வது காட்டும்.",
+        "/help code: ஐகான், கொடி, குறியீட்டு code களை காட்டும்.",
+        "/<command> help: குறிப்பிட்ட command உதவியை காட்டும்.",
+        "எ.கா.: /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement அல்லது /<command> access.",
+        "command விலை, குறைந்தபட்ச level பார்க்கும்,",
+        "மேலும் இலவசத்திற்கு குறைந்தபட்ச role. எ.கா.: /kill requirement."
+    ],
+    "reportHelp": [
+        "report செய்வதில் முக்கியமானது துல்லியம்.",
+        "உங்கள் claim க்கு ஆதாரம் வேண்டும்.",
+        "குறைந்தது ஒரு video அல்லது screenshot தேவை.",
+        "ஆதாரம் மீறலை தெளிவாக காட்ட வேண்டும்.",
+        "மேலும் தகவலுக்கு Discord பாருங்கள்."
+    ],
+    "rulesHelp": [
+        "அடிப்படை விதிகள்:",
+        "எப்போதும் ஒருவருக்கொருவர் மரியாதை.",
+        "chat, name, tag ஆகியவற்றில் கெட்ட சொல் வேண்டாம்.",
+        "FFA server இல் team up செய்ய வேண்டாம்.",
+        "Team server இல் betray செய்ய வேண்டாம்.",
+        "இல்லாத விதியை உருவாக்க வேண்டாம்.",
+        "முழு விதிகள் Discord இல்.",
+        "குறிப்பு: server owners கூடுதல் விதிகள் வைத்திருக்கலாம்."
+    ],
+    "achievementCmdHelp": [
+        "/achievement: உங்கள் achievements பார்க்கும்.",
+        "/achievement show: achievement ஐ பொதுவாக காட்டும்.",
+        "/achievement <cl>: player இன் achievement பார்க்கும்."
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: coins கொண்டு 2 நாட்கள் ban.",
+        "/ban <cl> 2 <reason>: admin மூலம் 2 நாட்கள் ban.",
+        "/ban <cl1> <cl2>: 2 players ஐ ஒரே நேரத்தில் ban.",
+        "/ban all 2: எல்லா players ஐ 2 நாட்கள் ban.",
+        "<cl> என்பது player client id. /cl type செய்யவும்.",
+        "local id, account id, name, account name பயன்படுத்தலாம்.",
+        "/ban sita haf 2: sita, hafsah ஐ 2 நாட்கள் ban.",
+        "/ban <scope> remove <cl>: player ஐ unban.",
+        "/ban <scope> status <cl>: ban status பார்க்கும்.",
+        "<scope> global, ffa அல்லது team ஆகும்.",
+        "/recent: recent player client ids பார்க்கும்.",
+        "/find <name>: player அடையாளம் கண்டுபிடிக்கும்."
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: server ஐ public party list இலிருந்து மறைக்கும்."
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: அந்த scope இல் இருந்து உங்களை unban.",
+        "<scope> global, ffa அல்லது team ஆகும்.",
+        "/unban team: team server இல் ban ஆனால்.",
+        "/unban <scope> status: உங்கள் ban status பார்க்கும்."
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: server ஐ public party list இல் காட்டும்."
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: command ஐ உங்கள்மீது இயக்கும்.",
+        "/<cmd> all: அனைவர்மீதும் இயக்கும்.",
+        "/<cmd> team: teammates மீது இயக்கும்.",
+        "/<cmd> noteam: எதிரிகள் மீது இயக்கும்.",
+        "/<cmd> <id1> <id2>: 2 players மீது ஒரே நேரத்தில்.",
+        "<id> என்பது player index. /id type செய்யவும்.",
+        "<id>க்கு பதிலாக பெயரை பயன்படுத்தலாம்.",
+        "/<cmd> sita aur: sita, aura மீது இயக்கும்."
+    ],
+    "coinCmdHelp": [
+        "/coin: உங்கள் coins பார்க்கும்.",
+        "/coin show: coins பொதுவாக காட்டும்.",
+        "/coin <cl>: player coins பார்க்கும்.",
+        "/coin transfer <cl> <amount>: coins மாற்றும்.",
+        "/coin convert <amount>: coins ஐ score ஆக மாற்றும்.",
+        "/coin history: transaction history படிக்கும்."
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: server coins பார்க்கும்.",
+        "/coin transaction: server transaction history படிக்கும்.",
+        "/coin add <cl> <amount>: player க்கு coins சேர்க்கும்.",
+        "குறிப்பு: coins server இலிருந்து கழிக்கப்படும்."
+    ],
+    "commandCmdHelp": [
+        "/command regular: regular commands காட்டும்.",
+        "/command fun: fun commands காட்டும்.",
+        "/command cheat: cheat commands காட்டும்.",
+        "/command manage: management commands காட்டும்.",
+        "/command history: command history படிக்கும்.",
+        "/command alias <cmd>: command aliases காட்டும்.",
+        "/command info <cmd>: basic info காட்டும்.",
+        "Free access க்கு reason தேவை; இல்லையெனில் coins பயன்படும்.",
+        "எ.கா.: /end இங்கே valid reason எழுதுங்கள்."
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: புதிய alias அமைக்கும்.",
+        "/command delalias <alias>: alias நீக்கும்.",
+        "/command level <cmd> <level>: min level அமைக்கும்.",
+        "/command price <cmd> <price>: cmd விலை அமைக்கும்.",
+        "/command role <cmd> <role>: free access role அமைக்கும்.",
+        "குறிப்பு: எல்லா commands கும் free role இல்லை."
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: spark effect ஐ inventoryக்கு சேர்க்கும்.",
+        "/effect add spark 3: spark validity 3 நாட்கள் நீட்டிக்கும்.",
+        "/effect price: effect விலை பார்க்கும்.",
+        "/effect limit: max effect பார்க்கும்.",
+        "/effect <cl>: player effects பார்க்கும்.",
+        "/effect remove 2: inventory ல் 2வது effect நீக்கும்."
+    ],
+    "funCmdHelp": [
+        "/<cmd>: command ஐ உங்கள்மீது இயக்கும்.",
+        "/<cmd> all: அனைவர்மீதும் இயக்கும்.",
+        "/<cmd> team: teammates மீது இயக்கும்.",
+        "/<cmd> noteam: எதிரிகள் மீது இயக்கும்.",
+        "/<cmd> <id1> <id2>: 2 players மீது ஒரே நேரத்தில்.",
+        "<id> என்பது player index. /id type செய்யவும்.",
+        "<id>க்கு பதிலாக பெயரை பயன்படுத்தலாம்.",
+        "/<cmd> haf aur: hafsah, aura மீது இயக்கும்.",
+        "சில commands க்கு extra argument தேவை, இல்லையெனில்: random.",
+        "உதாரணம்: /color all red. 'Red' என்பது extra argument."
+    ],
+    "helpCmdIconHelp": [
+        "'\\' type செய்து பின்னர் code கொடுங்கள். உதாரணம்:",
+        "\\crownChampion -> இப்படியான text உருவாகும்: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: sample icon codes காட்டும்.",
+        "/help code symbol: sample symbol codes காட்டும்.",
+        "/help code flag: sample flag codes காட்டும்.",
+        "முழு பட்டியலுக்கு Discord பாருங்கள்."
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: role ஐ 2 நாட்கள் பொதுவில் மறைக்கும்.",
+        "/hide list: மறைக்க முடியும் items பார்க்கும்.",
+        "/show role: role ஐ மீண்டும் காட்டும்."
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: புதிய hidden item உருவாக்கும்.",
+        "/hide delete <item>: hidden item நீக்கும்."
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: 2 random players மீது இயக்கும்.",
+        "/<cmd> all: அனைவர்மீதும் இயக்கும்.",
+        "/<cmd> team: teammates மீது இயக்கும்.",
+        "/<cmd> noteam: எதிரிகள் மீது இயக்கும்.",
+        "/<cmd> id1 id2: 2 players மீது ஒரே நேரத்தில்.",
+        "<id> என்பது player index. /id type செய்யவும்.",
+        "பெயரையும் பயன்படுத்தலாம்.",
+        "/<cmd> sita haf: sita, hafsah மீது இயக்கும்",
+        "/<cmd> 4: 4 random players மீது இயக்கும்."
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: crown icon ஐ inventoryக்கு சேர்க்கும்.",
+        "/icon add \\indonesia: Indonesia flag 2 நாட்கள் சேர்க்கும்.",
+        "/icon price: icon விலை பார்க்கும்.",
+        "/icon limit: max எண்ணிக்கையும் length ஐவும் பார்க்கும்.",
+        "/icon <cl>: player icons பார்க்கும்.",
+        "/icon remove 2: inventory ல் 2வது icon நீக்கும்."
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: coins கொண்டு player ஐ kick செய்கிறது.",
+        "/kick <cl> <reason>: admin மூலம் kick செய்கிறது.",
+        "/kick <cl1> <cl2>: 2 players ஐ ஒரே நேரத்தில் kick.",
+        "/kick all: எல்லா players ஐ kick.",
+        "<cl> என்பது player client id. /cl type செய்யவும்.",
+        "local id, account id, name, account name பயன்படுத்தலாம்.",
+        "/kick sita haf aur: sita, hafsah, aura ஐ kick."
+    ],
+    "languageCmdHelp": [
+        "/language english: மொழியை english ஆக அமைக்கும்.",
+        "/language list: கிடைக்கும் மொழிகளை காட்டும்.",
+        "Language support help வரை மட்டுமே இருக்கலாம்.",
+        "சில மொழிகள் மட்டுமே கிடைக்கலாம்.",
+        "english அல்லாத மொழிகள் பழையதாக இருக்கலாம்.",
+        "மொழிபெயர்க்க உதவுங்கள்."
+    ],
+    "levelCmdHelp": [
+        "/level: உங்கள் level பார்க்கும்.",
+        "/level upgrade: coins கொண்டு level மேம்படுத்தும்.",
+        "அல்லது score மூலம் தானாக மேம்படும்.",
+        "/level show: level ஐ பொதுவாக காட்டும்.",
+        "/level <cl>: player level பார்க்கும்.",
+        "/level convert <number>: levels ஐ coins ஆக மாற்றும்."
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: level புதுப்பிக்கும் (server coins பயன்படுத்தும்).",
+        "நீங்கள் players ஐ எச்சரிக்கலாம்:",
+        "Ranking 70 க்கும் கீழே > 1 level குறைவு (max).",
+        "Ranking 150 க்கும் கீழே > 2 levels குறைவு (max).",
+        "Ranking 250 க்கும் கீழே > 3 levels குறைவு (max)."
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: player indexes பட்டியல்",
+        "/clientid OR /cl: client IDs பட்டியல்",
+        "/accountid OR /ad: account IDs பட்டியல்",
+        "/accountname OR /an: account names பட்டியல்",
+        "/myid: உங்கள் அடையாளங்கள்: Local ID, Account Name, Account ID",
+        "/myid <show>: அடையாளங்களை பொதுவாக காட்டும்.",
+        "locid (Local ID) ஐ பெரும்பாலும் பயன்படுத்தலாம்",
+        "clientid க்கு பதிலாக. எ.கா.: coins transfer, ban player."
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: coins கொண்டு 2 நாட்கள் mute.",
+        "/mute <cl> 2 <reason>: admin மூலம் 2 நாட்கள் mute.",
+        "/mute <cl1> <cl2> 2: 2 players ஐ ஒரே நேரத்தில் mute.",
+        "/mute all 2: எல்லா players ஐ 2 நாட்கள் mute.",
+        "<cl> என்பது player client id. /cl type செய்யவும்.",
+        "local id, account id, name, account name பயன்படுத்தலாம்.",
+        "/mute sita aur 2: sita, aura ஐ 2 நாட்கள் mute.",
+        "/mute remove <cl>: player ஐ unmute செய்கிறது.",
+        "/mute status <cl>: mute status பார்க்கும்.",
+        "/recent: recent client ids பார்க்கும்.",
+        "/find <name>: player அடையாளம் கண்டுபிடிக்கும்."
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: server chat ஐ முடக்கும்."
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: உங்கள் mute நீக்கும்.",
+        "/unmute status: உங்கள் mute status பார்க்கும்."
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: server chat ஐ இயக்கு."
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: தற்போதைய password ஐ சரிபார்க்கும்.",
+        "/password remove <password>: password ஐ நீக்கும்.",
+        "/password set <new-pass> <old-pass>: password மாற்றும்.",
+        "default old-password gosquad ஆகும்.",
+        "Min 4 characters, max 16.",
+        "Password மறந்தால்? co/owners ஐ தொடர்பு கொள்ளவும்."
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: player password ஐ பார்க்கும்",
+        "/password reset <cl>: player password நீக்கும்."
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: taobao pet ஐ inventoryக்கு சேர்க்கும்.",
+        "/pet add taobao 3: taobao ஐ 3 நாட்கள் நீட்டிக்கும்.",
+        "/pet price: pet விலை பார்க்கும்.",
+        "/pet limit: max pet number பார்க்கும்.",
+        "/pet <cl>: player pets பார்க்கும்.",
+        "/pet remove 2: inventory ல் 2வது pet நீக்கும்."
+    ],
+    "pingCmdHelp": [
+        "/ping: உங்கள் ping பார்க்கும்.",
+        "/ping show: ping பொதுவாக காட்டும்.",
+        "/ping <cl>: player ping பார்க்கும்.",
+        "/ping all: எல்லா players ping பார்க்கும்."
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: coins கொண்டு player ஐ lobbyக்கு அனுப்பும்.",
+        "/remove <id> <reason>: admin மூலம் lobbyக்கு அனுப்பும்.",
+        "/remove <id1> <id2>: 2 players ஐ ஒரே நேரத்தில் அனுப்பும்.",
+        "/remove all: எல்லாவற்றையும் lobbyக்கு அனுப்பும்.",
+        "<id> என்பது player index. /id type செய்யவும்.",
+        "பெயரையும் பயன்படுத்தலாம்.",
+        "/remove sita haf aur: sita, hafsah, aura ஐ lobbyக்கு அனுப்பும்."
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: player roles பார்க்கும்.",
+        "/role price: roles விலையும் விவரமும் பார்க்கும்.",
+        "/role add admin 1: உங்களை 1 மாதம் admin ஆக்கும்.",
+        "/role remove admin: admin role நீக்கும்.",
+        "/role tag admin cool: admin default tag ஐ cool ஆக மாற்றும்.",
+        "/role remtag admin: admin tag ஐ default ஆக மாற்றும்.",
+        "/role anim admin right: admin animation ஐ right ஆக மாற்றும்."
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: player க்கு 7 நாள் admin.",
+        "/role revoke <cl> admin: player admin நீக்கும்.",
+        "/role create staff: staff role உருவாக்கும்.",
+        "/role delete staff: staff role நீக்கும்.",
+        "/role eligible <cl> true: admin க்கு தகுதி அளிக்கும்.",
+        "/role deftag owner cool: owner default tag ஐ cool ஆக மாற்றும்.",
+        "/role import: உங்களை owner ஆக மாற்றும் (hint படிக்கவும்)."
+    ],
+    "statsCmdHelp": [
+        "/stats: உங்கள் stats பார்க்கும்.",
+        "/stats show: stats பொதுவாக காட்டும்.",
+        "/stats convert <score>: stats score ஐ coins ஆக மாற்றும்.",
+        "betrayal count கவனிக்கவும்; ban ஆகலாம்."
+    ],
+    "statusCmdHelp": [
+        "/status: உங்கள் status பார்க்கும்.",
+        "/status show: status பொதுவாக காட்டும்.",
+        "/status <clid>: player status பார்க்கும்."
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: trophy symbol ஐ inventoryக்கு சேர்க்கும்.",
+        "/symbol price: symbol விலை பார்க்கும்.",
+        "/symbol limit: max எண்ணிக்கையும் length ஐவும் பார்க்கும்.",
+        "/symbol <cl>: player symbols பார்க்கும்.",
+        "/symbol remove 2: inventory ல் 2வது symbol நீக்கும்.",
+        "Emoji/smiley கூட symbol ஆக பயன்படுத்தலாம்."
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: 'Winner' tag ஐ inventoryக்கு சேர்க்கும்.",
+        "/tag add \"Top Win\": space க்கு quotes பயன்படுத்தவும்.",
+        "/tag price: tag விலை பார்க்கும்.",
+        "/tag limit: max எண்ணிக்கையும் length ஐவும் பார்க்கும்.",
+        "/tag <cl>: player tags பார்க்கும்.",
+        "/tag remove 2: 2வது tag நீக்கும்.",
+        "/tag color 1 red: 1வது tag நிறத்தை red ஆக மாற்றும்.",
+        "கிடைக்கும் tag நிறங்கள்:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: player kickvote 2 நாட்கள் முடக்கும்.",
+        "/voteoff <cl> 2 <reason>: admin மூலம் 2 நாட்கள் முடக்கும்.",
+        "/voteoff <cl1> <cl2>: 2 players ஐ ஒரே நேரத்தில் முடக்கும்.",
+        "/voteoff all 2: எல்லாவற்றையும் 2 நாட்கள் முடக்கும்.",
+        "<cl> என்பது player client id. /cl type செய்யவும்.",
+        "local id, account id, name, account name பயன்படுத்தலாம்.",
+        "/voteoff haf aur 2: hafsah, aura ஐ 2 நாட்கள் முடக்கும்.",
+        "/voteoff remove <cl>: player kickvote இயக்கு.",
+        "/voteoff status <cl>: kickvote status பார்க்கும்.",
+        "/recent: recent client ids பார்க்கும்.",
+        "/find <name>: player அடையாளம் கண்டுபிடிக்கும்."
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: server kickvote முடக்கும்."
+    ],
+    "voteonCmdHelp": [
+        "/voteon: உங்கள் kickvote இயக்கு.",
+        "/voteon status: உங்கள் kickvote status பார்க்கும்."
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: server kickvote இயக்கு."
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: player msgvote 2 நாட்கள் முடக்கும்.",
+        "/mvoteoff <cl> 2 <reason>: admin மூலம் 2 நாட்கள் முடக்கும்.",
+        "/mvoteoff <cl1> <cl2> 2: 2 players ஐ ஒரே நேரத்தில் முடக்கும்.",
+        "/mvoteoff all 2: எல்லாவற்றையும் 2 நாட்கள் முடக்கும்.",
+        "<cl> என்பது player client id. /cl type செய்யவும்.",
+        "local id, account id, name, account name பயன்படுத்தலாம்.",
+        "/mvoteoff sita aur 2: sita, aura ஐ 2 நாட்கள் முடக்கும்.",
+        "/mvoteoff remove <cl>: player msgvote இயக்கு.",
+        "/mvoteoff status <cl>: msgvote status பார்க்கும்.",
+        "/recent: recent client ids பார்க்கும்.",
+        "/find <name>: player அடையாளம் கண்டுபிடிக்கும்."
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: server msgvote முடக்கும்."
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: உங்கள் msgvote இயக்கு.",
+        "/mvoteon status: உங்கள் msgvote status பார்க்கும்."
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: server msgvote இயக்கு."
+    ]
+}

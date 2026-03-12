@@ -69,6 +69,7 @@ states = [
     State(bomb='ice', name='Frozen Bombs'),
     State(bomb='sticky', name='Sticky Bombs'),
     State(bomb='vacuum', name='Vacuum Bombs'),
+    State(bomb='shatter', name='Breaker Bombs'),
     State(bomb='impact', name='Impact Bombs'),
     State(grab=True, name='Grabbing only'),
     State(punch=True, name='Punching only'),
@@ -195,23 +196,10 @@ class ArmRaceGame(bs.TeamGameActivity[Player, Team]):
     # overriding the default character spawning..
     def spawn_player(self, player: Player) -> bs.Actor:
         spaz = self.spawn_player_spaz(player)
-
-        player.state = player.state or PlayerState.NORMAL
         if player.state is None:
             player.state = self.states[0]
-        super().spawn_player(player)
-        player.state.apply(player.actor)
-
-        spaz.connect_controls_to_player(
-            enable_punch=self.punch,
-            enable_bomb=self.bomb,
-            enable_pickup=self.grab,
-        )
-        if self.curse:
-            spaz.curse()
-        if self.bomb:
-            spaz.bomb_type = self.bomb
-        spaz.set_score_text(self.name)
+        player.state.apply(spaz)
+        return spaz
 
     def isValidKill(self, m):
         if m.getkillerplayer(Player) is None:

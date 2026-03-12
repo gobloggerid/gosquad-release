@@ -2,7 +2,7 @@
 # Made by MattZ45986 on GitHub
 # Ported by: Freaku / @[Just] Freak#4999
 #
-# Edited by goblogger
+# Modified for gosquad server by n00biity
 # Join BCS:
 # https://discord.gg/ucyaesh
 #
@@ -378,17 +378,18 @@ class NonMusicalFlagGame(bs.TeamGameActivity[Player, Team]):
                 for player in self.spawned:
                     if not player.done:
                         try:
+                            name = player.getname(full=True)
                             message = [
-                                f'You should have been faster, {player.getname(full=True)}!',
-                                f'You are too slow, {player.getname(full=True)}!',
-                                f'You are too slow to catch the flag, {player.getname(full=True)}!',
-                                f'Why did you not catch the flag, {player.getname(full=True)}?',
-                                f'Is it your first time playing, {player.getname(full=True)}?',
-                                f'Do you understand the game, {player.getname(full=True)}?',
-                                f"Maybe you're just unlucky, {player.getname(full=True)}.",
-                                f'Better luck next time, {player.getname(full=True)}.',
-                                f'You should be more prepared next time, {player.getname(full=True)}.',
-                                f"Catch the flag. It's not that hard, {player.getname(full=True)}!",
+                                f'You should have been faster, {name}!',
+                                f'You are too slow, {name}!',
+                                f'You are too slow to catch the flag, {name}!',
+                                f'Why did you not catch the flag, {name}?',
+                                f'Is it your first time playing, {name}?',
+                                f'Do you understand the game, {name}?',
+                                f"Maybe you're just unlucky, {name}.",
+                                f'Better luck next time, {name}.',
+                                f'You should be more prepared next time, {name}.',
+                                f"Catch the flag. It's not that hard, {name}!",
                             ]
                             player.survived = False
                             (

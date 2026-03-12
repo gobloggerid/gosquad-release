@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: tampilkan informasi umum tentang Gosquad.",
+        "/help rules: tampilkan aturan di Gosquad.",
+        "/help report: tampilkan cara melaporkan pelanggaran.",
+        "/help code: tampilkan kode ikon, bendera dan simbol.",
+        "/<command> help: tampilkan pertolongan untuk perintah.",
+        "Con. /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement ATAU /<command> access.",
+        "Mengecek harga perintah, level minimal untuk menjalankan.",
+        "& min peran untuk menjalankan gratis. Con. /kill access."
+    ],
+    "reportHelp": [
+        "Yang paling penting tentang laporan adalah ketepatan.",
+        "Kamu harus punya bukti dari klaim kamu.",
+        "Setidaknya satu vidio atau tangkapan layar dibutuhkan.",
+        "Di barbuk harus terlihat jelas pelanggarannya.",
+        "Kunjungi Discord untuk informasi lengkap."
+    ],
+    "rulesHelp": [
+        "Aturan dasar:",
+        "Selalu saling menghormati satu sama lain.",
+        "Tidak ada kata kotor pada obrolan, nama, tag, dll..",
+        "Jangan berkomplot di server FFA.",
+        "Jangan berkhianant di server tim",
+        "Jangan membuat aturan yang tidak ada.",
+        "Aturan lengkap berada di server Discord kami.",
+        "Catatan: pemilik server mungkin punya aturan tambahan."
+    ],
+    "achievementCmdHelp": [
+        "/achievement: cek pencapaian sendiri.",
+        "/achievement show: tampilkan pencapaian ke publik.",
+        "/achievement <cl>: checks player's achievement."
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: ban pemain untuk 2 hari dengan koin.",
+        "/ban <cl> 2 <alasan>: ban pemain untuk 2 hari dengan admin.",
+        "/ban <cl1> <cl2>: ban 2 pemain sekaligus.",
+        "/ban all 2: ban semua pemain untuk 2 hari.",
+        "<cl> adalah klien id pemain. Ketik /cl untuk memeriksa.",
+        "Bisa juga dengan lokal id, akun id, nama, nama akun.",
+        "/ban sita haf 2: ban sita, hafsah untuk 2 hari.",
+        "/ban <scope> remove <cl>: unban pemain dari skop.",
+        "/ban <scope> status <cl>: periksa status ban pemain.",
+        "<scope> bisa global, ffa, atau team.",
+        "/recent: periksa klien id pemain baru-baru.",
+        "/find <nama>: cari identitas pemain."
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: sembunyikan server dari daftar pesta publik."
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: unban sendiri dari ban skop.",
+        "<scope> bisa global, ffa, atau team.",
+        "/unban team: jika di-ban dari server tim.",
+        "/unban <scope> status: periksa status ban."
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: munculkan server di daftar pesta publik."
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: jalankan perintah untuk sendiri.",
+        "/<cmd> all: jalankan perintah untuk semua.",
+        "/<cmd> team: jalankan perintah untuk tim.",
+        "/<cmd> noteam: jalankan perintah untuk musuh.",
+        "/<cmd> <id1> <id2>: jalankan perintah utk 2 pemain sekaligus.",
+        "<id> adalah indeks pemain. Ketik /id untuk memeriksa.",
+        "Bisa juga menggunakan nama sebagai pengganti <id>.",
+        "/<cmd> sita aur: jalankan perintah untuk renata, aura."
+    ],
+    "coinCmdHelp": [
+        "/coin: periksa koin sendiri.",
+        "/coin show: tampilkan koin ke publik.",
+        "/coin <cl>: periksa koin pemain.",
+        "/coin transfer <cl> <jumlah>: transfer koin.",
+        "/coin convert <jumlah>: tukar koin dengan skor.",
+        "/coin history: baca riwayat transaksi."
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: periksa koin server.",
+        "/coin transaction: baca riwayat transaksi server.",
+        "/coin add <cl> <jumlah>: tambahkan koin ke pemain.",
+        "Catatan: koin akan diambil dari koin server."
+    ],
+    "commandCmdHelp": [
+        "/command regular: tampilkan perintah2 biasa.",
+        "/command fun: tampilkan perintah2 seru.",
+        "/command cheat: tampilkan perinta2 curang.",
+        "/command manage: tampilkan perintah2 pengaturan.",
+        "/command history: baca riwayat printah.",
+        "/command alias <cmd>: tampilkan alias dari perintah.",
+        "/command info <cmd>: tampilkan info dasar dari perintah.",
+        "Akses bebas butuh alasan, kalau tidak akan memakai koin.",
+        "Contoh /end lalu ketik alasan apapun di sini."
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: terapkan alias baru.",
+        "/command delalias <alias>: hapus alias.",
+        "/command level <cmd> <level>: terapkan min level perintah.",
+        "/command price <cmd> <harga>: terapkan harga perintah.",
+        "/command role <cmd> <peran>: terapkan peran akses bebas.",
+        "Catatan: tidak setiap perintah memiliki akses bebas."
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: tambah efek spark ke inventori.",
+        "/effect add spark 3: perpanjang masa spark untuk 3 hari.",
+        "/effect price: periksa harga efek.",
+        "/effect limit: periksa maksimum efek.",
+        "/effect <cl>: periksa efek pemain.",
+        "/effect remove 2: hapus efek ke-2 dari inventori."
+    ],
+    "funCmdHelp": [
+        "/<cmd>: jalankan perintah untuk sendiri.",
+        "/<cmd> all: jalankan perintah untuk semua.",
+        "/<cmd> team: jalankan perintah untuk tim.",
+        "/<cmd> noteam: jalankan perintah untuk musuh.",
+        "/<cmd> <id1> <id2>: jalankan perintah utk 2 pemain sekaligus.",
+        "<id> adalah indeks pemain. Ketik /id untuk memeriksa.",
+        "Bisa juga menggunakan nama sebagai pengganti <id>.",
+        "/<cmd> haf aur: jalankan perintah untuk hafsah, aura.",
+        "Sebagian butuh argument tambahan, jika tidak: terpilih acak.",
+        "Contoh: /color all red. 'Red' adalah argumen tambahan."
+    ],
+    "helpCmdIconHelp": [
+        "Cukup ketik '\\' diikuti kode tersedia. Contoh:",
+        "\\crownChampion -> Membuat teks ini: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: tampilkan contoh kode ikon.",
+        "/help code symbol: tampilkan contoh kode simbol.",
+        "/help code flag: tampilkan contoh kode bendera.",
+        "Kunjungi Discord untuk daftar lengkapnya."
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: sembunyikan role untuk 2 hari.",
+        "/hide list: periksa item apa yang bisa disembunyikan.",
+        "/show role: tampilkan kembali role."
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: buat item tersembunyi baru.",
+        "/hide delete <item>: hapus item tersembunyi."
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: jalankan perintah untuk 2 pemain acak.",
+        "/<cmd> all: jalankan perintah untuk semua.",
+        "/<cmd> team: jalankan perintah untuk tim.",
+        "/<cmd> noteam: jalankan perintah untuk musuh.",
+        "/<cmd> id1 id2: jalankan perintah utk 2 pemain sekaligus.",
+        "<id> adalah indeks pemain. Ketik /id untuk memeriksa.",
+        "Bisa juga menggunakan nama sebagai pengganti <id>.",
+        "/<cmd> sita haf: jalankan perintah untuk sita, hafsah.",
+        "/<cmd> 4: jalankan perintah untuk 4 pemain acak."
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: tambah ikon mahkota ke inventori.",
+        "/icon add \\indonesia 2: tambah bendera Indonesia 2 hari.",
+        "/icon price: periksa harga ikon.",
+        "/icon limit: periksa maks jumlah ikon dan panjang.",
+        "/icon <cl>: periksa ikon pemain.",
+        "/icon remove 2: hapus ikon ke-2 dari inventori."
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: tendang pemain dengan koin.",
+        "/kick <cl> <alasan>: tendang pemain dengan admin.",
+        "/kick <cl1> <cl2>: tendang 2 pemain sekaligus.",
+        "/kick all: tendang semua pemain dari server.",
+        "<cl> adalah klien id pemain. Ketik /cl untuk memeriksa.",
+        "Bisa juga dengan lokal id, akun id, nama, nama akun.",
+        "/kick sita haf aur: tendang sita, hafsah, aura."
+    ],
+    "languageCmdHelp": [
+        "/language english: terapkan bahasa ke inggris.",
+        "/language list: cek bahasa yang tersedia.",
+        "Dukungan bahasa mungkin terbatas pada bantuan saja.",
+        "Mungkin hanya sedikit bahasa yang tersedia.",
+        "Bahasa selain inggris mungkin kadaluwarsa.",
+        "Tolong bantu kami untuk menerjemahkan."
+    ],
+    "levelCmdHelp": [
+        "/level: periksa level sendiri.",
+        "/level upgrade: tingkatkan level dengan koin.",
+        "Atau biarkan meningkat secara otomatis dengan skor.",
+        "/level show: tampilkan level ke publik.",
+        "/level <cl>: periksa level pemain.",
+        "/level convert <jumlah>: tukar sejumlah level dengan koin."
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: ubah level (pakai koin server).",
+        "KAMU MUNGKIN INGIN MEMPERINGATKAN PEMAIN TENTANG:",
+        "Ranking turun dibawah 70th > Level menurun 1 (maks).",
+        "Ranking turun dibawah 150th > Level menurun 2 (maks).",
+        "Ranking turun dibawah 250th > Level menurun 3 (maks)."
+    ],
+    "listCmdHelp": [
+        "/playerid ATAU /id: periksa indeks pemain.",
+        "/clientid ATAU /cl: periksa klien ID.",
+        "/accountid ATAU /ad: periksa Akun ID.",
+        "/accountname ATAU /an: periksa nama akun.",
+        "/myid: periksa identitas sendiri: Lokal ID, Nama Akun, Akun ID",
+        "/myid <show>: tampilkan identitas ke publik.",
+        "Kamu bisa pakai locid (Lokal ID) Untuk hampir semua hal dgn mudah",
+        "dibanding pakai clientid. Contoh: transfer koin, ban pemain "
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: bisukan pemain 2 hari dengan koin.",
+        "/mute <cl> 2 <alasan>: bisukan 2 hari dengan admin.",
+        "/mute <cl1> <cl2> 2: bisukan 2 pemain sekaligus.",
+        "/mute all 2: bisukan semua pemain 2 hari.",
+        "<cl> adalah klien id pemain. Ketik /cl untuk memeriksa.",
+        "Bisa juga dengan lokal id, akun id, nama, nama akun.",
+        "/mute sita aur 2: bisukan sita, aura 2 hari.",
+        "/mute remove <cl>: suarakan pemain.",
+        "/mute status <cl>: periksa status bisu pemain.",
+        "/recent: periksa klien id pemain baru-baru.",
+        "/find <nama>: cari identitas pemain."
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: matikan fitur obrolan server."
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: suarakan sendiri.",
+        "/unmute status: periksa status bisu sendiri."
+    ],
+    "unmuteAdmCmdHelp n ": [
+        "/unmute server: nyalakan fitur obrolan server."
+    ],
+    "passwdCmdHelp": [
+        "/password <sandi>: uji kebenaran sandi sendiri.",
+        "/password remove <sandi>: hapus sandi sendiri.",
+        "/password set <sandi-baru> <sandi-lama>: ganti sandi.",
+        "setelan bawaan sandi lama adalah gosquad.",
+        "Minimal sandi 4 karakter, maksimal 16.",
+        "Lupa sandi? Hubungi co/owners."
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: periksa sandi pemain",
+        "/password reset <cl>: hapus sandi pemain."
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: tambah peliharaan taobao ke inventori.",
+        "/pet add taobao 3: perpanjang masa taobao 3 hari.",
+        "/pet price: periksa harga peliharaan.",
+        "/pet limit: periksa maks jumlah peliharaan.",
+        "/pet <cl>: periksa peliharaan pemain.",
+        "/pet remove 2: hapus peliharaan ke-2 dari inventori."
+    ],
+    "pingCmdHelp": [
+        "/ping: periksa ping sendiri.",
+        "/ping show: tampilkan ping ke publik.",
+        "/ping <cl>: periksa ping pemain.",
+        "/ping all: periksa ping semua pemain."
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: singkirkan pemain ke lobi dengan koin.",
+        "/remove <id> <alasan>: singkirkan pemain dengan admin.",
+        "/remove <id1> <id2>: singkirkan 2 pemain sekaligus.",
+        "/remove all: singkirkan semua pemain ke lobi.",
+        "<id> adalah indeks pemain. Ketik /id untuk memeriksa.",
+        "Bisa juga menggunakan nama sebagai pengganti <id>.",
+        "/remove sita haf aur: singkirkan sita, hafsah, aura."
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: cek peran pemain.",
+        "/role price: cek harga peran dan detailnya.",
+        "/role add admin 1: jadikan sendiri admin 1 bulan.",
+        "/role remove admin: hapus peran admin.",
+        "/role tag admin keren: ganti tag bawaan admin ke keren.",
+        "/role remtag admin: kembalikan tag bawaan admin.",
+        "/role anim admin right: ganti animasi tag menjadi kanan."
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: jadikan pemain sebagai admin 7 hari.",
+        "/role revoke <cl> admin: hilangkan peran admin dari pemain.",
+        "/role create staff: buat peran staff.",
+        "/role delete staff: hapus peran staff.",
+        "/role eligible <cl> true: buat pemain layak berperan admin.",
+        "/role deftag owner keren: ganti tag bawaan owner jadi keren.",
+        "/role import: jadikan sendiri owner (sila baca petunjuk)."
+    ],
+    "statsCmdHelp": [
+        "/stats: periksa stats sendiri.",
+        "/stats show: tampilkan stats ke publik.",
+        "/stats convert <skor>: tukar skore dengan koin.",
+        "Hati2 dengan jumlah pengkhianatan. Bisa kena ban."
+    ],
+    "statusCmdHelp": [
+        "/status: periksa status sendiri.",
+        "/status show: tampilkan status ke publik.",
+        "/status <clid>: periksa status pemain."
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy 2: tambah simbol piala ke inventori.",
+        "/symbol price: periksa harga simbol.",
+        "/symbol limit: periksa maks jumlah dan panjang simbol.",
+        "/symbol <cl>: periksa simbol pemain.",
+        "/symbol remove 2: hapus simbol ke-2 dari inventori.",
+        "Emoji/smiley juga cocok untuk simbol."
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: tambah tag 'Winner' ke inventori.",
+        "/tag add \"Top Win\": gunakan kutipan untuk pakai spasi.",
+        "/tag price: periksa harga tag.",
+        "/tag limit: periksa maks jumlah dan panjang tag.",
+        "/tag <cl>: periksa tag pemain.",
+        "/tag remove 2: hapus tag ke-2 dari inventori.",
+        "/tag color 1 red: ganti warna tag ke-1 jadi merah.",
+        "Warna yang tersedia:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: matikan voting-tendang pemain dengan koin.",
+        "/voteoff <cl> 2 <alasan>: matikan voting-tendang dengan admin.",
+        "/voteoff <cl1> <cl2>: matikan 2 pemain sekaligus.",
+        "/voteoff all 2: matikan semua pemain  2 hari.",
+        "<cl> adalah klien id pemain. Ketik /cl untuk memeriksa.",
+        "Bisa juga dengan lokal id, akun id, nama, nama akun.",
+        "/voteoff haf aur 2: matikan hafsah, aura 2 hari.",
+        "/voteoff remove <cl>: nyalakan voting-tendang pemain.",
+        "/voteoff status <cl>: periksa status voting-tendang pemain.",
+        "/recent: periksa klien id pemain baru-baru.",
+        "/find <nama>: cari identitas pemain."
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: matikan fitur voting-tendang server."
+    ],
+    "voteonCmdHelp": [
+        "/voteon: nyalakan voting-tendang sendiri.",
+        "/voteon status: periksa status voting-tendang."
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: matikan fitur voting-tendang server."
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: matikan voting-pesan pemain dengan koin.",
+        "/mvoteoff <cl> 2 <alasan>: matikan voting-pesan dengan admin.",
+        "/mvoteoff <cl1> <cl2>: matikan 2 pemain sekaligus.",
+        "/mvoteoff all 2: matikan semua pemain  2 hari.",
+        "<cl> adalah klien id pemain. Ketik /cl untuk memeriksa.",
+        "Bisa juga dengan lokal id, akun id, nama, nama akun.",
+        "/mvoteoff haf aur 2: matikan hafsah, aura 2 hari.",
+        "/mvoteoff remove <cl>: nyalakan voting-pesan pemain.",
+        "/mvoteoff status <cl>: periksa status voting-pesan pemain.",
+        "/recent: periksa klien id pemain baru-baru.",
+        "/find <nama>: cari identitas pemain."
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: matikan fitur voting-pesan server."
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: nyalakan voting-pesan sendiri.",
+        "/mvoteon status: periksa status voting-pesan."
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: matikan fitur voting-pesan server."
+    ]
+}

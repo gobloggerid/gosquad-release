@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: แสดงข้อมูลทั่วไปของ Gosquad.",
+        "/help rules: แสดงกฎของ Gosquad.",
+        "/help report: แสดงวิธีรายงานการละเมิด.",
+        "/help code: แสดงโค้ดไอคอน ธง และสัญลักษณ์.",
+        "/<command> help: แสดงวิธีใช้คำสั่ง.",
+        "เช่น: /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement หรือ /<command> access.",
+        "ตรวจราคา ระดับขั้นต่ำในการใช้,",
+        "และบทบาทขั้นต่ำสำหรับใช้ฟรี. เช่น: /kill requirement."
+    ],
+    "reportHelp": [
+        "สิ่งสำคัญที่สุดในการรายงานคือความถูกต้อง.",
+        "ต้องมีหลักฐานยืนยันคำกล่าวอ้าง.",
+        "ต้องมีอย่างน้อยหนึ่งวิดีโอหรือภาพหน้าจอ.",
+        "หลักฐานต้องแสดงการละเมิดอย่างชัดเจน.",
+        "ดู Discord สำหรับข้อมูลเพิ่มเติม."
+    ],
+    "rulesHelp": [
+        "กฎพื้นฐาน:",
+        "เคารพกันเสมอ.",
+        "ห้ามคำหยาบในแชท ชื่อ แท็ก ฯลฯ.",
+        "ห้ามทีมอัพในเซิร์ฟเวอร์ FFA.",
+        "ห้ามทรยศในเซิร์ฟเวอร์ Team.",
+        "ห้ามสร้างกฎที่ไม่มีอยู่.",
+        "กฎทั้งหมดอยู่ใน Discord.",
+        "หมายเหตุ: เจ้าของเซิร์ฟเวอร์อาจมีกฎเพิ่มเติม."
+    ],
+    "achievementCmdHelp": [
+        "/achievement: ตรวจสอบความสำเร็จของตัวเอง.",
+        "/achievement show: แสดงความสำเร็จแบบสาธารณะ.",
+        "/achievement <cl>: ตรวจสอบความสำเร็จของผู้เล่น."
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: แบนผู้เล่น 2 วันด้วยเหรียญ.",
+        "/ban <cl> 2 <reason>: แบน 2 วันด้วย admin.",
+        "/ban <cl1> <cl2>: แบน 2 ผู้เล่นพร้อมกัน.",
+        "/ban all 2: แบนผู้เล่นทั้งหมด 2 วัน.",
+        "<cl> คือ client id ของผู้เล่น. พิมพ์ /cl.",
+        "ยังใช้ local id, account id, name, account name ได้.",
+        "/ban sita haf 2: แบน sita, hafsah 2 วัน.",
+        "/ban <scope> remove <cl>: ปลดแบนผู้เล่น.",
+        "/ban <scope> status <cl>: ตรวจสถานะแบน.",
+        "<scope> เป็น global, ffa หรือ team.",
+        "/recent: ตรวจ client id ล่าสุด.",
+        "/find <name>: ค้นหาตัวตนผู้เล่น."
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: ซ่อนเซิร์ฟเวอร์จากรายการสาธารณะ."
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: ปลดแบนตัวเองจาก scope.",
+        "<scope> เป็น global, ffa หรือ team.",
+        "/unban team: ถ้าถูกแบนจากเซิร์ฟเวอร์ team.",
+        "/unban <scope> status: ตรวจสถานะแบนของตัวเอง."
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: แสดงเซิร์ฟเวอร์ในรายการสาธารณะ."
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: ใช้คำสั่งกับตัวเอง.",
+        "/<cmd> all: ใช้กับทุกคน.",
+        "/<cmd> team: ใช้กับเพื่อนร่วมทีม.",
+        "/<cmd> noteam: ใช้กับฝ่ายตรงข้าม.",
+        "/<cmd> <id1> <id2>: ใช้กับ 2 ผู้เล่นพร้อมกัน.",
+        "<id> คือหมายเลขผู้เล่น. พิมพ์ /id.",
+        "ใช้ชื่อแทน <id> ได้.",
+        "/<cmd> sita aur: ใช้กับ sita, aura."
+    ],
+    "coinCmdHelp": [
+        "/coin: ตรวจเหรียญของตัวเอง.",
+        "/coin show: แสดงเหรียญแบบสาธารณะ.",
+        "/coin <cl>: ตรวจเหรียญของผู้เล่น.",
+        "/coin transfer <cl> <amount>: โอนเหรียญ.",
+        "/coin convert <amount>: แปลงเหรียญเป็นคะแนน.",
+        "/coin history: อ่านประวัติธุรกรรม."
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: ตรวจเหรียญของเซิร์ฟเวอร์.",
+        "/coin transaction: อ่านประวัติธุรกรรมของเซิร์ฟเวอร์.",
+        "/coin add <cl> <amount>: เพิ่มเหรียญให้ผู้เล่น.",
+        "หมายเหตุ: เหรียญจะถูกหักจากเซิร์ฟเวอร์."
+    ],
+    "commandCmdHelp": [
+        "/command regular: แสดงคำสั่งทั่วไป.",
+        "/command fun: แสดงคำสั่งสนุก.",
+        "/command cheat: แสดงคำสั่งโกง.",
+        "/command manage: แสดงคำสั่งจัดการ.",
+        "/command history: อ่านประวัติคำสั่ง.",
+        "/command alias <cmd>: แสดง alias ของคำสั่ง.",
+        "/command info <cmd>: แสดงข้อมูลพื้นฐาน.",
+        "ขอใช้ฟรีต้องมีเหตุผล ไม่งั้นใช้เหรียญ.",
+        "เช่น: /end ใส่เหตุผลที่ใช้ได้ที่นี่."
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: ตั้ง alias ใหม่.",
+        "/command delalias <alias>: ลบ alias.",
+        "/command level <cmd> <level>: ตั้งระดับขั้นต่ำ.",
+        "/command price <cmd> <price>: ตั้งราคาคำสั่ง.",
+        "/command role <cmd> <role>: ตั้งบทบาทสำหรับใช้ฟรี.",
+        "หมายเหตุ: ไม่ใช่ทุกคำสั่งมีบทบาทใช้ฟรี."
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: เพิ่มเอฟเฟกต์ spark ในคลัง.",
+        "/effect add spark 3: ต่ออายุ spark 3 วัน.",
+        "/effect price: ตรวจราคาเอฟเฟกต์.",
+        "/effect limit: ตรวจจำนวนเอฟเฟกต์สูงสุด.",
+        "/effect <cl>: ตรวจเอฟเฟกต์ของผู้เล่น.",
+        "/effect remove 2: ลบเอฟเฟกต์ที่ 2 จากคลัง."
+    ],
+    "funCmdHelp": [
+        "/<cmd>: ใช้คำสั่งกับตัวเอง.",
+        "/<cmd> all: ใช้กับทุกคน.",
+        "/<cmd> team: ใช้กับเพื่อนร่วมทีม.",
+        "/<cmd> noteam: ใช้กับฝ่ายตรงข้าม.",
+        "/<cmd> <id1> <id2>: ใช้กับ 2 ผู้เล่นพร้อมกัน.",
+        "<id> คือหมายเลขผู้เล่น. พิมพ์ /id.",
+        "ใช้ชื่อแทน <id> ได้.",
+        "/<cmd> haf aur: ใช้กับ hafsah, aura.",
+        "บางคำสั่งต้องมีอาร์กิวเมนต์เพิ่ม ไม่งั้น: random.",
+        "ตัวอย่าง: /color all red. 'Red' คืออาร์กิวเมนต์เพิ่ม."
+    ],
+    "helpCmdIconHelp": [
+        "พิมพ์ '\\' ตามด้วยโค้ดที่มี. ตัวอย่าง:",
+        "\\crownChampion -> สร้างข้อความแบบนี้: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: แสดงตัวอย่างโค้ดไอคอน.",
+        "/help code symbol: แสดงตัวอย่างโค้ดสัญลักษณ์.",
+        "/help code flag: แสดงตัวอย่างโค้ดธง.",
+        "ดูรายการทั้งหมดใน Discord."
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: ซ่อนบทบาทจากสาธารณะ 2 วัน.",
+        "/hide list: ตรวจรายการที่ซ่อนได้.",
+        "/show role: แสดงบทบาทกลับ."
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: สร้าง hidden item ใหม่.",
+        "/hide delete <item>: ลบ hidden item."
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: ใช้กับผู้เล่นสุ่ม 2 คน.",
+        "/<cmd> all: ใช้กับทุกคน.",
+        "/<cmd> team: ใช้กับเพื่อนร่วมทีม.",
+        "/<cmd> noteam: ใช้กับฝ่ายตรงข้าม.",
+        "/<cmd> id1 id2: ใช้กับ 2 ผู้เล่นพร้อมกัน.",
+        "<id> คือหมายเลขผู้เล่น. พิมพ์ /id.",
+        "ใช้ชื่อได้.",
+        "/<cmd> sita haf: ใช้กับ sita, hafsah",
+        "/<cmd> 4: ใช้กับผู้เล่นสุ่ม 4 คน."
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: เพิ่มไอคอน crown ในคลัง.",
+        "/icon add \\indonesia: เพิ่มธง Indonesia 2 วัน.",
+        "/icon price: ตรวจราคาไอคอน.",
+        "/icon limit: ตรวจจำนวนและความยาวสูงสุด.",
+        "/icon <cl>: ตรวจไอคอนของผู้เล่น.",
+        "/icon remove 2: ลบไอคอนที่ 2 จากคลัง."
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: เตะผู้เล่นด้วยเหรียญ.",
+        "/kick <cl> <reason>: เตะผู้เล่นด้วย admin.",
+        "/kick <cl1> <cl2>: เตะ 2 ผู้เล่นพร้อมกัน.",
+        "/kick all: เตะผู้เล่นทั้งหมด.",
+        "<cl> คือ client id ของผู้เล่น. พิมพ์ /cl.",
+        "ใช้ local id, account id, name, account name ได้.",
+        "/kick sita haf aur: เตะ sita, hafsah, aura."
+    ],
+    "languageCmdHelp": [
+        "/language english: ตั้งภาษาเป็น english.",
+        "/language list: แสดงภาษาที่มี.",
+        "การรองรับภาษาอาจจำกัดแค่ help.",
+        "อาจมีภาษาให้เลือกเพียงไม่กี่ภาษา.",
+        "ภาษาที่ไม่ใช่ english อาจล้าสมัย.",
+        "โปรดช่วยแปลด้วย."
+    ],
+    "levelCmdHelp": [
+        "/level: ตรวจเลเวลของตัวเอง.",
+        "/level upgrade: อัปเลเวลด้วยเหรียญ.",
+        "หรืออัปอัตโนมัติด้วย score.",
+        "/level show: แสดงเลเวลแบบสาธารณะ.",
+        "/level <cl>: ตรวจเลเวลของผู้เล่น.",
+        "/level convert <number>: แลกเลเวลเป็นเหรียญ."
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: อัปเดตเลเวล (ใช้เหรียญของเซิร์ฟเวอร์).",
+        "คุณอาจต้องแจ้งผู้เล่นเรื่องนี้:",
+        "อันดับต่ำกว่า 70 > ลด 1 เลเวล (สูงสุด).",
+        "อันดับต่ำกว่า 150 > ลด 2 เลเวล (สูงสุด).",
+        "อันดับต่ำกว่า 250 > ลด 3 เลเวล (สูงสุด)."
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: รายการหมายเลขผู้เล่น",
+        "/clientid OR /cl: รายการ client IDs",
+        "/accountid OR /ad: รายการ account IDs",
+        "/accountname OR /an: รายการชื่อบัญชี",
+        "/myid: ตรวจตัวตน: Local ID, Account Name, Account ID",
+        "/myid <show>: แสดงตัวตนแบบสาธารณะ.",
+        "ใช้ locid (Local ID) แทน clientid ได้เกือบทุกอย่าง",
+        "เช่น: โอนเหรียญ, แบนผู้เล่น."
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: ปิดเสียงผู้เล่น 2 วันด้วยเหรียญ.",
+        "/mute <cl> 2 <reason>: ปิดเสียง 2 วันด้วย admin.",
+        "/mute <cl1> <cl2> 2: ปิดเสียง 2 ผู้เล่นพร้อมกัน.",
+        "/mute all 2: ปิดเสียงผู้เล่นทั้งหมด 2 วัน.",
+        "<cl> คือ client id ของผู้เล่น. พิมพ์ /cl.",
+        "ใช้ local id, account id, name, account name ได้.",
+        "/mute sita aur 2: ปิดเสียง sita, aura 2 วัน.",
+        "/mute remove <cl>: ปลด mute ผู้เล่น.",
+        "/mute status <cl>: ตรวจสถานะ mute.",
+        "/recent: ตรวจ client id ล่าสุด.",
+        "/find <name>: ค้นหาตัวตนผู้เล่น."
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: ปิดการแชทของเซิร์ฟเวอร์."
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: ปลด mute ตัวเอง.",
+        "/unmute status: ตรวจสถานะ mute ของตัวเอง."
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: เปิดการแชทของเซิร์ฟเวอร์."
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: ตรวจรหัสผ่านปัจจุบัน.",
+        "/password remove <password>: ลบรหัสผ่านของตัวเอง.",
+        "/password set <new-pass> <old-pass>: เปลี่ยนรหัสผ่าน.",
+        "รหัสผ่านเดิมเริ่มต้นคือ gosquad.",
+        "ขั้นต่ำ 4 ตัวอักษร, สูงสุด 16.",
+        "ลืมรหัสผ่าน? ติดต่อ co/owners."
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: ตรวจรหัสผ่านของผู้เล่น",
+        "/password reset <cl>: ลบรหัสผ่านของผู้เล่น."
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: เพิ่ม taobao pet ในคลัง.",
+        "/pet add taobao 3: ต่ออายุ taobao 3 วัน.",
+        "/pet price: ตรวจราคาสัตว์เลี้ยง.",
+        "/pet limit: ตรวจจำนวนสัตว์เลี้ยงสูงสุด.",
+        "/pet <cl>: ตรวจสัตว์เลี้ยงของผู้เล่น.",
+        "/pet remove 2: ลบสัตว์เลี้ยงที่ 2 จากคลัง."
+    ],
+    "pingCmdHelp": [
+        "/ping: ตรวจ ping ของตัวเอง.",
+        "/ping show: แสดง ping แบบสาธารณะ.",
+        "/ping <cl>: ตรวจ ping ของผู้เล่น.",
+        "/ping all: ตรวจ ping ของผู้เล่นทั้งหมด."
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: ส่งผู้เล่นกลับ lobby ด้วยเหรียญ.",
+        "/remove <id> <reason>: ส่งผู้เล่นกลับด้วย admin.",
+        "/remove <id1> <id2>: ส่ง 2 ผู้เล่นพร้อมกัน.",
+        "/remove all: ส่งผู้เล่นทั้งหมดกลับ lobby.",
+        "<id> คือหมายเลขผู้เล่น. พิมพ์ /id.",
+        "ใช้ชื่อได้.",
+        "/remove sita haf aur: ส่ง sita, hafsah, aura กลับ lobby."
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: ตรวจ role ของผู้เล่น.",
+        "/role price: ตรวจราคาและรายละเอียดของ role.",
+        "/role add admin 1: ทำให้คุณเป็น admin 1 เดือน.",
+        "/role remove admin: ลบ role admin.",
+        "/role tag admin cool: เปลี่ยน tag admin เป็น cool.",
+        "/role remtag admin: รีเซ็ต tag admin เป็นค่าเดิม.",
+        "/role anim admin right: เปลี่ยน animation admin เป็น right."
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: ให้ role admin 7 วัน.",
+        "/role revoke <cl> admin: ถอน role admin.",
+        "/role create staff: สร้าง role staff.",
+        "/role delete staff: ลบ role staff.",
+        "/role eligible <cl> true: ทำให้มีสิทธิ์เป็น admin.",
+        "/role deftag owner cool: เปลี่ยน tag owner เป็น cool.",
+        "/role import: ทำให้เป็น owner (โปรดอ่าน hint)."
+    ],
+    "statsCmdHelp": [
+        "/stats: ตรวจ stats ของตัวเอง.",
+        "/stats show: แสดง stats แบบสาธารณะ.",
+        "/stats convert <score>: แลก score stats เป็นเหรียญ.",
+        "ระวังจำนวนการทรยศ คุณอาจโดนแบน."
+    ],
+    "statusCmdHelp": [
+        "/status: ตรวจสถานะของตัวเอง.",
+        "/status show: แสดงสถานะแบบสาธารณะ.",
+        "/status <clid>: ตรวจสถานะของผู้เล่น."
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: เพิ่ม symbol trophy ในคลัง.",
+        "/symbol price: ตรวจราคาสัญลักษณ์.",
+        "/symbol limit: ตรวจจำนวนและความยาวสูงสุด.",
+        "/symbol <cl>: ตรวจสัญลักษณ์ของผู้เล่น.",
+        "/symbol remove 2: ลบสัญลักษณ์ที่ 2 จากคลัง.",
+        "Emoji/smiley ก็เหมาะเป็นสัญลักษณ์."
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: เพิ่ม tag 'Winner' ในคลัง.",
+        "/tag add \"Top Win\": ใช้เครื่องหมายคำพูดเพื่อเว้นวรรค.",
+        "/tag price: ตรวจราคาแท็ก.",
+        "/tag limit: ตรวจจำนวนและความยาวสูงสุด.",
+        "/tag <cl>: ตรวจแท็กของผู้เล่น.",
+        "/tag remove 2: ลบแท็กที่ 2.",
+        "/tag color 1 red: เปลี่ยนสีแท็กแรกเป็น red.",
+        "สีแท็กที่มีให้ใช้:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: ปิด kickvote ของผู้เล่น 2 วัน.",
+        "/voteoff <cl> 2 <reason>: ปิด 2 วันด้วย admin.",
+        "/voteoff <cl1> <cl2>: ปิด kickvote 2 ผู้เล่นพร้อมกัน.",
+        "/voteoff all 2: ปิด kickvote ทั้งหมด 2 วัน.",
+        "<cl> คือ client id ของผู้เล่น. พิมพ์ /cl.",
+        "ใช้ local id, account id, name, account name ได้.",
+        "/voteoff haf aur 2: ปิด kickvote ของ hafsah, aura 2 วัน.",
+        "/voteoff remove <cl>: เปิด kickvote ของผู้เล่น.",
+        "/voteoff status <cl>: ตรวจสถานะ kickvote.",
+        "/recent: ตรวจ client id ล่าสุด.",
+        "/find <name>: ค้นหาตัวตนผู้เล่น."
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: ปิด kickvote ของเซิร์ฟเวอร์."
+    ],
+    "voteonCmdHelp": [
+        "/voteon: เปิด kickvote ของตัวเอง.",
+        "/voteon status: ตรวจสถานะ kickvote ของตัวเอง."
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: เปิด kickvote ของเซิร์ฟเวอร์."
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: ปิด msgvote ของผู้เล่น 2 วัน.",
+        "/mvoteoff <cl> 2 <reason>: ปิด 2 วันด้วย admin.",
+        "/mvoteoff <cl1> <cl2> 2: ปิด msgvote 2 ผู้เล่นพร้อมกัน.",
+        "/mvoteoff all 2: ปิด msgvote ทั้งหมด 2 วัน.",
+        "<cl> คือ client id ของผู้เล่น. พิมพ์ /cl.",
+        "ใช้ local id, account id, name, account name ได้.",
+        "/mvoteoff sita aur 2: ปิด msgvote ของ sita, aura 2 วัน.",
+        "/mvoteoff remove <cl>: เปิด msgvote ของผู้เล่น.",
+        "/mvoteoff status <cl>: ตรวจสถานะ msgvote.",
+        "/recent: ตรวจ client id ล่าสุด.",
+        "/find <name>: ค้นหาตัวตนผู้เล่น."
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: ปิด msgvote ของเซิร์ฟเวอร์."
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: เปิด msgvote ของตัวเอง.",
+        "/mvoteon status: ตรวจสถานะ msgvote ของตัวเอง."
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: เปิด msgvote ของเซิร์ฟเวอร์."
+    ]
+}

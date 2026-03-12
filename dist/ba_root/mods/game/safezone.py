@@ -800,7 +800,7 @@ class SafeZoneGame(bs.TeamGameActivity[Player, Team]):
             self.get_random_bot(),
             pos=position,
             spawn_time=1,
-            on_spawn_call=babase.CallStrict(self._on_bot_spawn),
+            on_spawn_call=babase.WeakCallPartial(self._on_bot_spawn),
         )
 
     def move_bot(self, bot):
@@ -821,6 +821,8 @@ class SafeZoneGame(bs.TeamGameActivity[Player, Team]):
     def get_random_bot(self):
         bots = [
             stdbot.BomberBotProStaticHyper,
+            stdbot.BomberBotProStaticBurner,
+            stdbot.BomberBotProStaticCurser,
             stdbot.BomberBotProStaticShielded,
         ]
         return random.choice(bots)
@@ -828,7 +830,11 @@ class SafeZoneGame(bs.TeamGameActivity[Player, Team]):
     def _get_bot_speed(self, bot_type):
         if bot_type == stdbot.BomberBotProStaticHyper:
             return 0.7
-        elif bot_type == stdbot.BomberBotProStaticShielded:
+        elif bot_type in (
+            stdbot.BomberBotProStaticShielded,
+            stdbot.BomberBotProStaticBurner,
+            stdbot.BomberBotProStaticCurser,
+        ):
             return 0.85
         else:
             raise Exception(

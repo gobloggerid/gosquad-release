@@ -1,21 +1,57 @@
 # Released under the MIT License. See LICENSE for details.
 #
+"""Powerup related functionality."""
 
 from __future__ import annotations
-from dataclasses import dataclass
+
 from typing import TYPE_CHECKING
-from gocommon.gosetting import getsetting
-if TYPE_CHECKING:from collections.abc import Sequence;import bascenev1
+from dataclasses import dataclass
+
+if TYPE_CHECKING:
+    from typing import Sequence
+
+    import bascenev1
+
+
 @dataclass
-class PowerupMessage:poweruptype:str;sourcenode:bascenev1.Node|None=None
+class PowerupMessage:
+    """A message telling an object to accept a powerup.
+
+    This message is normally received by touching a
+    bascenev1.PowerupBox.
+    """
+
+    poweruptype: str
+    """The type of powerup to be granted (a string).
+       See bascenev1.Powerup.poweruptype for available type values."""
+
+    sourcenode: bascenev1.Node | None = None
+    """The node the powerup game from, or None otherwise.
+       If a powerup is accepted, a bascenev1.PowerupAcceptMessage should be
+       sent back to the sourcenode to inform it of the fact. This will
+       generally cause the powerup box to make a sound and disappear or
+       whatnot."""
+
+
 @dataclass
-class PowerupAcceptMessage:0
-powerup_distribution=None
-def _get_default_powerup_distribution():powerup_setting=getsetting().get('powerupSettings',[]);return[(item['name'],item['count'])for item in powerup_setting]
-def get_default_powerup_distribution():
-	global powerup_distribution
-	if powerup_distribution is None:powerup_distribution=tuple(_get_default_powerup_distribution())
-	return powerup_distribution
-def apply():
-	import importlib;public_api=importlib.import_module('bascenev1');orig_module=importlib.import_module('bascenev1._powerup');addition=['get_default_powerup_distribution']
-	for name in addition:setattr(orig_module,name,globals()[name]);setattr(public_api,name,globals()[name])
+class PowerupAcceptMessage:
+    """A message informing a bascenev1.Powerup that it was accepted.
+
+    This is generally sent in response to a bascenev1.PowerupMessage to
+    inform the box (or whoever granted it) that it can go away.
+    """
+
+
+def get_default_powerup_distribution() -> Sequence[tuple[str, int]]:
+    """Standard set of powerups."""
+    return (
+        ('triple_bombs', 3),
+        ('ice_bombs', 3),
+        ('punch', 3),
+        ('impact_bombs', 3),
+        ('land_mines', 2),
+        ('sticky_bombs', 3),
+        ('shield', 2),
+        ('health', 1),
+        ('curse', 1),
+    )

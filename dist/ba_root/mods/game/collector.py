@@ -286,11 +286,7 @@ class CollectorGame(bs.TeamGameActivity[Player, Team]):
             1, max(len(t.players) for t in self.teams)
         )
         self._update_scoreboard()
-
-        if isinstance(self.session, bs.FreeForAllSession):
-            self._flag_pos = self.map.get_flag_position(random.randint(0, 1))
-        else:
-            self._flag_pos = self.map.get_flag_position(None)
+        self._flag_pos = self.map.get_flag_position(None)
 
         bs.timer(1.0, self._tick, repeat=True)
         self._flag_state = FlagState.NEW

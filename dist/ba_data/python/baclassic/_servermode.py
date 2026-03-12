@@ -4,24 +4,24 @@
 
 from __future__ import annotations
 
-import logging
 import sys
 import time
+import logging
 from typing import TYPE_CHECKING
 
-import babase
-import bascenev1
+from efro.terminal import Clr
 from bacommon.servermanager import (
-    ChatMessageCommand,
-    ClientListCommand,
-    KickCommand,
-    ScreenMessageCommand,
     ServerCommand,
+    StartServerModeCommand,
     ShutdownCommand,
     ShutdownReason,
-    StartServerModeCommand,
+    ChatMessageCommand,
+    ScreenMessageCommand,
+    ClientListCommand,
+    KickCommand,
 )
-from efro.terminal import Clr
+import babase
+import bascenev1
 
 if TYPE_CHECKING:
     from typing import Any
@@ -132,7 +132,11 @@ class ServerController:
         title3 = 'Players'
         col1 = 10
         col2 = 16
-        out = f'{Clr.BLD}{title1:<{col1}} {title2:<{col2}} {title3}{Clr.RST}'
+        out = (
+            f'{Clr.BLD}'
+            f'{title1:<{col1}} {title2:<{col2}} {title3}'
+            f'{Clr.RST}'
+        )
         for client in roster:
             if client['client_id'] == -1:
                 continue
@@ -230,7 +234,7 @@ class ServerController:
         else:
             addr = data['address']
             port = data['port']
-            show_addr = os.environ.get('BA_ACCESS_CHECK_VERBOSE', '1')
+            show_addr = os.environ.get('BA_ACCESS_CHECK_VERBOSE', '0') == '1'
             if show_addr:
                 addrstr = f' {addr}'
                 poststr = ''
@@ -242,29 +246,17 @@ class ServerController:
                 )
             if data['accessible']:
                 print(
-                    f'{Clr.SGRN}Master server access check of{addrstr}'
-                    f' UDP port {port} succeeded.\n'
+                    f'{Clr.SBLU}Master server access check of{addrstr}'
+                    f' udp port {port} succeeded.\n'
                     f'Your server appears to be'
                     f' joinable from the internet.{poststr}{Clr.RST}'
                 )
-                if self._config.party_is_public:
-                    print(
-                        f'{Clr.SGRN}Your party {self._config.party_name}'
-                        f' is visible in public party list.\n'
-                        f'It also can be joined by{addrstr} {port}.{Clr.RST}'
-                    )
-                else:
-                    print(
-                        f'{Clr.SYLW}Your private party {self._config.party_name}\n'
-                        f'can only be joined by{addrstr} {port}.{Clr.RST}'
-                    )
             else:
                 print(
                     f'{Clr.SRED}Master server access check of{addrstr}'
-                    f' UDP port {port} failed.\n'
+                    f' udp port {port} failed.\n'
                     f'Your server does not appear to be'
-                    f' joinable from the internet.\n'
-                    f'Check your firewall or security group.{poststr}{Clr.RST}'
+                    f' joinable from the internet.{poststr}{Clr.RST}'
                 )
 
     def _prepare_to_serve(self) -> None:
@@ -335,9 +327,7 @@ class ServerController:
         typename = (
             'teams'
             if result['playlistType'] == 'Team Tournament'
-            else 'ffa'
-            if result['playlistType'] == 'Free-for-All'
-            else '??'
+            else 'ffa' if result['playlistType'] == 'Free-for-All' else '??'
         )
         plistname = result['playlistName']
         print(f'{Clr.SBLU}Got playlist: "{plistname}" ({typename}).{Clr.RST}')
@@ -440,8 +430,6 @@ class ServerController:
         classic.teams_series_length = self._config.teams_series_length
         classic.ffa_series_length = self._config.ffa_series_length
 
-        bascenev1.set_authenticate_clients(self._config.authenticate_clients)
-
         bascenev1.set_enable_default_kick_voting(
             self._config.enable_default_kick_voting
         )
@@ -464,7 +452,6 @@ class ServerController:
         bascenev1.set_player_rejoin_cooldown(
             self._config.player_rejoin_cooldown
         )
-
         bascenev1.set_max_players_override(
             self._config.session_max_players_override
         )
@@ -486,28 +473,3 @@ class ServerController:
         if self._config.party_is_public and not self._ran_access_check:
             self._run_access_check()
             self._ran_access_check = True
-
-
-def apply() -> None:
-    """Apply this overlay onto baclassic._servermode."""
-    import importlib
-    import sys
-
-    orig_module = importlib.import_module('baclassic._servermode')
-    orig_controller = orig_module.ServerController
-
-    # The orig module isn't exposed to public API.
-    # So it's safe to import all the symbols from this overlay.
-    for key, val in globals().items():
-        if key.startswith('__') and key.endswith('__'):
-            continue
-        if key in {'apply'}:
-            continue
-        setattr(orig_module, key, val)
-
-    # Rebind simple module-level aliases from patched _servermode module object.
-    for mod in list(sys.modules.values()):
-        if mod is None:
-            continue
-        if getattr(mod, 'ServerController', None) is orig_controller:
-            mod.ServerController = ServerController

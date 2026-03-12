@@ -1,31 +1,24 @@
 # Porting made easier by baport.(https://github.com/bombsquad-community/baport)
-# Edited by goblogger
+# Ported to api 9 by n00bility.
+# Modified for gosquad server by n00bility.
 # ba_meta require api 9
 # (see https://ballistica.net/wiki/meta-tag-system)
 
 from __future__ import annotations
 
 import random
-
-# import _babase
 from math import cos, sin
 from typing import TYPE_CHECKING
 
 import babase
-
-# import bauiv1 as bui
 import bascenev1 as bs
 from bascenev1lib.actor.bomb import Blast, Bomb, BombFactory, ExplodeMessage
-
-# from bascenev1lib.actor.playerspaz import PlayerSpaz
 from bascenev1lib.actor.scoreboard import Scoreboard
 from bascenev1lib.gameutils import SharedObjects
 
 if TYPE_CHECKING:
     from collections.abc import Callable, Sequence
-    from typing import (
-        Any,
-    )
+    from typing import Any
 
 
 class DisconnectMessage:

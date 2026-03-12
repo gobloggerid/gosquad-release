@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: Gosquad की सामान्य जानकारी दिखाता है।",
+        "/help rules: Gosquad के नियम दिखाता है।",
+        "/help report: उल्लंघन रिपोर्ट कैसे करें दिखाता है।",
+        "/help code: आइकन, फ्लैग और प्रतीक कोड दिखाता है।",
+        "/<command> help: किसी कमांड की मदद दिखाता है।",
+        "उदा.: /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement या /<command> access.",
+        "कमांड की कीमत और न्यूनतम लेवल दिखाता है,",
+        "और मुफ्त चलाने का न्यूनतम रोल. उदा.: /kill requirement."
+    ],
+    "reportHelp": [
+        "रिपोर्ट में सबसे जरूरी सटीकता है।",
+        "आपके दावे के लिए सबूत जरूरी है।",
+        "कम से कम एक वीडियो या स्क्रीनशॉट चाहिए।",
+        "सबूत में उल्लंघन साफ दिखना चाहिए।",
+        "अधिक जानकारी के लिए Discord देखें।"
+    ],
+    "rulesHelp": [
+        "बुनियादी नियम:",
+        "हमेशा एक-दूसरे का सम्मान करें।",
+        "चैट, नाम, टैग आदि में गाली नहीं।",
+        "FFA सर्वर में टीम मत बनाएं।",
+        "Team सर्वर में धोखा न दें।",
+        "कोई ऐसा नियम न बनाएं जो मौजूद नहीं है।",
+        "पूरे नियम Discord पर हैं।",
+        "नोट: सर्वर मालिकों के अलग/अतिरिक्त नियम हो सकते हैं।"
+    ],
+    "achievementCmdHelp": [
+        "/achievement: अपने achievement देखें।",
+        "/achievement show: achievement सार्वजनिक दिखाता है।",
+        "/achievement <cl>: खिलाड़ी का achievement देखता है।"
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: coins से 2 दिन के लिए ban करता है।",
+        "/ban <cl> 2 <reason>: admin से 2 दिन के लिए ban।",
+        "/ban <cl1> <cl2>: 2 खिलाड़ियों को साथ ban।",
+        "/ban all 2: सभी खिलाड़ियों को 2 दिन ban।",
+        "<cl> खिलाड़ी का client id है। /cl लिखें।",
+        "local id, account id, name, account name भी चलेंगे।",
+        "/ban sita haf 2: sita, hafsah को 2 दिन ban।",
+        "/ban <scope> remove <cl>: खिलाड़ी को unban करता है।",
+        "/ban <scope> status <cl>: ban status देखता है।",
+        "<scope> global, ffa या team हो सकता है।",
+        "/recent: हाल के client ids देखता है।",
+        "/find <name>: खिलाड़ी की पहचान ढूंढता है।"
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: सर्वर को public party list से छुपाता है।"
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: उस scope से खुद को unban करता है।",
+        "<scope> global, ffa या team हो सकता है।",
+        "/unban team: अगर team server में ban हो।",
+        "/unban <scope> status: अपना ban status देखता है।"
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: सर्वर को public party list में दिखाता है।"
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: कमांड खुद पर चलाता है।",
+        "/<cmd> all: सब पर चलाता है।",
+        "/<cmd> team: teammates पर चलाता है।",
+        "/<cmd> noteam: opponents पर चलाता है।",
+        "/<cmd> <id1> <id2>: 2 खिलाड़ियों पर साथ।",
+        "<id> खिलाड़ी का index है। /id लिखें।",
+        "नाम को <id> के बदले इस्तेमाल कर सकते हैं।",
+        "/<cmd> sita aur: sita, aura पर चलाता है।"
+    ],
+    "coinCmdHelp": [
+        "/coin: अपने coins देखता है।",
+        "/coin show: coins सार्वजनिक दिखाता है।",
+        "/coin <cl>: खिलाड़ी के coins देखता है।",
+        "/coin transfer <cl> <amount>: coins ट्रांसफर करता है।",
+        "/coin convert <amount>: coins को score में बदलता है।",
+        "/coin history: लेनदेन इतिहास पढ़ता है।"
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: सर्वर के coins देखता है।",
+        "/coin transaction: सर्वर का transaction इतिहास पढ़ता है।",
+        "/coin add <cl> <amount>: खिलाड़ी को coins जोड़ता है।",
+        "Note: coins सर्वर के coins से कटेंगे।"
+    ],
+    "commandCmdHelp": [
+        "/command regular: regular commands दिखाता है।",
+        "/command fun: fun commands दिखाता है।",
+        "/command cheat: cheat commands दिखाता है।",
+        "/command manage: management commands दिखाता है।",
+        "/command history: command history पढ़ता है।",
+        "/command alias <cmd>: command के aliases दिखाता है।",
+        "/command info <cmd>: basic info दिखाता है।",
+        "Free access के लिए reason चाहिए, नहीं तो coins लगेंगे।",
+        "उदा.: /end यहाँ valid reason लिखें।"
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: नया alias सेट करता है।",
+        "/command delalias <alias>: alias हटाता है।",
+        "/command level <cmd> <level>: min level सेट करता है।",
+        "/command price <cmd> <price>: cmd की कीमत सेट करता है।",
+        "/command role <cmd> <role>: free access role सेट करता है।",
+        "Note: हर command का free role नहीं होता।"
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: spark effect को inventory में जोड़ता है।",
+        "/effect add spark 3: spark की वैधता 3 दिन बढ़ाता है।",
+        "/effect price: effect की कीमत देखता है।",
+        "/effect limit: max effect देखता है।",
+        "/effect <cl>: खिलाड़ी के effects देखता है।",
+        "/effect remove 2: inventory से 2nd effect हटाता है।"
+    ],
+    "funCmdHelp": [
+        "/<cmd>: कमांड खुद पर चलाता है।",
+        "/<cmd> all: सब पर चलाता है।",
+        "/<cmd> team: teammates पर चलाता है।",
+        "/<cmd> noteam: opponents पर चलाता है।",
+        "/<cmd> <id1> <id2>: 2 खिलाड़ियों पर साथ।",
+        "<id> खिलाड़ी का index है। /id लिखें।",
+        "नाम को <id> के बदले इस्तेमाल कर सकते हैं।",
+        "/<cmd> haf aur: hafsah, aura पर चलाता है।",
+        "कुछ commands को extra argument चाहिए, नहीं तो: random.",
+        "उदाहरण: /color all red. 'Red' extra argument है।"
+    ],
+    "helpCmdIconHelp": [
+        "'\\' लिखें और उसके बाद code दें। उदाहरण:",
+        "\\crownChampion -> ऐसा टेक्स्ट बनाता है: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: icon codes का नमूना दिखाता है।",
+        "/help code symbol: symbol codes का नमूना दिखाता है।",
+        "/help code flag: flag codes का नमूना दिखाता है।",
+        "पूरी सूची के लिए Discord देखें।"
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: role को 2 दिन सार्वजनिक से छुपाता है।",
+        "/hide list: कौन-से items छुप सकते हैं देखता है।",
+        "/show role: role वापस दिखाता है।"
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: नया hidden item बनाता है।",
+        "/hide delete <item>: hidden item हटाता है।"
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: 2 random खिलाड़ियों पर चलता है।",
+        "/<cmd> all: सब पर चलता है।",
+        "/<cmd> team: teammates पर चलता है।",
+        "/<cmd> noteam: opponents पर चलता है।",
+        "/<cmd> id1 id2: 2 खिलाड़ियों पर साथ चलता है।",
+        "<id> खिलाड़ी का index है। /id लिखें।",
+        "नाम भी इस्तेमाल कर सकते हैं।",
+        "/<cmd> sita haf: sita, hafsah पर चलता है",
+        "/<cmd> 4: 4 random खिलाड़ियों पर चलता है।"
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: crown icon को inventory में जोड़ता है।",
+        "/icon add \\indonesia: Indonesia flag 2 दिन जोड़ता है।",
+        "/icon price: icon की कीमत देखता है।",
+        "/icon limit: max संख्या और length देखता है।",
+        "/icon <cl>: खिलाड़ी के icons देखता है।",
+        "/icon remove 2: inventory से 2nd icon हटाता है।"
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: coins से खिलाड़ी को kick करता है।",
+        "/kick <cl> <reason>: admin से kick करता है।",
+        "/kick <cl1> <cl2>: 2 खिलाड़ियों को साथ kick।",
+        "/kick all: सभी खिलाड़ियों को kick।",
+        "<cl> खिलाड़ी का client id है। /cl लिखें।",
+        "local id, account id, name, account name भी चलेंगे।",
+        "/kick sita haf aur: sita, hafsah, aura को kick।"
+    ],
+    "languageCmdHelp": [
+        "/language english: भाषा english पर सेट करता है।",
+        "/language list: उपलब्ध भाषाएँ दिखाता है।",
+        "Language support शायद केवल help तक सीमित हो।",
+        "केवल कुछ भाषाएँ उपलब्ध हो सकती हैं।",
+        "english के अलावा भाषा पुरानी हो सकती है।",
+        "कृपया इसे अनुवाद करने में मदद करें।"
+    ],
+    "levelCmdHelp": [
+        "/level: अपना level देखता है।",
+        "/level upgrade: coins से level बढ़ाता है।",
+        "या score से अपने आप बढ़ने दें।",
+        "/level show: level सार्वजनिक दिखाता है।",
+        "/level <cl>: खिलाड़ी का level देखता है।",
+        "/level convert <number>: levels को coins से बदलता है।"
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: level अपडेट करता है (server coins से).",
+        "आप खिलाड़ियों को चेतावनी देना चाह सकते हैं:",
+        "Ranking 70 से नीचे > 1 level घटेगा (max)।",
+        "Ranking 150 से नीचे > 2 levels घटेंगे (max)。",
+        "Ranking 250 से नीचे > 3 levels घटेंगे (max)。"
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: player indexes की सूची",
+        "/clientid OR /cl: client IDs की सूची",
+        "/accountid OR /ad: account IDs की सूची",
+        "/accountname OR /an: account names की सूची",
+        "/myid: अपनी पहचान देखें: Local ID, Account Name, Account ID",
+        "/myid <show>: पहचान सार्वजनिक दिखाता है।",
+        "locid (Local ID) को लगभग हर चीज के लिए उपयोग करें",
+        "clientid की जगह। उदा.: coins transfer, ban player."
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: coins से 2 दिन mute करता है।",
+        "/mute <cl> 2 <reason>: admin से 2 दिन mute।",
+        "/mute <cl1> <cl2> 2: 2 खिलाड़ियों को साथ mute।",
+        "/mute all 2: सभी को 2 दिन mute।",
+        "<cl> खिलाड़ी का client id है। /cl लिखें।",
+        "local id, account id, name, account name भी चलेंगे।",
+        "/mute sita aur 2: sita, aura को 2 दिन mute।",
+        "/mute remove <cl>: खिलाड़ी को unmute करता है।",
+        "/mute status <cl>: mute status देखता है।",
+        "/recent: हाल के client ids देखता है।",
+        "/find <name>: खिलाड़ी की पहचान ढूंढता है।"
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: server की chat बंद करता है।"
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: खुद को unmute करता है।",
+        "/unmute status: अपना mute status देखता है।"
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: server की chat चालू करता है।"
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: वर्तमान पासवर्ड जाँचता है।",
+        "/password remove <password>: पासवर्ड हटाता है।",
+        "/password set <new-pass> <old-pass>: पासवर्ड बदलता है।",
+        "default old-password gosquad है।",
+        "Min 4 characters, max 16.",
+        "पासवर्ड भूल गए? co/owners से संपर्क करें।"
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: खिलाड़ी का पासवर्ड जाँचता है",
+        "/password reset <cl>: खिलाड़ी का पासवर्ड हटाता है।"
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: taobao pet को inventory में जोड़ता है।",
+        "/pet add taobao 3: taobao को 3 दिन बढ़ाता है।",
+        "/pet price: pet की कीमत देखता है।",
+        "/pet limit: max pet number देखता है।",
+        "/pet <cl>: खिलाड़ी के pets देखता है।",
+        "/pet remove 2: inventory से 2nd pet हटाता है।"
+    ],
+    "pingCmdHelp": [
+        "/ping: अपना ping देखता है।",
+        "/ping show: ping सार्वजनिक दिखाता है।",
+        "/ping <cl>: खिलाड़ी का ping देखता है।",
+        "/ping all: सभी खिलाड़ियों का ping देखता है।"
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: coins से खिलाड़ी को lobby भेजता है।",
+        "/remove <id> <reason>: admin से lobby भेजता है।",
+        "/remove <id1> <id2>: 2 खिलाड़ियों को साथ भेजता है।",
+        "/remove all: सभी को lobby भेजता है।",
+        "<id> खिलाड़ी का index है। /id लिखें।",
+        "नाम भी इस्तेमाल कर सकते हैं।",
+        "/remove sita haf aur: sita, hafsah, aura को lobby भेजता है।"
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: खिलाड़ी के roles देखता है।",
+        "/role price: roles के दाम और विवरण देखता है।",
+        "/role add admin 1: आपको 1 महीने के लिए admin बनाता है।",
+        "/role remove admin: admin role हटाता है।",
+        "/role tag admin cool: admin का default tag cool करता है।",
+        "/role remtag admin: admin tag वापस default करता है।",
+        "/role anim admin right: admin animation को right करता है।"
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: खिलाड़ी को 7 दिन admin देता है।",
+        "/role revoke <cl> admin: खिलाड़ी से admin हटाता है।",
+        "/role create staff: staff role बनाता है।",
+        "/role delete staff: staff role हटाता है।",
+        "/role eligible <cl> true: admin के लिए पात्र बनाता है।",
+        "/role deftag owner cool: owner का default tag cool करता है।",
+        "/role import: आपको owner बनाता है (hint पढ़ें)।"
+    ],
+    "statsCmdHelp": [
+        "/stats: अपने stats देखता है।",
+        "/stats show: stats सार्वजनिक दिखाता है।",
+        "/stats convert <score>: stats score को coins से बदलता है।",
+        "बetrayal counts पर ध्यान दें। ban हो सकता है।"
+    ],
+    "statusCmdHelp": [
+        "/status: अपना status देखता है।",
+        "/status show: status सार्वजनिक दिखाता है।",
+        "/status <clid>: खिलाड़ी का status देखता है।"
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: trophy symbol को inventory में जोड़ता है।",
+        "/symbol price: symbol की कीमत देखता है।",
+        "/symbol limit: max संख्या और length देखता है।",
+        "/symbol <cl>: खिलाड़ी के symbols देखता है।",
+        "/symbol remove 2: inventory से 2nd symbol हटाता है।",
+        "Emoji/smiley भी symbol के लिए ठीक है।"
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: 'Winner' tag को inventory में जोड़ता है।",
+        "/tag add \"Top Win\": space के लिए quotes लगाएं।",
+        "/tag price: tag की कीमत देखता है।",
+        "/tag limit: max संख्या और length देखता है।",
+        "/tag <cl>: खिलाड़ी के tags देखता है।",
+        "/tag remove 2: 2nd tag हटाता है।",
+        "/tag color 1 red: 1st tag का रंग red करता है।",
+        "उपलब्ध tag रंग:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: खिलाड़ी का kickvote 2 दिन बंद करता है।",
+        "/voteoff <cl> 2 <reason>: admin से 2 दिन बंद करता है।",
+        "/voteoff <cl1> <cl2>: 2 खिलाड़ियों का kickvote बंद करता है।",
+        "/voteoff all 2: सभी का kickvote 2 दिन बंद।",
+        "<cl> खिलाड़ी का client id है। /cl लिखें।",
+        "local id, account id, name, account name भी चलेंगे।",
+        "/voteoff haf aur 2: hafsah, aura का kickvote 2 दिन बंद।",
+        "/voteoff remove <cl>: खिलाड़ी का kickvote चालू करता है।",
+        "/voteoff status <cl>: kickvote status देखता है।",
+        "/recent: हाल के client ids देखता है।",
+        "/find <name>: खिलाड़ी की पहचान ढूंढता है।"
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: server का kickvote बंद करता है।"
+    ],
+    "voteonCmdHelp": [
+        "/voteon: अपना kickvote चालू करता है।",
+        "/voteon status: अपना kickvote status देखता है।"
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: server का kickvote चालू करता है。"
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: खिलाड़ी का msgvote 2 दिन बंद करता है।",
+        "/mvoteoff <cl> 2 <reason>: admin से 2 दिन बंद करता है।",
+        "/mvoteoff <cl1> <cl2> 2: 2 खिलाड़ियों का msgvote बंद करता है।",
+        "/mvoteoff all 2: सभी का msgvote 2 दिन बंद।",
+        "<cl> खिलाड़ी का client id है। /cl लिखें।",
+        "local id, account id, name, account name भी चलेंगे।",
+        "/mvoteoff sita aur 2: sita, aura का msgvote 2 दिन बंद।",
+        "/mvoteoff remove <cl>: खिलाड़ी का msgvote चालू करता है।",
+        "/mvoteoff status <cl>: msgvote status देखता है।",
+        "/recent: हाल के client ids देखता है।",
+        "/find <name>: खिलाड़ी की पहचान ढूंढता है।"
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: server का msgvote बंद करता है।"
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: अपना msgvote चालू करता है।",
+        "/mvoteon status: अपना msgvote status देखता है।"
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: server का msgvote चालू करता है।"
+    ]
+}

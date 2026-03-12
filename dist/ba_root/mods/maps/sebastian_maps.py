@@ -24,6 +24,7 @@
 
 from __future__ import annotations
 
+import weakref
 from typing import TYPE_CHECKING
 
 import bascenev1 as bs
@@ -2234,27 +2235,31 @@ class IslandMine(bs.Map):
 
         # print(str(dir(self.mine)))
 
-        def move_platform(value, time):
-            # print('move')
-            v = self.mine.velocity
+        map_ref = weakref.ref(self)
 
-            def _safe_setattr(node, attr, val):
-                #      print('safe_attr, '+str(attr)+', '+str(val))
-                if node.exists():
+        def move_platform(value, time):
+            def _safe_setattr(attr, val):
+                map_obj = map_ref()
+                if map_obj is None:
+                    return
+                node = map_obj.mine
+                if node and node.exists():
                     setattr(node, attr, val)
 
             def repeat_move():
+                map_obj = map_ref()
+                if map_obj is None:
+                    return
                 bs.timer(
                     0.001,
                     bs.CallStrict(
-                        _safe_setattr, self.mine, 'velocity', (-value / 3, 0, 0)
+                        _safe_setattr, 'velocity', (-value / 3, 0, 0)
                     ),
                 )
                 bs.timer(
                     0.001,
                     bs.CallStrict(
                         _safe_setattr,
-                        self.mine,
                         'extra_acceleration',
                         (-value / 1.5, 0, 0),
                     ),
@@ -2262,14 +2267,13 @@ class IslandMine(bs.Map):
                 bs.timer(
                     time + 0.3,
                     bs.CallStrict(
-                        _safe_setattr, self.mine, 'velocity', (value / 3, 0, 0)
+                        _safe_setattr, 'velocity', (value / 3, 0, 0)
                     ),
                 )
                 bs.timer(
                     time + 0.3,
                     bs.CallStrict(
                         _safe_setattr,
-                        self.mine,
                         'extra_acceleration',
                         (value / 1.5, 0, 0),
                     ),
@@ -2278,15 +2282,12 @@ class IslandMine(bs.Map):
 
             bs.timer(
                 0.001,
-                bs.CallStrict(
-                    _safe_setattr, self.mine, 'velocity', (value / 3, 0, 0)
-                ),
+                bs.CallStrict(_safe_setattr, 'velocity', (value / 3, 0, 0)),
             )
             bs.timer(
                 0.001,
                 bs.CallStrict(
                     _safe_setattr,
-                    self.mine,
                     'extra_acceleration',
                     (value / 1.5, 0, 0),
                 ),

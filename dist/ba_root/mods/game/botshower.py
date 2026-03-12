@@ -1,5 +1,5 @@
 # ba_meta require api 9
-# Modified for gosquad server by goblogger.
+# Modified for gosquad server by n00bility.
 #
 
 from __future__ import annotations

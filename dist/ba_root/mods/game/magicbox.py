@@ -401,8 +401,7 @@ class MagicBoxGame(bs.TeamGameActivity[Player, Team]):
 
             scoreteam.timeremaining = max(0, scoreteam.timeremaining - 1)
             self._update_scoreboard()
-            if scoreteam.timeremaining > 0:
-                assert self._box is not None
+            if scoreteam.timeremaining > 0 and self._box is not None and self._box.node:
                 self._box.set_score_text(str(scoreteam.timeremaining))
 
             # announce numbers we have sounds for
@@ -420,9 +419,18 @@ class MagicBoxGame(bs.TeamGameActivity[Player, Team]):
         self.end(results=results, announce_delay=0)
 
     def _update_box_state(self) -> None:
+        box = self._box
+        box_node = box.node if box is not None else None
+
         for team in self.teams:
             team.holdingbox = False
         self._holding_players = []
+
+        if box is None or not box_node:
+            self._box_state = BoxState.NEW
+            self._scoring_team = None
+            return
+
         for player in self.players:
             holdingbox = False
             try:
@@ -432,21 +440,18 @@ class MagicBoxGame(bs.TeamGameActivity[Player, Team]):
                     and player.actor.node
                     and player.actor.node.hold_node
                 ):
-                    holdingbox = player.actor.node.hold_node == self._box.node
+                    holdingbox = player.actor.node.hold_node == box_node
             except Exception:
                 print('Error checking hold box.')
             if holdingbox:
                 self._holding_players.append(player)
                 player.team.holdingbox = True
 
-        if self._box is not None and self._box:
-            self._box.held_by = len(self._holding_players)
-            self._box._update_floatyness()
+        box.held_by = len(self._holding_players)
+        box._update_floatyness()
 
         holdingteams = set(t for t in self.teams if t.holdingbox)
         prevstate = self._box_state
-        assert self._box is not None
-        assert self._box.node
         if len(holdingteams) > 1:
             self._box_state = BoxState.CONTESTED
             self._scoring_team = None

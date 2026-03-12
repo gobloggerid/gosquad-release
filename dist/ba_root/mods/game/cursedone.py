@@ -1,4 +1,8 @@
 # Released under the MIT License. See LICENSE for details.
+# Made by anonym (api 4)
+# Ported to api 9 by n00bility
+# Fixed and improved by n00bility
+# Modified for gosquad server by n00bility
 #
 """Provides the chosen-one mini-game."""
 
@@ -38,15 +42,15 @@ class Team(bs.Team[Player]):
 # ba_meta export bascenev1.GameActivity
 class CursedOneGame(bs.TeamGameActivity[Player, Team]):
     """
-    Game involving trying to remain the one 'chosen one'
+    Game involving trying to remain the one 'cursed one'
     for a set length of time while everyone else tries to
-    kill you and become the chosen one themselves.
+    kill you and become the cursed one themselves.
     """
 
     name = 'Cursed One'
     description = (
-        'Be the chosen one for a length of time to win.\n'
-        'Kill the chosen one to become it.'
+        'Be the cursed one for a length of time to win.\n'
+        'Kill the cursed one to become it.'
     )
     available_settings = [
         bs.IntSetting(

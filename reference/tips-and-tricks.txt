@@ -1,0 +1,4 @@
+# How to join local network with non default port (43210)
+- Choose manual join
+- IP: 127.0.0.1
+- PORT: the target port

@@ -5,6 +5,8 @@
 
 # Mod by Froshlee14
 # Updated to api 7 by SEBASTIAN2059
+# Updated to api 9 by n00bility
+# Modified for gosquad server by n00bility
 
 # ba_meta require api 9
 # (see https://ballistica.net/wiki/meta-tag-system)
@@ -85,6 +87,13 @@ class RunningBombGame(bs.TeamGameActivity[Player, Team]):
         )
         self.slow_motion = self._epic_mode
 
+        self._block_wall_regions: list[bs.NodeActor] = []
+
+        # Deny access to the raised safe platform.
+        self._block_wall_pos = (-0.0, 4.6, 7.0)
+        self._block_wall_pos_2 = (-0.0, 7.6, -6.1)
+        self._block_wall_scale = (28, 12, 0.5)
+
         shared = SharedObjects.get()
         self.kill_bomb_region_material = bs.Material()
         self.kill_player_region_material = bs.Material()
@@ -151,9 +160,37 @@ class RunningBombGame(bs.TeamGameActivity[Player, Team]):
                 },
             )
         ).autoretain()
+
+        self._block_wall_regions.append(
+            bs.NodeActor(
+                bs.newnode(
+                    'region',
+                    attrs={
+                        'position': self._block_wall_pos,
+                        'scale': self._block_wall_scale,
+                        'type': 'box',
+                        'materials': [self.block_player_region_material],
+                    },
+                )
+            )
+        )
+        self._block_wall_regions.append(
+            bs.NodeActor(
+                bs.newnode(
+                    'region',
+                    attrs={
+                        'position': self._block_wall_pos_2,
+                        'scale': self._block_wall_scale,
+                        'type': 'box',
+                        'materials': [self.block_player_region_material],
+                    },
+                )
+            )
+        )
+
         for i in range(-11, 11):
             i /= 2
-            light = bs.newnode(
+            bs.newnode(
                 'light',
                 attrs={
                     'position': (defs.boxes['goal2'][0], 0, i),
@@ -183,8 +220,6 @@ class RunningBombGame(bs.TeamGameActivity[Player, Team]):
 
         self._timer = OnScreenTimer()
         self._timer.start()
-
-        bs.timer(1.5, bs.CallStrict(self._drop_impact), repeat=True)
 
         # Check for immediate end (if we've only got 1 player, etc).
         bs.timer(5.0, self._check_end_game)
@@ -341,14 +376,6 @@ class RunningBombGame(bs.TeamGameActivity[Player, Team]):
 
         if bomb_type == 'land_trap':
             bomb.arm()
-
-    def _drop_impact(self) -> None:
-        # Extra bomb for cheaters
-        pos = random.choice([(13.4, 2, 7), (13.4, 3.5, 9)])
-        bomb = Bomb(
-            position=pos, velocity=(-20, 2, 0), bomb_type='land_trap'
-        ).autoretain()
-        bomb.arm()
 
     def _decrement_meteor_time(self) -> None:
         if self._random_bombs_spawn:

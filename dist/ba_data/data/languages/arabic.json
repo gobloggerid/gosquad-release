@@ -1738,6 +1738,7 @@
       "Can't link 2 diamond league accounts.": "لا يمكن ربط 2 حسابات الدوري الماس.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "لا يمكن الارتباط؛ سيتجاوز الحد الأقصى للحسابات المرتبطة ب ${COUNT} من الحسابات.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "الغش الكشف عنها. تم تعليق العشرات والجوائز لمدة ${COUNT} من الأيام.",
+      "Connection rejected.": "تم رفض الاتصال.",
       "Could not establish a secure connection.": "تعذر إنشاء اتصال آمن.",
       "Daily maximum reached.": "الحد الأقصى اليومي الذي تم الوصول إليه.",
       "Daily sign-in reward": "جائزة تسجيل الدخول اليومي",

@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: muestra info general de Gosquad.",
+        "/help rules: muestra reglas de Gosquad.",
+        "/help report: muestra cómo reportar infracción.",
+        "/help code: muestra códigos de íconos, banderas y símbolos.",
+        "/<command> help: muestra ayuda de un comando.",
+        "Ej.: /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement O /<command> access.",
+        "Revisa precio, nivel mínimo para usarlo,",
+        "y rol mínimo para usarlo gratis. Ej.: /kill requirement."
+    ],
+    "reportHelp": [
+        "La clave al reportar es la precisión.",
+        "Debes tener pruebas para apoyar tu reclamo.",
+        "Se requiere al menos un video o captura.",
+        "La prueba debe mostrar claramente la infracción.",
+        "Visita nuestro Discord para más info."
+    ],
+    "rulesHelp": [
+        "Reglas básicas:",
+        "Respeten siempre a los demás.",
+        "Sin malas palabras en chat, nombre, tag, etc.",
+        "No hagan equipo en servidor FFA.",
+        "No traicionen en servidor Team.",
+        "No inventes reglas que no existen.",
+        "Reglas completas en nuestro Discord.",
+        "Nota: dueños del servidor pueden tener reglas extra."
+    ],
+    "achievementCmdHelp": [
+        "/achievement: revisa tus logros.",
+        "/achievement show: muestra el logro públicamente.",
+        "/achievement <cl>: revisa logro del jugador."
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: banea 2 días usando monedas.",
+        "/ban <cl> 2 <reason>: banea 2 días con admin.",
+        "/ban <cl1> <cl2>: banea 2 jugadores a la vez.",
+        "/ban all 2: banea a todos 2 días.",
+        "<cl> es el id de cliente. Escribe /cl.",
+        "También puedes usar id local, id de cuenta, nombre, nombre de cuenta.",
+        "/ban sita haf 2: banea a sita, hafsah 2 días.",
+        "/ban <scope> remove <cl>: desbanea al jugador.",
+        "/ban <scope> status <cl>: revisa estado de ban.",
+        "<scope> puede ser global, ffa o team.",
+        "/recent: revisa ids de clientes recientes.",
+        "/find <name>: encuentra identidad del jugador."
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: oculta el servidor de la lista pública."
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: te desbanea del alcance.",
+        "<scope> puede ser global, ffa o team.",
+        "/unban team: si estás baneado del server team.",
+        "/unban <scope> status: revisa tu estado de ban."
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: muestra el servidor en la lista pública."
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: ejecuta el comando en ti.",
+        "/<cmd> all: en todos.",
+        "/<cmd> team: en tus compañeros.",
+        "/<cmd> noteam: en oponentes.",
+        "/<cmd> <id1> <id2>: en 2 jugadores a la vez.",
+        "<id> es índice del jugador. Usa /id.",
+        "También puedes usar nombre en lugar de <id>.",
+        "/<cmd> sita aur: en sita y aura."
+    ],
+    "coinCmdHelp": [
+        "/coin: revisa tus monedas.",
+        "/coin show: muestra monedas públicamente.",
+        "/coin <cl>: revisa monedas del jugador.",
+        "/coin transfer <cl> <amount>: transfiere monedas.",
+        "/coin convert <amount>: convierte monedas en score.",
+        "/coin history: lee historial de transacciones."
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: revisa monedas del servidor.",
+        "/coin transaction: lee historial de transacciones del servidor.",
+        "/coin add <cl> <amount>: agrega monedas al jugador.",
+        "Nota: se tomarán de las monedas del servidor."
+    ],
+    "commandCmdHelp": [
+        "/command regular: muestra comandos regulares.",
+        "/command fun: muestra comandos divertidos.",
+        "/command cheat: muestra comandos de cheat.",
+        "/command manage: muestra comandos de gestión.",
+        "/command history: lee historial de comandos.",
+        "/command alias <cmd>: muestra alias del comando.",
+        "/command info <cmd>: muestra info básica.",
+        "Acceso gratis requiere motivo, si no usa monedas.",
+        "Ej.: /end Escribe un motivo válido aquí."
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: define nuevo alias.",
+        "/command delalias <alias>: elimina alias.",
+        "/command level <cmd> <level>: fija nivel mínimo.",
+        "/command price <cmd> <price>: fija precio.",
+        "/command role <cmd> <role>: fija rol para acceso gratis.",
+        "Nota: no todos los comandos tienen rol gratis."
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: agrega efecto spark al inventario.",
+        "/effect add spark 3: extiende spark 3 días.",
+        "/effect price: revisa precio del efecto.",
+        "/effect limit: revisa máximo de efectos.",
+        "/effect <cl>: revisa efectos del jugador.",
+        "/effect remove 2: elimina el 2.º efecto del inventario."
+    ],
+    "funCmdHelp": [
+        "/<cmd>: ejecuta el comando en ti.",
+        "/<cmd> all: en todos.",
+        "/<cmd> team: en tus compañeros.",
+        "/<cmd> noteam: en oponentes.",
+        "/<cmd> <id1> <id2>: en 2 jugadores a la vez.",
+        "<id> es índice del jugador. Usa /id.",
+        "También puedes usar nombre en lugar de <id>.",
+        "/<cmd> haf aur: en hafsah y aura.",
+        "Algunos comandos requieren argumento extra, si no: random.",
+        "Ejemplo: /color all red. 'Red' es el argumento extra."
+    ],
+    "helpCmdIconHelp": [
+        "Solo escribe '\\' seguido de un código. Ejemplo:",
+        "\\crownChampion -> Hace un texto así: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: muestra ejemplos de iconos.",
+        "/help code symbol: muestra ejemplos de símbolos.",
+        "/help code flag: muestra ejemplos de banderas.",
+        "Visita Discord para la lista completa."
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: oculta el rol 2 días.",
+        "/hide list: revisa items ocultables.",
+        "/show role: muestra el rol de nuevo."
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: crea un item oculto.",
+        "/hide delete <item>: elimina un item oculto."
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: ejecuta en 2 jugadores aleatorios.",
+        "/<cmd> all: en todos.",
+        "/<cmd> team: en compañeros.",
+        "/<cmd> noteam: en oponentes.",
+        "/<cmd> id1 id2: en 2 jugadores.",
+        "<id> es índice del jugador. Usa /id.",
+        "También puedes usar nombre.",
+        "/<cmd> sita haf: en sita y hafsah",
+        "/<cmd> 4: en 4 jugadores aleatorios."
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: agrega icono crown al inventario.",
+        "/icon add \\indonesia: agrega bandera Indonesia 2 días.",
+        "/icon price: revisa precio.",
+        "/icon limit: revisa máximo y longitud.",
+        "/icon <cl>: revisa iconos del jugador.",
+        "/icon remove 2: elimina el 2.º icono."
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: expulsa usando monedas.",
+        "/kick <cl> <reason>: expulsa con admin.",
+        "/kick <cl1> <cl2>: expulsa 2 jugadores.",
+        "/kick all: expulsa a todos.",
+        "<cl> es id de cliente. Escribe /cl.",
+        "También puedes usar id local, id de cuenta, nombre, nombre de cuenta.",
+        "/kick sita haf aur: expulsa a sita, hafsah y aura."
+    ],
+    "languageCmdHelp": [
+        "/language english: pone idioma en english.",
+        "/language list: lista idiomas.",
+        "El soporte puede limitarse a ayuda.",
+        "Puede haber pocos idiomas.",
+        "Idiomas distintos a english pueden estar desactualizados.",
+        "Por favor ayúdanos a traducirlo."
+    ],
+    "levelCmdHelp": [
+        "/level: revisa tu nivel.",
+        "/level upgrade: sube nivel usando monedas.",
+        "O sube automáticamente con score.",
+        "/level show: muestra nivel públicamente.",
+        "/level <cl>: revisa nivel del jugador.",
+        "/level convert <number>: cambia niveles por monedas."
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: actualiza nivel (usa monedas del servidor).",
+        "QUIZÁ QUIERAS ADVERTIR A LOS JUGADORES:",
+        "Ranking bajó de 70 > baja 1 nivel (máx).",
+        "Ranking bajó de 150 > baja 2 niveles (máx).",
+        "Ranking bajó de 250 > baja 3 niveles (máx)."
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: lista índices de jugadores",
+        "/clientid OR /cl: lista IDs de cliente",
+        "/accountid OR /ad: lista IDs de cuenta",
+        "/accountname OR /an: lista nombres de cuenta",
+        "/myid: revisa identidades: ID local, nombre de cuenta, ID de cuenta",
+        "/myid <show>: muestra identidades públicamente.",
+        "Puedes usar locid (ID local) para casi todo",
+        "en lugar de clientid. Ej.: transferir monedas, banear jugador."
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: silencia 2 días usando monedas.",
+        "/mute <cl> 2 <reason>: silencia 2 días con admin.",
+        "/mute <cl1> <cl2> 2: silencia 2 jugadores.",
+        "/mute all 2: silencia a todos 2 días.",
+        "<cl> es id cliente. Escribe /cl.",
+        "También puedes usar id local, id cuenta, nombre, nombre de cuenta.",
+        "/mute sita aur 2: silencia a sita y aura 2 días.",
+        "/mute remove <cl>: quita silencio.",
+        "/mute status <cl>: revisa estado de silencio.",
+        "/recent: revisa ids recientes.",
+        "/find <name>: encuentra identidad del jugador."
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: desactiva el chat del servidor."
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: quita tu silencio.",
+        "/unmute status: revisa tu estado de silencio."
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: activa el chat del servidor."
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: valida tu contraseña actual.",
+        "/password remove <password>: quita tu contraseña.",
+        "/password set <new-pass> <old-pass>: cambia contraseña.",
+        "la contraseña vieja por defecto es gosquad.",
+        "Mín 4 caracteres, máx 16.",
+        "¿Olvidaste la contraseña? Contacta co/owners."
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: revisa contraseña del jugador",
+        "/password reset <cl>: quita contraseña del jugador."
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: agrega mascota taobao al inventario.",
+        "/pet add taobao 3: extiende taobao 3 días.",
+        "/pet price: revisa precio.",
+        "/pet limit: revisa máximo de mascotas.",
+        "/pet <cl>: revisa mascotas del jugador.",
+        "/pet remove 2: elimina la 2.ª mascota."
+    ],
+    "pingCmdHelp": [
+        "/ping: revisa tu ping.",
+        "/ping show: muestra ping públicamente.",
+        "/ping <cl>: revisa ping del jugador.",
+        "/ping all: revisa ping de todos."
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: envía al lobby usando monedas.",
+        "/remove <id> <reason>: envía al lobby con admin.",
+        "/remove <id1> <id2>: envía 2 jugadores.",
+        "/remove all: envía a todos al lobby.",
+        "<id> es índice. Usa /id.",
+        "También puedes usar nombre.",
+        "/remove sita haf aur: envía a sita, hafsah y aura."
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: revisa roles del jugador.",
+        "/role price: revisa precios y detalles.",
+        "/role add admin 1: te hace admin 1 mes.",
+        "/role remove admin: quita rol admin.",
+        "/role tag admin cool: cambia tag default a cool.",
+        "/role remtag admin: vuelve tag default.",
+        "/role anim admin right: cambia animación a right."
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: da admin 7 días.",
+        "/role revoke <cl> admin: quita admin.",
+        "/role create staff: crea rol staff.",
+        "/role delete staff: borra rol staff.",
+        "/role eligible <cl> true: hace elegible para admin.",
+        "/role deftag owner cool: cambia tag owner a cool.",
+        "/role import: te hace owner (lee el hint)."
+    ],
+    "statsCmdHelp": [
+        "/stats: revisa tus stats.",
+        "/stats show: muestra stats públicamente.",
+        "/stats convert <score>: cambia score de stats por monedas.",
+        "Vigila tus traiciones. Puedes ser baneado."
+    ],
+    "statusCmdHelp": [
+        "/status: revisa tu estado.",
+        "/status show: muestra estado públicamente.",
+        "/status <clid>: revisa estado del jugador."
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: agrega símbolo trophy al inventario.",
+        "/symbol price: revisa precio.",
+        "/symbol limit: revisa máximo y longitud.",
+        "/symbol <cl>: revisa símbolos del jugador.",
+        "/symbol remove 2: elimina el 2.º símbolo.",
+        "Emoji/smiley también sirve como símbolo."
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: agrega tag 'Winner' al inventario.",
+        "/tag add \"Top Win\": pon comillas para usar espacio.",
+        "/tag price: revisa precio.",
+        "/tag limit: revisa máximo y longitud.",
+        "/tag <cl>: revisa tags del jugador.",
+        "/tag remove 2: elimina el 2.º tag.",
+        "/tag color 1 red: cambia color del 1.º tag a red.",
+        "Colores de tag disponibles:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: desactiva kickvote 2 días.",
+        "/voteoff <cl> 2 <reason>: desactiva 2 días con admin.",
+        "/voteoff <cl1> <cl2>: desactiva 2 jugadores.",
+        "/voteoff all 2: desactiva a todos 2 días.",
+        "<cl> es id cliente. Escribe /cl.",
+        "También puedes usar id local, id cuenta, nombre, nombre cuenta.",
+        "/voteoff haf aur 2: desactiva hafsah y aura 2 días.",
+        "/voteoff remove <cl>: habilita kickvote.",
+        "/voteoff status <cl>: revisa estado de kickvote.",
+        "/recent: revisa ids recientes.",
+        "/find <name>: encuentra identidad del jugador."
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: desactiva kickvote del servidor."
+    ],
+    "voteonCmdHelp": [
+        "/voteon: habilita tu kickvote.",
+        "/voteon status: revisa tu estado de kickvote."
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: habilita kickvote del servidor."
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: desactiva msgvote 2 días.",
+        "/mvoteoff <cl> 2 <reason>: desactiva 2 días con admin.",
+        "/mvoteoff <cl1> <cl2> 2: desactiva 2 jugadores.",
+        "/mvoteoff all 2: desactiva a todos 2 días.",
+        "<cl> es id cliente. Escribe /cl.",
+        "También puedes usar id local, id cuenta, nombre, nombre cuenta.",
+        "/mvoteoff sita aur 2: desactiva sita y aura 2 días.",
+        "/mvoteoff remove <cl>: habilita msgvote.",
+        "/mvoteoff status <cl>: revisa estado de msgvote.",
+        "/recent: revisa ids recientes.",
+        "/find <name>: encuentra identidad del jugador."
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: desactiva msgvote del servidor."
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: habilita tu msgvote.",
+        "/mvoteon status: revisa tu estado de msgvote."
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: habilita msgvote del servidor."
+    ]
+}

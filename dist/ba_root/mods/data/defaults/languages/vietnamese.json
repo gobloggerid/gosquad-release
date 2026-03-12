@@ -1,0 +1,355 @@
+{
+    "guideHelp": [
+        "/help general: hiển thị thông tin chung về Gosquad.",
+        "/help rules: hiển thị quy tắc Gosquad.",
+        "/help report: hiển thị cách báo cáo vi phạm.",
+        "/help code: hiển thị mã icon, flag, symbol.",
+        "/<command> help: hiển thị trợ giúp cho lệnh.",
+        "Ví dụ: /tag help, /effet help, /ban help, /unban help.",
+        "/<command> requirement hoặc /<command> access.",
+        "Kiểm tra giá lệnh, cấp tối thiểu để dùng,",
+        "và vai trò tối thiểu để dùng miễn phí. VD: /kill requirement."
+    ],
+    "reportHelp": [
+        "Quan trọng nhất khi báo cáo là độ chính xác.",
+        "Bạn phải có bằng chứng để chứng minh.",
+        "Cần ít nhất một video hoặc ảnh chụp màn hình.",
+        "Bằng chứng phải cho thấy vi phạm rõ ràng.",
+        "Xem Discord để biết thêm thông tin."
+    ],
+    "rulesHelp": [
+        "Quy tắc cơ bản:",
+        "Luôn tôn trọng nhau.",
+        "Không nói tục trong chat, tên, tag, v.v.",
+        "Không lập team trong server FFA.",
+        "Không phản bội trong server Team.",
+        "Không tự đặt ra quy tắc không tồn tại.",
+        "Quy tắc đầy đủ ở Discord.",
+        "Lưu ý: chủ server có thể có quy tắc khác/thêm."
+    ],
+    "achievementCmdHelp": [
+        "/achievement: xem achievement của bạn.",
+        "/achievement show: hiển thị achievement công khai.",
+        "/achievement <cl>: xem achievement của người chơi."
+    ],
+    "banCmdHelp": [
+        "/ban <cl> 2: cấm người chơi 2 ngày bằng coin.",
+        "/ban <cl> 2 <reason>: cấm 2 ngày bằng admin.",
+        "/ban <cl1> <cl2>: cấm 2 người cùng lúc.",
+        "/ban all 2: cấm tất cả 2 ngày.",
+        "<cl> là client id của người chơi. Gõ /cl.",
+        "Cũng có thể dùng local id, account id, name, account name.",
+        "/ban sita haf 2: cấm sita, hafsah 2 ngày.",
+        "/ban <scope> remove <cl>: bỏ cấm người chơi.",
+        "/ban <scope> status <cl>: kiểm tra trạng thái cấm.",
+        "<scope> có thể là global, ffa, hoặc team.",
+        "/recent: xem client id gần đây.",
+        "/find <name>: tìm danh tính người chơi."
+    ],
+    "banAdmCmdHelp": [
+        "/ban server: ẩn server khỏi danh sách công khai."
+    ],
+    "unbanCmdHelp": [
+        "/unban <scope>: tự bỏ cấm theo phạm vi.",
+        "<scope> có thể là global, ffa, hoặc team.",
+        "/unban team: nếu bị cấm ở server team.",
+        "/unban <scope> status: kiểm tra trạng thái cấm của bạn."
+    ],
+    "unbanAdmCmdHelp": [
+        "/unban server: hiển thị server trong danh sách công khai."
+    ],
+    "cheatCmdHelp": [
+        "/<cmd>: chạy lệnh cho bản thân.",
+        "/<cmd> all: chạy cho tất cả.",
+        "/<cmd> team: chạy cho đồng đội.",
+        "/<cmd> noteam: chạy cho đối thủ.",
+        "/<cmd> <id1> <id2>: chạy cho 2 người cùng lúc.",
+        "<id> là chỉ số người chơi. Gõ /id.",
+        "Bạn cũng có thể dùng tên thay cho <id>.",
+        "/<cmd> sita aur: chạy cho sita, aura."
+    ],
+    "coinCmdHelp": [
+        "/coin: xem coin của bạn.",
+        "/coin show: hiển thị coin công khai.",
+        "/coin <cl>: xem coin của người chơi.",
+        "/coin transfer <cl> <amount>: chuyển coin.",
+        "/coin convert <amount>: đổi coin thành score.",
+        "/coin history: xem lịch sử giao dịch."
+    ],
+    "coinAdmCmdHelp": [
+        "/coin server: xem coin của server.",
+        "/coin transaction: xem lịch sử giao dịch của server.",
+        "/coin add <cl> <amount>: thêm coin cho người chơi.",
+        "Lưu ý: coin sẽ trừ từ server."
+    ],
+    "commandCmdHelp": [
+        "/command regular: hiển thị lệnh thường.",
+        "/command fun: hiển thị lệnh vui.",
+        "/command cheat: hiển thị lệnh cheat.",
+        "/command manage: hiển thị lệnh quản lý.",
+        "/command history: xem lịch sử lệnh.",
+        "/command alias <cmd>: hiển thị alias của lệnh.",
+        "/command info <cmd>: hiển thị thông tin cơ bản.",
+        "Truy cập miễn phí cần lý do, nếu không sẽ dùng coin.",
+        "VD: /end Nhập lý do hợp lệ ở đây."
+    ],
+    "commandAdmCmdHelp": [
+        "/command setalias <cmd> <alias>: đặt alias mới.",
+        "/command delalias <alias>: xóa alias.",
+        "/command level <cmd> <level>: đặt mức tối thiểu.",
+        "/command price <cmd> <price>: đặt giá lệnh.",
+        "/command role <cmd> <role>: đặt role miễn phí.",
+        "Lưu ý: không phải lệnh nào cũng có role miễn phí."
+    ],
+    "effectCmdHelp": [
+        "/effect add spark: thêm hiệu ứng spark vào kho.",
+        "/effect add spark 3: kéo dài spark 3 ngày.",
+        "/effect price: xem giá hiệu ứng.",
+        "/effect limit: xem giới hạn hiệu ứng.",
+        "/effect <cl>: xem hiệu ứng của người chơi.",
+        "/effect remove 2: xóa hiệu ứng thứ 2 trong kho."
+    ],
+    "funCmdHelp": [
+        "/<cmd>: chạy lệnh cho bản thân.",
+        "/<cmd> all: chạy cho tất cả.",
+        "/<cmd> team: chạy cho đồng đội.",
+        "/<cmd> noteam: chạy cho đối thủ.",
+        "/<cmd> <id1> <id2>: chạy cho 2 người cùng lúc.",
+        "<id> là chỉ số người chơi. Gõ /id.",
+        "Bạn cũng có thể dùng tên thay cho <id>.",
+        "/<cmd> haf aur: chạy cho hafsah, aura.",
+        "Một số lệnh cần thêm tham số, nếu không: random.",
+        "Ví dụ: /color all red. 'Red' là tham số thêm."
+    ],
+    "helpCmdIconHelp": [
+        "Chỉ cần gõ '\\' rồi mã có sẵn. Ví dụ:",
+        "\\crownChampion -> Tạo chữ như sau: \ue043Champion",
+        "\\fireballGoSquad\\dragon -> \ue04fGoSquad\ue048",
+        "Annie\\heartArmin -> Annie\ue047Armin",
+        "/help code icon: hiển thị mã icon mẫu.",
+        "/help code symbol: hiển thị mã symbol mẫu.",
+        "/help code flag: hiển thị mã flag mẫu.",
+        "Xem Discord để có danh sách đầy đủ."
+    ],
+    "hideCmdHelp": [
+        "/hide role 2: ẩn role khỏi công khai trong 2 ngày.",
+        "/hide list: xem các mục có thể ẩn.",
+        "/show role: hiện lại role."
+    ],
+    "hideAdmCmdHelp": [
+        "/hide create <item>: tạo mục ẩn mới.",
+        "/hide delete <item>: xóa mục ẩn."
+    ],
+    "hugCmdHelp": [
+        "/<cmd>: chạy cho 2 người chơi ngẫu nhiên.",
+        "/<cmd> all: chạy cho tất cả.",
+        "/<cmd> team: chạy cho đồng đội.",
+        "/<cmd> noteam: chạy cho đối thủ.",
+        "/<cmd> id1 id2: chạy cho 2 người cùng lúc.",
+        "<id> là chỉ số người chơi. Gõ /id.",
+        "Bạn cũng có thể dùng tên.",
+        "/<cmd> sita haf: chạy cho sita, hafsah",
+        "/<cmd> 4: chạy cho 4 người chơi ngẫu nhiên."
+    ],
+    "iconCmdHelp": [
+        "/icon add \\crown: thêm icon crown vào kho.",
+        "/icon add \\indonesia: thêm cờ Indonesia trong 2 ngày.",
+        "/icon price: xem giá icon.",
+        "/icon limit: xem giới hạn số lượng và độ dài.",
+        "/icon <cl>: xem icon của người chơi.",
+        "/icon remove 2: xóa icon thứ 2 trong kho."
+    ],
+    "kickCmdHelp": [
+        "/kick <cl>: đá người chơi bằng coin.",
+        "/kick <cl> <reason>: đá người chơi bằng admin.",
+        "/kick <cl1> <cl2>: đá 2 người cùng lúc.",
+        "/kick all: đá tất cả người chơi khỏi server.",
+        "<cl> là client id của người chơi. Gõ /cl.",
+        "Cũng có thể dùng local id, account id, name, account name.",
+        "/kick sita haf aur: đá sita, hafsah, aura."
+    ],
+    "languageCmdHelp": [
+        "/language english: đặt ngôn ngữ là english.",
+        "/language list: liệt kê các ngôn ngữ.",
+        "Hỗ trợ ngôn ngữ có thể chỉ giới hạn ở help.",
+        "Có thể chỉ có vài ngôn ngữ.",
+        "Ngôn ngữ ngoài english có thể đã lỗi thời.",
+        "Vui lòng giúp chúng tôi dịch."
+    ],
+    "levelCmdHelp": [
+        "/level: xem level của bạn.",
+        "/level upgrade: nâng level bằng coin.",
+        "Hoặc tự nâng bằng score.",
+        "/level show: hiển thị level công khai.",
+        "/level <cl>: xem level của người chơi.",
+        "/level convert <number>: đổi level lấy coin."
+    ],
+    "levelAdmCmdHelp": [
+        "/level change <cl> <level>: cập nhật level (dùng coin của server).",
+        "BẠN NÊN CẢNH BÁO NGƯỜI CHƠI:",
+        "Xếp hạng dưới 70 > giảm 1 level (tối đa).",
+        "Xếp hạng dưới 150 > giảm 2 level (tối đa).",
+        "Xếp hạng dưới 250 > giảm 3 level (tối đa)."
+    ],
+    "listCmdHelp": [
+        "/playerid OR /id: liệt kê chỉ số người chơi",
+        "/clientid OR /cl: liệt kê client IDs",
+        "/accountid OR /ad: liệt kê account IDs",
+        "/accountname OR /an: liệt kê tên tài khoản",
+        "/myid: xem danh tính: Local ID, Account Name, Account ID",
+        "/myid <show>: hiển thị danh tính công khai.",
+        "Bạn có thể dùng locid (Local ID) cho hầu hết mọi thứ",
+        "thay vì clientid. VD: chuyển coin, cấm người chơi."
+    ],
+    "muteCmdHelp": [
+        "/mute <cl> 2: tắt chat người chơi 2 ngày bằng coin.",
+        "/mute <cl> 2 <reason>: tắt chat 2 ngày bằng admin.",
+        "/mute <cl1> <cl2> 2: tắt chat 2 người cùng lúc.",
+        "/mute all 2: tắt chat tất cả 2 ngày.",
+        "<cl> là client id của người chơi. Gõ /cl.",
+        "Cũng có thể dùng local id, account id, name, account name.",
+        "/mute sita aur 2: tắt chat sita, aura 2 ngày.",
+        "/mute remove <cl>: mở chat lại cho người chơi.",
+        "/mute status <cl>: xem trạng thái mute.",
+        "/recent: xem client id gần đây.",
+        "/find <name>: tìm danh tính người chơi."
+    ],
+    "muteAdmCmdHelp": [
+        "/mute server: tắt tính năng chat của server."
+    ],
+    "unmuteCmdHelp": [
+        "/unmute: bỏ mute cho bạn.",
+        "/unmute status: xem trạng thái mute của bạn."
+    ],
+    "unmuteAdmCmdHelp": [
+        "/unmute server: bật tính năng chat của server."
+    ],
+    "passwdCmdHelp": [
+        "/password <password>: xác thực mật khẩu hiện tại.",
+        "/password remove <password>: xóa mật khẩu của bạn.",
+        "/password set <new-pass> <old-pass>: đổi mật khẩu.",
+        "mật khẩu cũ mặc định là gosquad.",
+        "Tối thiểu 4 ký tự, tối đa 16.",
+        "Quên mật khẩu? Liên hệ co/owners."
+    ],
+    "passwdAdmCmdHelp": [
+        "/password check <cl>: kiểm tra mật khẩu của người chơi",
+        "/password reset <cl>: xóa mật khẩu của người chơi."
+    ],
+    "petCmdHelp": [
+        "/pet add taobao: thêm thú cưng taobao vào kho.",
+        "/pet add taobao 3: kéo dài taobao 3 ngày.",
+        "/pet price: xem giá thú cưng.",
+        "/pet limit: xem giới hạn thú cưng.",
+        "/pet <cl>: xem thú cưng của người chơi.",
+        "/pet remove 2: xóa thú cưng thứ 2 trong kho."
+    ],
+    "pingCmdHelp": [
+        "/ping: xem ping của bạn.",
+        "/ping show: hiển thị ping công khai.",
+        "/ping <cl>: xem ping của người chơi.",
+        "/ping all: xem ping của tất cả người chơi."
+    ],
+    "removeCmdHelp": [
+        "/remove <id>: đưa người chơi về lobby bằng coin.",
+        "/remove <id> <reason>: đưa người chơi về lobby bằng admin.",
+        "/remove <id1> <id2>: đưa 2 người cùng lúc.",
+        "/remove all: đưa tất cả về lobby.",
+        "<id> là chỉ số người chơi. Gõ /id.",
+        "Bạn cũng có thể dùng tên.",
+        "/remove sita haf aur: đưa sita, hafsah, aura về lobby."
+    ],
+    "roleCmdHelp": [
+        "/role <cl>: xem role của người chơi.",
+        "/role price: xem giá và chi tiết role.",
+        "/role add admin 1: bạn thành admin trong 1 tháng.",
+        "/role remove admin: xóa role admin.",
+        "/role tag admin cool: đổi tag mặc định của admin thành cool.",
+        "/role remtag admin: trả tag admin về mặc định.",
+        "/role anim admin right: đổi hoạt ảnh admin sang right."
+    ],
+    "roleAdmCmdHelp": [
+        "/role assign <cl> admin 7: cấp role admin 7 ngày.",
+        "/role revoke <cl> admin: thu hồi role admin.",
+        "/role create staff: tạo role staff.",
+        "/role delete staff: xóa role staff.",
+        "/role eligible <cl> true: cho phép người chơi đủ điều kiện admin.",
+        "/role deftag owner cool: đổi tag mặc định owner thành cool.",
+        "/role import: biến bạn thành owner (hãy đọc gợi ý)."
+    ],
+    "statsCmdHelp": [
+        "/stats: xem stats của bạn.",
+        "/stats show: hiển thị stats công khai.",
+        "/stats convert <score>: đổi score stats lấy coin.",
+        "Coi chừng số lần phản bội. Bạn có thể bị cấm."
+    ],
+    "statusCmdHelp": [
+        "/status: xem trạng thái của bạn.",
+        "/status show: hiển thị trạng thái công khai.",
+        "/status <clid>: xem trạng thái của người chơi."
+    ],
+    "symbolCmdHelp": [
+        "/symbol add \\trophy: thêm symbol trophy vào kho.",
+        "/symbol price: xem giá symbol.",
+        "/symbol limit: xem giới hạn số lượng và độ dài.",
+        "/symbol <cl>: xem symbol của người chơi.",
+        "/symbol remove 2: xóa symbol thứ 2 trong kho.",
+        "Emoji/smiley cũng phù hợp làm symbol."
+    ],
+    "tagCmdHelp": [
+        "/tag add Winner: thêm tag 'Winner' vào kho.",
+        "/tag add \"Top Win\": dùng dấu nháy để có khoảng trắng.",
+        "/tag price: xem giá tag.",
+        "/tag limit: xem giới hạn số lượng và độ dài.",
+        "/tag <cl>: xem tag của người chơi.",
+        "/tag remove 2: xóa tag thứ 2.",
+        "/tag color 1 red: đổi màu tag đầu tiên thành red.",
+        "Màu tag có sẵn:"
+    ],
+    "voteoffCmdHelp": [
+        "/voteoff <cl> 2: tắt kickvote của người chơi 2 ngày.",
+        "/voteoff <cl> 2 <reason>: tắt 2 ngày bằng admin.",
+        "/voteoff <cl1> <cl2>: tắt 2 người cùng lúc.",
+        "/voteoff all 2: tắt tất cả 2 ngày.",
+        "<cl> là client id của người chơi. Gõ /cl.",
+        "Cũng có thể dùng local id, account id, name, account name.",
+        "/voteoff haf aur 2: tắt hafsah, aura 2 ngày.",
+        "/voteoff remove <cl>: bật kickvote cho người chơi.",
+        "/voteoff status <cl>: xem trạng thái kickvote.",
+        "/recent: xem client id gần đây.",
+        "/find <name>: tìm danh tính người chơi."
+    ],
+    "voteoffAdmCmdHelp": [
+        "/voteoff server: tắt kickvote của server."
+    ],
+    "voteonCmdHelp": [
+        "/voteon: bật kickvote cho bạn.",
+        "/voteon status: xem trạng thái kickvote của bạn."
+    ],
+    "voteonAdmCmdHelp": [
+        "/voteon server: bật kickvote của server."
+    ],
+    "mvoteoffCmdHelp": [
+        "/mvoteoff <cl> 2: tắt msgvote của người chơi 2 ngày.",
+        "/mvoteoff <cl> 2 <reason>: tắt 2 ngày bằng admin.",
+        "/mvoteoff <cl1> <cl2> 2: tắt 2 người cùng lúc.",
+        "/mvoteoff all 2: tắt tất cả 2 ngày.",
+        "<cl> là client id của người chơi. Gõ /cl.",
+        "Cũng có thể dùng local id, account id, name, account name.",
+        "/mvoteoff sita aur 2: tắt sita, aura 2 ngày.",
+        "/mvoteoff remove <cl>: bật msgvote cho người chơi.",
+        "/mvoteoff status <cl>: xem trạng thái msgvote.",
+        "/recent: xem client id gần đây.",
+        "/find <name>: tìm danh tính người chơi."
+    ],
+    "mvoteoffAdmCmdHelp": [
+        "/mvoteoff server: tắt msgvote của server."
+    ],
+    "mvoteonCmdHelp": [
+        "/mvoteon: bật msgvote cho bạn.",
+        "/mvoteon status: xem trạng thái msgvote của bạn."
+    ],
+    "mvoteonAdmCmdHelp": [
+        "/mvoteon server: bật msgvote của server."
+    ]
+}

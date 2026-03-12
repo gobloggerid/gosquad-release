@@ -103,7 +103,8 @@ class EggHuntInTheSkyGame(bs.TeamGameActivity[Player, Team]):
         super().on_begin()
         self._update_scoreboard()
         self._update_timer = bs.Timer(0.25, self._update, repeat=True)
-        self._countdown = OnScreenCountdown(60, endcall=self.end_game)
+        duration = 30 if self.slow_motion else 60
+        self._countdown = OnScreenCountdown(duration, endcall=self.end_game)
         bs.timer(4.0, self._countdown.start)
 
     # Overriding the default character spawning.
