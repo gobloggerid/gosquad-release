@@ -6,16 +6,27 @@ Simple guide to install and run the GoSquad server.
 - 1 CPU core (more is better)
 - 1 GB free RAM (more is better)
 - Ubuntu 24.04 or newer (binary built for 24.04)
-- Or Debian 11 or newer (binary built for 11)
 - Internet connection
 
 **Read before you start**
 - Use at your own risk
+- What you see is what you get
+- Please read LICENSE file
+
+## Instruction
+Run the following commands one by one.
+- Copy each command (CTRL + C)
+- Paste to your console (CTRL + SHIFT + V)
+- Press ENTER
 
 ## Setup
-Install tools (if missing):
+Update system:
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
+
+Install tools (if missing):
+```bash
 sudo apt install --upgrade git tmux -y
 ```
 
@@ -35,7 +46,7 @@ Download the server:
 git clone -b main --single-branch https://github.com/n00bility/gosquad.git
 ```
 - If `aarch64`:
-NOT AVAILABLE YET!
+THIS IS NOT AVAILABLE YET!
 ```bash
 git clone -b aarch --single-branch https://github.com/n00bility/gosquad.git
 ```
@@ -45,9 +56,13 @@ Go to the project folder:
 cd gosquad
 ```
 
-Run setup:
+Allow setup file:
 ```bash
 sudo chmod +x .setup.sh
+```
+
+Run setup:
+```bash
 bash .setup.sh
 ```
 
