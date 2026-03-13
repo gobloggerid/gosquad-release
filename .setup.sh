@@ -45,7 +45,7 @@ if [[ ! -d "$DATA_DIR" ]]; then
     exit 1
 fi
 
-echo "Preparing necessary files..."
+echo "⏳ Preparing necessary files..."
 sleep 2
 echo ""
 
@@ -83,7 +83,7 @@ sleep 2
 echo "Installing python...."
 echo ""
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update -y
 sudo apt install software-properties-common -y
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt install -y python3.13-dev python3.13-venv python3-pip

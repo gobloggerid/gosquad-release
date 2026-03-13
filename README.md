@@ -1,114 +1,131 @@
-# GOSQUAD (BOMBSQUAD MOD)
-A modified version of BombSquad game (API 9) - private repository.
+# GoSquad (BombSquad Mod, API 9)
+Simple guide to install and run the GoSquad server.
 
+**What you need**
+- Computer with x86_64 or ARM CPU (dedicated is better)
+- 1 CPU core (more is better)
+- 1 GB free RAM (more is better)
+- Ubuntu 24.04 or newer (binary built for 24.04)
+- Internet connection
 
-# PREREQUISITES
-- Computer with x86 or Arm CPU. Dedicated is recommended.
-- 1 core cpu (more is better).
-- 1 GB free memory (more is better).
-- This build is built against: 
-  - Debian Linux 12 (bookworm) (x86).
-  - Ubuntu 24.04 (noble) (arm).
-  - Use Debian/Ubuntu or their derived distros with the same or higher version.
-- Fast internet connection (unless for local use).
+**Read before you start**
+- Use at your own risk
 
-
-# HOW TO SETUP
-
-## Method 1: Using HTTP
-Create tmux session and clone the repository
+## Setup
+Install tools (if missing):
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install --upgrade git tmux
 ```
+
+Create a tmux session:
+```bash
 tmux new -s gosquad
-git config --global credential.helper store
-git clone https://github.com/n00bility/gosquad.git
 ```
 
-## Method 2: Using SSH
-Create the key (if not done yet)
-```
-ssh-keygen -t rsa -b 4096 -C "email@example.com"
-ssh-add ~/.ssh/id_rsa
+Check your CPU type:
+```bash
+uname -m
 ```
 
-Copy the public key, then save the key to github
+Download the server:
+- If `x86_64`:
+```bash
+git clone -b main --single-branch https://github.com/n00bility/gosquad.git
 ```
-cat ~/.ssh/id_rsa.pub
-```
+- If `aarch64`:
+Not available yet.
 
-Clone the repository
-```
-git clone git@github.com:n00bility/gosquad.git
-```
-
-
-Once finished, navigate to downloaded gosquad directory, 
-then prepare and install the required files/modules.
-```
+Go to the project folder:
+```bash
 cd gosquad
-sudo chmod +x preparation.sh install_python.sh install_database.sh
-
-./preparation.sh
-./install_python.sh
-./install_database.sh
 ```
 
-
-# RUN THE GAME
-**Recommended:** Use virtual environment
-
-Create the virtual environment
-```
-python3.13 -m venv venv
-source venv/bin/activate
+Run setup:
+```bash
+sudo chmod +x .setup.sh
+bash .setup.sh
 ```
 
-Run the game
+## Run the game
+If you just rebooted:
+```bash
+tmux attach-session gosquad
 ```
+
+Or start a new session:
+```bash
+tmux new -s gosquad
+```
+
+Start the server:
+```bash
 ./gosquad_server
 ```
 
+## Playlists and ports
+Default:
+- Config file: `config.toml`
+- UDP port: `43210`
 
-# CONFIGS
-Above command is to run the game with config.toml/config.json as the config file
-and 43210 as the port (default)
-
-To run another config file (if exist in ./dist/ba_root/mods/data/defaults/playlists)
-```
+Run a different playlist:
+```bash
 ./gosquad_server --config ffa.toml
 ```
 
-or
-```
-./gosquad_server --config team.toml
-```
-
-To run multiple config files (change automatically after game restart)
-```
-./gosquad_server --config ffa.toml team.toml sport.toml
-```
-
-To run on different port
-```
+Run on another port:
+```bash
 ./gosquad_server --config ffa.toml --port 43211
 ```
 
-
-**Quit virtual environment**
-If using one
-```
-deactivate
+Run multiple playlists on one port (rotates on restart):
+```bash
+./gosquad_server --config ffa.toml team.toml smash.toml --port 43211
 ```
 
+Playlist files:
+- Defaults: `./dist/ba_root/mods/data/defaults/playlists/`
+- Live edits: `./dist/ba_root/mods/data/live/playlists/`
 
-# COMMON PROBLEMS
-## Missing packages
-Install missing/outdated packages in batch
+## Make yourself owner
+Do this once.
+- Put your `account_id` in the `admins` list inside your config file (`ffa.toml`, `team.toml`, etc.).
+- If `protocol_version > 35`, your id starts with `a-`.
+- If `protocol_version <= 35` (default), your id starts with `pb-`.
+- You can add both to be safe.
+- You are owner for permanently.
+
+After you join the server, run in chat:
+```bash
+/role import
 ```
-sudo chmod +x requirements.sh
-sudo ./requirements.sh
 
+## Commands
+Two ways:
+- Read help files: `./dist/ba_root/mods/defaults/languages/`
+- In game:
+```bash
+/command help
+```
+```bash
+/ban help
+```
+```bash
+/ban requirement
 ```
 
-Install missing/outdated package individually.
-Open requirements.sh.
-Then install the packages one by one using the commands on requirements.sh
+## Notes
+- Commands need levels/roles/coins depending on type.
+- Files in `./dist/ba_root/mods/data/live/` are safe to edit.
+- If you break them, delete them to restore defaults.
+- `settings.json` controls server settings.
+- GoSquad comes with plenty of server coins.
+- As owner, you won't need it for most of the time.
+- Except for assigning roles to players.
+- Or sending coins to them (giveaways).
+- Contact author on discord to top up.
+
+## Notes 2
+- Discord module is not ready. You have to edit it to make it works.
+- This module is take from HeyFang bombsquad repository.
+- You may want to explore the server features for a while privately before you make the server public.
