@@ -2,7 +2,7 @@
 Simple guide to install and run the GoSquad server.
 
 **What you need**
-- Computer with x86_64 CPU (dedicated is better)
+- Computer with x86_64 or AARCH64 CPU (dedicated is better)
 - 1 CPU core (more is better)
 - 1 GB free RAM (more is better)
 - Ubuntu 24.04 or newer (binary built for 24.04)
@@ -47,7 +47,6 @@ git clone -b main --single-branch https://github.com/n00bility/gosquad.git
 ```
 - If `aarch64`:
 ```bash
-THIS IS NOT AVAILABLE YET!
 git clone -b aarch --single-branch https://github.com/n00bility/gosquad.git
 ```
 
