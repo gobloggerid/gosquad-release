@@ -6,6 +6,7 @@ Simple guide to install and run the GoSquad server.
 - 1 CPU core (more is better)
 - 1 GB free RAM (more is better)
 - Ubuntu 24.04 or newer (binary built for 24.04)
+- Or Debian 11 or newer (binary built for 11)
 - Internet connection
 
 **Read before you start**
@@ -15,7 +16,7 @@ Simple guide to install and run the GoSquad server.
 Install tools (if missing):
 ```bash
 sudo apt update && sudo apt upgrade -y
-sudo apt install --upgrade git tmux
+sudo apt install --upgrade git tmux -y
 ```
 
 Create a tmux session:
@@ -34,7 +35,10 @@ Download the server:
 git clone -b main --single-branch https://github.com/n00bility/gosquad.git
 ```
 - If `aarch64`:
-Not available yet.
+NOT AVAILABLE YET!
+```bash
+git clone -b aarch --single-branch https://github.com/n00bility/gosquad.git
+```
 
 Go to the project folder:
 ```bash
@@ -50,7 +54,7 @@ bash .setup.sh
 ## Run the game
 If you just rebooted:
 ```bash
-tmux attach-session gosquad
+tmux attach-session -t gosquad
 ```
 
 Or start a new session:
@@ -85,7 +89,7 @@ Run multiple playlists on one port (rotates on restart):
 
 Playlist files:
 - Defaults: `./dist/ba_root/mods/data/defaults/playlists/`
-- Live edits: `./dist/ba_root/mods/data/live/playlists/`
+- Live edits: `./dist/ba_root/mods/data/live/playlists/` | These are the ones to edit.
 
 ## Make yourself owner
 Do this once.
@@ -108,14 +112,22 @@ Two ways:
 /command help
 ```
 ```bash
-/ban help
+/role help
 ```
 ```bash
 /ban requirement
 ```
+```bash
+/effect price
+```
 
 ## Notes
 - Commands need levels/roles/coins depending on type.
+- Admin commands always need reason to run, otherwise they will use coins.
+- E.g.: /restart aNy ReASon yoU wAnt -> to restart server.
+- This to avoid being abused by server admins.
+- Admin commands will be logged, coins commands will not.
+- Fun and Cheat commands always need coins regardless the executor.
 - Files in `./dist/ba_root/mods/data/live/` are safe to edit.
 - If you break them, delete them to restore defaults.
 - `settings.json` controls server settings.
