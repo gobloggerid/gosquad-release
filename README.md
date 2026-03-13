@@ -2,7 +2,7 @@
 Simple guide to install and run the GoSquad server.
 
 **What you need**
-- Computer with x86_64 or ARM CPU (dedicated is better)
+- Computer with x86_64 CPU (dedicated is better)
 - 1 CPU core (more is better)
 - 1 GB free RAM (more is better)
 - Ubuntu 24.04 or newer (binary built for 24.04)
@@ -46,8 +46,8 @@ Download the server:
 git clone -b main --single-branch https://github.com/n00bility/gosquad.git
 ```
 - If `aarch64`:
-THIS IS NOT AVAILABLE YET!
 ```bash
+THIS IS NOT AVAILABLE YET!
 git clone -b aarch --single-branch https://github.com/n00bility/gosquad.git
 ```
 
@@ -56,14 +56,17 @@ Go to the project folder:
 cd gosquad
 ```
 
-Allow setup file:
+Allow setup files:
 ```bash
-sudo chmod +x .setup.sh
+sudo chmod +x .setup.sh .prepare_files.sh .install_python.sh .install_requirements.sh .install_database.sh
 ```
 
-Run setup:
+You can either run .setup.sh or run them one by one:
 ```bash
-bash .setup.sh
+bash .prepare_files.sh
+bash .install_python.sh
+bash .install_requirements.sh
+bash .install_database.sh
 ```
 
 ## Run the game
@@ -156,3 +159,20 @@ Two ways:
 - Discord module is not ready. You have to edit it to make it works.
 - This module is take from HeyFang bombsquad repository.
 - You may want to explore the server features for a while privately before you make the server public.
+- It is recommended to use V2 Account. With this, you can use ballistica cloud console to manage your server without joining your game server.
+  - Do this by logging in with your V2 account when the server starts.
+
+**Cloud Command**
+On your ballistica cloud console
+```
+from bascenev1.cloudcmd import cmd
+cmd.command()
+```
+This will print all the available cloud commands.
+
+Example:
+```
+from bascenev1.cloudcmd import cmd
+cmd.find('n00b')
+```
+Find players whose their names cointains 'n00b' word.

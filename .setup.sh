@@ -98,7 +98,7 @@ echo "Installing database...."
 echo ""
 
 sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/redis.gpg
+curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor --batch --yes -o /etc/apt/keyrings/redis.gpg
 
 echo "deb [signed-by=/etc/apt/keyrings/redis.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | \
 sudo tee /etc/apt/sources.list.d/redis.list > /dev/null
@@ -135,11 +135,25 @@ echo ""
 echo "⏳ Preparing for the next step..."
 sleep 2
 
-echo "Installing packages...."
-echo ""
+if command -v python3.13 >/dev/null 2>&1; then
+    PYTHON_BIN="python3.13"
+else
+    echo "No Python 3.13 interpreter found. Install python3.13 and retry."
+    exit 1
+fi
 
-python3.13 -m pip install --upgrade pip
-python3.13 -m pip install --upgrade \
+mkdir -p "$PACKAGES_DIR"
+echo "Creating virtual environment...."
+sleep 2
+
+"$PYTHON_BIN" -m venv .venv
+source .venv/bin/activate
+
+echo "Installing packages...."
+sleep 2
+
+python -m pip install --upgrade pip
+python -m pip install --upgrade \
     --target="$PACKAGES_DIR" \
     better-profanity==0.6.1 \
     "redis[hiredis]" \
