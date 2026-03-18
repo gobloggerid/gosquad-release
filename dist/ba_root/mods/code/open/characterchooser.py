@@ -74,18 +74,18 @@ def new_init(
     app = babase.app
 
     self.hidden_chars = [
-        'Lee',
-        'Todd McBurton',
-        'Zola',
-        'Butch',
-        'Witch',
-        'Warrior',
-        'Middle-Man',
-        'Alien',
-        'Gladiator',
-        'Wrestler',
-        'Gretel',
-        'Robot',
+        # 'Lee',
+        # 'Todd McBurton',
+        # 'Zola',
+        # 'Butch',
+        # 'Witch',
+        # 'Warrior',
+        # 'Middle-Man',
+        # 'Alien',
+        # 'Gladiator',
+        # 'Wrestler',
+        # 'Gretel',
+        # 'Robot',
     ]
 
     # Load available player profiles either from the local config or

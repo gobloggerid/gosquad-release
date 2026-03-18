@@ -33,12 +33,12 @@ def _activate_code_paths() -> None:
 class GoPlugin(babase.Plugin):
     def on_app_running(self) -> None:
         _activate_code_paths()
-        from code.internal.routine import strapper
+        from goroutine import strapper
 
         strapper.on_app_running()
 
     def on_app_shutdown(self) -> None:
         _activate_code_paths()
-        from code.internal.routine import strapper
+        from goroutine import strapper
 
         strapper.on_app_shutdown()

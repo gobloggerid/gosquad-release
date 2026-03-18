@@ -10,7 +10,7 @@ import shutil
 from typing import TYPE_CHECKING
 
 from bascenev1lib.actor.spazappearance import Appearance
-from common import paths
+from gocommon import paths
 
 if TYPE_CHECKING:
     pass

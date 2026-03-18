@@ -12,18 +12,20 @@ import threading
 import babase
 import bascenev1 as bs
 
-from common.setting import getsetting
+from gocommon.setting import getsetting
 from code.open.discord.verify_manager import DiscordVerifyManager
 
 _SOCKET_THREAD_STARTED = False
-_DEFAULT_SOCKET_PATH = '/tmp/bombsquad_verify.sock'
+_DEFAULT_SOCKET_PATH = '/tmp/gosquad_discord.sock'
 _STOP_EVENT = threading.Event()
 _SERVER_THREAD: threading.Thread | None = None
 _SERVER_SOCK: socket.socket | None = None
 
 
 def _socket_path() -> str:
-    setting_path = getsetting().get('socketPath')
+    setting_path = (
+        getsetting().get('discordIntegration', {}).get('socketPath')
+    )
     if isinstance(setting_path, str) and setting_path.strip():
         return setting_path
     return _DEFAULT_SOCKET_PATH
@@ -175,7 +177,7 @@ def maybe_start_discord_socket_server() -> None:
         return
 
     if not bool(
-        getsetting().get('discordIntegration', {}).get('enable', False)):
+        getsetting().get('discordIntegration', {}).get('enabled', False)):
         return
 
     _STOP_EVENT.clear()

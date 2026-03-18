@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import bascenev1 as bs
-from common import helper
+from gocommon import helper
 
 if TYPE_CHECKING:
     pass

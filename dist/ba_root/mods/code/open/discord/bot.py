@@ -8,13 +8,76 @@ import os
 import socket
 
 import discord
-from code.open.discord import app_commands
+from discord import app_commands
 from discord.ext import commands
 
-BOT_TOKEN = os.getenv('GOSQUAD_DISCORD_BOT_TOKEN', '').strip()
-GUILD_ID = int(os.getenv('GOSQUAD_DISCORD_GUILD_ID', '0') or 0)
-STAFF_ROLE_ID = int(os.getenv('GOSQUAD_DISCORD_STAFF_ROLE_ID', '0') or 0)
-SOCKET_PATH = os.getenv('GOSQUAD_VERIFY_SOCKET', '/tmp/bombsquad_verify.sock')
+def _load_settings() -> dict:
+    try:
+        from gocommon.setting import getsetting
+    except Exception:
+        return {}
+    try:
+        return getsetting()
+    except Exception:
+        return {}
+
+
+def _get_str_setting(
+    settings: dict, key: str, env_name: str, default: str = ''
+) -> str:
+    value = settings.get(key)
+    if isinstance(value, str) and value.strip():
+        return value.strip()
+    env_value = os.getenv(env_name, '').strip()
+    if env_value:
+        return env_value
+    return default
+
+
+def _get_int_setting(
+    settings: dict, key: str, env_name: str, default: int = 0
+) -> int:
+    value = settings.get(key)
+    if isinstance(value, int) and value > 0:
+        return value
+    if isinstance(value, str) and value.strip():
+        try:
+            parsed = int(value.strip())
+            if parsed > 0:
+                return parsed
+        except ValueError:
+            pass
+    env_value = os.getenv(env_name, '').strip()
+    if env_value:
+        try:
+            return int(env_value)
+        except ValueError:
+            pass
+    return default
+
+
+_SETTINGS = _load_settings()
+_DISCORD_SETTINGS = (
+    _SETTINGS.get('discordIntegration', {})
+    if isinstance(_SETTINGS.get('discordIntegration', {}), dict)
+    else {}
+)
+
+BOT_TOKEN = _get_str_setting(
+    _DISCORD_SETTINGS, 'botToken', 'GOSQUAD_DISCORD_BOT_TOKEN'
+)
+GUILD_ID = _get_int_setting(
+    _DISCORD_SETTINGS, 'guildId', 'GOSQUAD_DISCORD_GUILD_ID'
+)
+STAFF_ROLE_ID = _get_int_setting(
+    _DISCORD_SETTINGS, 'staffRoleId', 'GOSQUAD_DISCORD_STAFF_ROLE_ID'
+)
+SOCKET_PATH = _get_str_setting(
+    _DISCORD_SETTINGS,
+    'socketPath',
+    'GOSQUAD_DISCORD_SOCKET_PATH',
+    default=os.getenv('GOSQUAD_VERIFY_SOCKET', '/tmp/gosquad_discord.sock'),
+)
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix='.', intents=intents)
@@ -26,7 +89,10 @@ async def on_ready() -> None:
     print('------')
     try:
         if GUILD_ID <= 0:
-            print('Set GOSQUAD_DISCORD_GUILD_ID to enable slash command sync.')
+            print(
+                'Set discordIntegration.guildId in setting.json '
+                'or GOSQUAD_DISCORD_GUILD_ID to enable slash command sync.'
+            )
             return
         guild = discord.Object(id=GUILD_ID)
         synced = await bot.tree.sync(guild=guild)
@@ -119,6 +185,9 @@ async def on_app_command_error(
 
 if __name__ == '__main__':
     if not BOT_TOKEN:
-        print('Set GOSQUAD_DISCORD_BOT_TOKEN before running this bot.')
+        print(
+            'Set discordIntegration.botToken in setting.json '
+            'or GOSQUAD_DISCORD_BOT_TOKEN before running this bot.'
+        )
     else:
         bot.run(BOT_TOKEN)

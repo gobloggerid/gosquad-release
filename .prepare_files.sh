@@ -14,24 +14,12 @@ if [[ "$USER" == "root" ]]; then
     exit 1
 fi
 
-if [[ ! -d "$MODS_DIR" ]]; then
-    echo "❌ Source directory not found: $MODS_DIR"
-    exit 1
-fi
-
 if [[ ! -d "$SEED_DIR" ]]; then
     echo "❌ Source directory not found: $SEED_DIR"
     exit 1
 fi
 
-if [[ ! -d "$DATA_DIR" ]]; then
-    echo "❌ Source directory not found: $DATA_DIR"
-    exit 1
-fi
-
-echo "⏳ Preparing necessary files..."
-sleep 2
-echo ""
+echo "Preparing necessary files..."
 
 cp --update --verbose --target-directory ./ "$SEED_DIR/gosquad_server"
 cp --update --verbose --target-directory ./dist "$SEED_DIR/gosquad_headless" "$SEED_DIR/gosquad_headless_aarch64"
@@ -56,7 +44,5 @@ mkdir -p \
 
 sudo chown -R "$USER:$USER" "$GAME_DIR"
 echo "✅ Fix files ownership..."
-echo ""
 
 echo "✅ Done preparing all necessary files."
-echo "Please run the next step!"

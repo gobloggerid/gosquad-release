@@ -13,8 +13,9 @@ if TYPE_CHECKING:
 class TextOnMap:
     def __init__(self):
         print(
-            'edit me on dist/ba_root/mods/code/open/textonmap.py '
-            'to have additional text/message in your game activity'
+            'enable me in dist/ba_root/mods/data/live/configs/setting.json '
+            'and edit me in dist/ba_root/mods/code/open/textonmap.py '
+            'to have additional Text on Map in your game activity'
         )
 
     @property

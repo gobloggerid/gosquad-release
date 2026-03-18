@@ -4,7 +4,7 @@ __pycache__/
 *.pyc
 .env
 .idea/
-.venv/
+venv/
 /gosquad_server
 dist/gosquad_headless
 dist/gosquad_headless_aarch64

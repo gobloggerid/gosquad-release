@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING
 
 import bascenev1 as bs
 from bascenev1lib.actor.popuptext import PopupText
-from extra.textmanager import textlist
+from goextra.textmanager import textlist
 
 if TYPE_CHECKING:
     from collections.abc import Sequence

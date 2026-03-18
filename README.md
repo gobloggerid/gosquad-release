@@ -55,28 +55,40 @@ Go to the project folder:
 cd gosquad
 ```
 
-Allow setup files:
+Make setup files executable:
 ```bash
-sudo chmod +x .setup.sh .prepare_files.sh .install_python.sh .install_requirements.sh .install_database.sh
+sudo chmod +x .prepare_files.sh .install_python.sh .install_requirements.sh .install_database.sh
 ```
 
-You can either run .setup.sh or run them one by one:
+Prepare program files:
 ```bash
 bash .prepare_files.sh
+```
+
+Install python3.13:
+```bash
 bash .install_python.sh
+```
+
+Install required packages:
+```bash
 bash .install_requirements.sh
+```
+
+Install database (System will reboot to take effect):
+```bash
 bash .install_database.sh
 ```
 
 ## Run the game
-If you just rebooted:
-```bash
-tmux attach-session -t gosquad
-```
-
-Or start a new session:
+If you just rebooted, start a new session:
 ```bash
 tmux new -s gosquad
+```
+
+Else:
+```bash
+tmux attach-session -t gosquad
 ```
 
 Start the server:
@@ -94,7 +106,7 @@ Run a different playlist:
 ./gosquad_server --config ffa.toml
 ```
 
-Run on another port:
+Run on another port (No need to edit port in the file):
 ```bash
 ./gosquad_server --config ffa.toml --port 43211
 ```
@@ -122,7 +134,7 @@ After you join the server, run in chat:
 ```
 
 ## Commands
-Two ways:
+Two ways to browse commands:
 - Read help files: `./dist/ba_root/mods/defaults/languages/`
 - In game:
 ```bash
@@ -145,7 +157,7 @@ Two ways:
 - This to avoid being abused by server admins.
 - Admin commands will be logged, coins commands will not.
 - Fun and Cheat commands always need coins regardless the executor.
-- Files in `./dist/ba_root/mods/data/live/` are safe to edit.
+- All the files under `./dist/ba_root/mods/data/live/` are safe to edit.
 - If you break them, delete them to restore defaults.
 - `settings.json` controls server settings.
 - GoSquad comes with plenty of server coins.
@@ -160,6 +172,8 @@ Two ways:
 - You may want to explore the server features for a while privately before you make the server public.
 - It is recommended to use V2 Account. With this, you can use ballistica cloud console to manage your server without joining your game server.
   - Do this by logging in with your V2 account when the server starts.
+- GoSquad is multi-instances ready. Meaning, you can run as many server as you want at the same time on the same machine. All of them will share the same/unified database.
+  - Learn about tmux pane/window to manage instance efficiently.
 
 **Cloud Command**
 On your ballistica cloud console
@@ -169,9 +183,28 @@ cmd.command()
 ```
 This will print all the available cloud commands.
 
-Example:
+Examples of available commands:
+
+Find players whose their names cointains 'n00b' word.
 ```
 from bascenev1.cloudcmd import cmd
 cmd.find('n00b')
 ```
-Find players whose their names cointains 'n00b' word.
+
+Ban a player using his local id (locid):
+```
+from bascenev1.cloudcmd import cmd
+cmd.ban(targets='gs-001', scope='global', reason='breaking rules', duration=1, incremental=False)
+```
+
+Or you can leave the default arguments:
+```
+from bascenev1.cloudcmd import cmd
+cmd.ban(targets='gs-001')
+```
+
+Or :
+```
+from bascenev1.cloudcmd import cmd
+cmd.ban('gs-001')
+```

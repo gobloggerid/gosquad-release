@@ -1,0 +1,31 @@
+# Download
+cd /tmp
+wget https://www.python.org/ftp/python/3.13.12/Python-3.13.12.tgz
+tar -xzf Python-3.13.12.tgz
+cd Python-3.13.12
+
+# If have prev build
+make distclean
+
+# Configure
+./configure --enable-optimizations --enable-shared
+
+# Build (Use all CPU cores for faster build)
+make -j$(nproc)
+
+# Install
+sudo make altinstall
+
+# When Python is built with shared libs, you usually must update the linker path:
+sudo ldconfig
+
+# Or add the library path manually:
+echo "/usr/local/lib" | sudo tee /etc/ld.so.conf.d/python3.13.conf
+sudo ldconfig
+
+# Verify
+ls /usr/local/lib | grep libpython3.13
+
+# Result
+libpython3.13.so
+

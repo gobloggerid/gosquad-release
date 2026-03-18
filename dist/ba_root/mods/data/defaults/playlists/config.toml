@@ -5,23 +5,20 @@
 # Uncomment any of these values to override defaults.
 
 # Name of our server in the public parties list.
-party_name = "MY SERVER 🇸🇬 TEST"
+party_name = "GOSQUAD 🇸🇬 TEST"
 
 # If true, your party will show up in the global public party list
 # Otherwise it will still be joinable via LAN or connecting by IP
 # address.
 party_is_public = false
 
-# If true, the master-server will provide your server with verified
-# account info for all connecting clients. Generally this should
-# always be enabled unless you are hosting on a LAN with no internet
-# connection. Note that if protocol_version is set to 36 or newer,
-# client authentication uses V2 account info (V2 account ids look
-# like a-XXX while V1 ids look like pb-XXX). This is highly
-# recommended as it does not suffer from spoofing vulnerabilities
-# that V1 ids do. You can use the following url to convert V1 ids to
-# V2 if you have an existing database of account ids for your
-# server: https://legacy.ballistica.net/v2id/YOURV1IDHERE
+# If true, all connecting clients will be authenticated through the
+# master server to screen for fake account info. Generally this
+# should always be enabled unless you are hosting on a LAN with no
+# internet connection. Note that if you set protocol_version to 36
+# or newer, client authentication uses V2 account info. This is
+# highly recommended as it does not have spoofing vulnerabilities
+# like the earlier V1 authentication.
 authenticate_clients = false
 
 # IDs of server admins. Server admins are not kickable through the
@@ -31,12 +28,7 @@ authenticate_clients = false
 # your V2 account id, poke the 'manage account' button in the
 # account window in-game. To get your V1 account id, enter
 # 'getaccountid' in Settings->Advanced->Send Info
-admins = [
-  "pb-IF4UUm4nHQ==",
-  "pb-IF4UVGUIDQ==",
-  "a-f62257",
-  "a-f332316"
-]
+admins = ["pb-IF4UUm4nHQ==", "pb-IF4UVGUIDQ==", "pb-IF42XhRePw==", "a-f62257", "a-f332316"]
 
 # Whether the default kick-voting system is enabled.
 enable_default_kick_voting = true
@@ -46,7 +38,7 @@ enable_default_kick_voting = true
 # try to use the address your server contacts it from, but this may
 # be an ipv6 address these days so you may need to provide an ipv4
 # address explicitly.
-#public_ipv4_address = "123.123.123.123"
+# public_ipv4_address = "161.118.207.241"
 
 # You can optionally provide an ipv6 address for your server for the
 # public server list. Unlike ipv4, a server is not required to have
@@ -56,7 +48,7 @@ enable_default_kick_voting = true
 # your server uses ipv6 when communicating with the master server. You
 # can pass an empty string here to explicitly disable the ipv6
 # address.
-#public_ipv6_address = "123A::A123:23A1:A312:12A3:A213:2A13"
+# public_ipv6_address = "2603:c024:4513:6900:0:f9b6:b6b1:7045"
 
 # UDP port to host on. Change this to work around firewalls or run
 # multiple servers on one machine.
@@ -161,10 +153,10 @@ idle_exit_minutes = 20
 #show_tutorial = false
 
 # Team names (teams mode only).
-team_names = ["MY NAME", "GOSQUAD"]
+team_names = ["\ue047RENATA\ue047", "\ue043GOSQUAD\ue043"]
 
 # Team colors (teams mode only).
-team_colors = [[0, 1, 0], [0, 0, 1]]
+team_colors = [[1.5, 0, 0], [1.5, 1.5, 1.5]]
 
 # Whether to enable the queue where players can line up before
 # entering your server. Disabling this can be used as a workaround
@@ -183,7 +175,7 @@ protocol_version = 35
 # How many seconds individual players from a given account must wait
 # before rejoining the game. This can help suppress exploits
 # involving leaving and rejoining or switching teams rapidly.
-player_rejoin_cooldown = 1.0
+player_rejoin_cooldown = 10.0
 
 # Log levels for particular loggers, overriding the engine's
 # defaults. Valid values are NOTSET, DEBUG, INFO, WARNING, ERROR, or

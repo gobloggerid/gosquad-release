@@ -6,8 +6,11 @@
     "coinLogo": "",
     "defaultLanguage": "english",
     "discordIntegration": {
-        "enable": false,
-        "socketPath": "/tmp/gosquad_discord.sock"
+        "enabled": false,
+        "socketPath": "/tmp/gosquad_discord.sock",
+        "botToken": "",
+        "guildId": 0,
+        "staffRoleId": 0
     },
     "dbSettings": {
         "unixSocket": true,
@@ -28,7 +31,7 @@
         "Don't play in a dark room.",
         "Stop before you're tired.",
         "Take a deep breath and exhale ... slowly.",
-        "Read server rules on our discord (https://cutt.cx/gosquad).",
+        "Read server rules in our discord (https://cutt.cx/gosquad).",
         "Join our discord to get 10000 and 20000 coins for free.",
         "Save the IPs and ports so you can join our servers quickly.",
         "Leaving in a mid-fight doesn't work anymore. Now it counts as kill for opponent.",
@@ -44,6 +47,7 @@
         "Type /language indonesian to change help language to Bahasa Indonesia.",
         "Please be safe. Be aware of your surroundings.",
         "Script by n00bility.",
+        "Get this script from: https://github.com/n00bility/gosquad",
         "LET'S GO!"
     ],
     "firstJoinMessage": "Hello. Please wait while we're creating/updating your profile.",
@@ -82,8 +86,8 @@
     "hitMessage": true,
     "kickIdlePlayer": true,
     "leaderboard": true,
-    "limitPlayerPerDevice": {
-        "enable": true,
+    "multiPlayerPerDevice": {
+        "enabled": true,
         "maxPlayer": 3,
         "whenPlayerLessThan": 10
     },
@@ -142,7 +146,7 @@
         {"name": "spring_bombs", "count": 4},
         {"name": "fire_bombs", "count": 5},
         {"name": "vacuum_bombs", "count": 3},
-        {"name": "shatter_bombs", "count": 3},
+        {"name": "breaker_bombs", "count": 3},
         {"name": "curser_bombs", "count": 3},
         {"name": "knockout_bombs", "count": 5},
         {"name": "cluster_bombs", "count": 4},
@@ -172,6 +176,7 @@
     ],
     "serverID": {
         "name": "GO SQUAD",
+        "nameChat": "\ue05bgosquad",
         "owner": "\ue03dnΘΘbiliτγ",
         "ownerTitle": "Owner",
         "outline": "________________________\n\n\n________________________"

@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING
 
 from unidecode import unidecode
 from better_profanity import profanity
-from extra.textmanager import TextManager
+from goextra.textmanager import TextManager
 
 if TYPE_CHECKING:
     pass
@@ -24,10 +24,17 @@ profanity.add_censor_words(custom_words=bad_words)
 
 # Precompiled regex
 _REPEAT_RE = re.compile(r'([a-z])\1+')
+# Disabled. Better profanity already handled this.
+# _SPACED_LETTERS_RE = re.compile(r'\b(?:[a-z]\s+){2,}[a-z]\b')
 
 
 def _normalize(text: str) -> str:
     text = unidecode(text)
+    # text = text.lower()
+    # text = _SPACED_LETTERS_RE.sub(
+    #     lambda m: m.group(0).replace(' ', ''),
+    #     text
+    # )
     text = _REPEAT_RE.sub(r'\1', text)
 
     return text
