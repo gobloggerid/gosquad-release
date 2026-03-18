@@ -79,6 +79,10 @@ Install database (System will reboot to take effect):
 ```bash
 bash .install_database.sh
 ```
+In a non-standard system, there's a chance the database fail to run using it's default configuration.
+In that case, you need to disable unix socket and fall back to using TCP.
+Open and disable the unix socket in *dist/ba_root/mods/data/configs/setting.json*
+Find and set *bSettings -> unixSocket -> false*
 
 ## Run the game
 If you just rebooted, start a new session:
@@ -167,8 +171,8 @@ Two ways to browse commands:
 - Contact author on discord to top up.
 
 ## Notes 2
-- Discord module is not ready. You have to edit it to make it works.
-- This module is take from HeyFang bombsquad repository.
+- Discord module may not ready. We have not tested it. You have to test it yourself and edit it if needed to make it work.
+- This module is taken from HeyFang bombsquad repository.
 - You may want to explore the server features for a while privately before you make the server public.
 - It is recommended to use V2 Account. With this, you can use ballistica cloud console to manage your server without joining your game server.
   - Do this by logging in with your V2 account when the server starts.

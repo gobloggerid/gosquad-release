@@ -40,7 +40,7 @@ enable_default_kick_voting = true
 # try to use the address your server contacts it from, but this may
 # be an ipv6 address these days so you may need to provide an ipv4
 # address explicitly.
-public_ipv4_address = "123.123.123.123"
+# public_ipv4_address = "123.123.123.123"
 
 # You can optionally provide an ipv6 address for your server for the
 # public server list. Unlike ipv4, a server is not required to have
@@ -50,7 +50,7 @@ public_ipv4_address = "123.123.123.123"
 # your server uses ipv6 when communicating with the master server. You
 # can pass an empty string here to explicitly disable the ipv6
 # address.
-public_ipv6_address = "2123:1234:1234:6900:0:f9b6:b6b1:7045"
+# public_ipv6_address = "2123:1234:1234:6900:0:f9b6:b6b1:7045"
 
 # UDP port to host on. Change this to work around firewalls or run
 # multiple servers on one machine.
@@ -173,7 +173,7 @@ idle_exit_minutes = 20
 team_names = ["\ue047RENATA\ue047", "\ue043GOSQUAD\ue043"]
 
 # Team colors (teams mode only).
-team_colors = [[1.5, 0, 0], [1.5, 1.5, 1.5]]
+team_colors = [[1.5, 0, 1.5], [0, 1.5, 1.5]]
 
 # Whether to enable the queue where players can line up before
 # entering your server. Disabling this can be used as a workaround

@@ -156,7 +156,7 @@ idle_exit_minutes = 20
 team_names = ["\ue047RENATA\ue047", "\ue043GOSQUAD\ue043"]
 
 # Team colors (teams mode only).
-team_colors = [[1.5, 0, 0], [1.5, 1.5, 1.5]]
+team_colors = [[1.5, 0, 1.5], [0, 1.5, 1.5]]
 
 # Whether to enable the queue where players can line up before
 # entering your server. Disabling this can be used as a workaround
