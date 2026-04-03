@@ -2,7 +2,7 @@
     "autoBalanceTeam": true,
     "autoAdminEligible": {
         "enabled": true,
-        "atLevel": 25
+        "atLevel": 11
     },
     "broadcastCommand": true,
     "banBetrayer": true,
@@ -95,7 +95,7 @@
     "kickIdlePlayer": true,
     "leaderboard": { 
         "enabled": true,
-        "fancy": false
+        "fancy": true
     },
     "multiPlayerPerDevice": {
         "enabled": true,
