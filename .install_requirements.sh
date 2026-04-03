@@ -18,9 +18,6 @@ source venv/bin/activate
 echo "Upgrading pip..."
 python -m pip install --upgrade pip
 
-# Install dependencies
-# Note: gosquad-private: install to virtual environment,
-# gosquad: install to target directory (for bundling with game)
 echo "Installing dependencies to virtual environment..."
 python -m pip install --upgrade \
     better-profanity==0.6.1 \
@@ -31,4 +28,5 @@ python -m pip install --upgrade \
     cffi \
     cryptography \
     psutil \
-    discord
+    discord \
+	typing-extensions
