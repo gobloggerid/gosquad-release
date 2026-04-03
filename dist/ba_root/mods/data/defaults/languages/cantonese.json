@@ -102,11 +102,11 @@
         "注意: 並非每個指令都有免費身分組。"
     ],
     "effectCmdHelp": [
-        "/effect add spark: 將 spark 效果加入背包。",
-        "/effect add spark 3: 延長 spark 3 日。",
+        "/effect spark: 將 spark 效果加入背包。",
+        "/effect spark 3: 延長 spark 3 日。",
         "/effect price: 查看效果價格。",
         "/effect limit: 查看效果上限。",
-        "/effect <cl>: 查看玩家效果。",
+        "/effect check <cl>: 查看玩家效果。",
         "/effect remove 2: 移除第 2 個效果。"
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: 對 4 名隨機玩家執行。"
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: 加入 crown 圖示到背包。",
-        "/icon add \\indonesia: 加入 Indonesia 旗幟 2 日。",
+        "/icon \\crown: 加入 crown 圖示到背包。",
+        "/icon \\indonesia: 加入 Indonesia 旗幟 2 日。",
         "/icon price: 查看圖示價格。",
         "/icon limit: 查看圖示數量與長度上限。",
-        "/icon <cl>: 查看玩家圖示。",
+        "/icon check <cl>: 查看玩家圖示。",
         "/icon remove 2: 移除第 2 個圖示。"
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: 移除玩家密碼。"
     ],
     "petCmdHelp": [
-        "/pet add taobao: 加入 taobao 寵物到背包。",
-        "/pet add taobao 3: 延長 taobao 3 日。",
+        "/pet taobao: 加入 taobao 寵物到背包。",
+        "/pet taobao 3: 延長 taobao 3 日。",
         "/pet price: 查看寵物價格。",
         "/pet limit: 查看寵物上限。",
-        "/pet <cl>: 查看玩家寵物。",
+        "/pet check <cl>: 查看玩家寵物。",
         "/pet remove 2: 移除第 2 個寵物。"
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: 送回 sita、hafsah、aura。"
     ],
     "roleCmdHelp": [
-        "/role <cl>: 查看玩家身分組。",
+        "/role check <cl>: 查看玩家身分組。",
         "/role price: 查看身分組價格同細節。",
-        "/role add admin 1: 令你成為 admin 1 個月。",
+        "/role admin 1: 令你成為 admin 1 個月。",
         "/role remove admin: 移除 admin 身分組。",
         "/role tag admin cool: 將 admin 預設標籤改為 cool。",
         "/role remtag admin: 還原 admin 標籤。",
@@ -289,19 +289,19 @@
         "/status <clid>: 查看玩家狀態。"
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: 加入 trophy 符號到背包。",
+        "/symbol \\trophy: 加入 trophy 符號到背包。",
         "/symbol price: 查看符號價格。",
         "/symbol limit: 查看符號數量與長度上限。",
-        "/symbol <cl>: 查看玩家符號。",
+        "/symbol check <cl>: 查看玩家符號。",
         "/symbol remove 2: 移除第 2 個符號。",
         "Emoji/表情也可作為符號。"
     ],
     "tagCmdHelp": [
-        "/tag add Winner: 加入 'Winner' 標籤到背包。",
-        "/tag add \"Top Win\": 用引號來使用空格。",
+        "/tag Winner: 加入 'Winner' 標籤到背包。",
+        "/tag \"Top Win\": 用引號來使用空格。",
         "/tag price: 查看標籤價格。",
         "/tag limit: 查看標籤數量與長度上限。",
-        "/tag <cl>: 查看玩家標籤。",
+        "/tag check <cl>: 查看玩家標籤。",
         "/tag remove 2: 移除第 2 個標籤。",
         "/tag color 1 red: 將第 1 個標籤顏色改為 red。",
         "可用標籤顏色:"

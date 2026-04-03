@@ -1540,7 +1540,7 @@
       "Taobao Mascot": "Taobao Mascot",
       "Todd McBurton": "Termi Nándor",
       "Zoe": "Zoe",
-      "Zola": "Zola"
+      "Zola": "Szerencsés"
     },
     "coopLevelNames": {
       "${GAME} Training": "${GAME} Edzés",
@@ -1755,6 +1755,7 @@
       "Can't link 2 diamond league accounts.": "Nem lehet összekötni 2 gyémánt ligabeli fiókot.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Nem lehet összekötni; túllépné a maximum ${COUNT} összeköthető fiókok mennyiségét.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Csalás észlelve; a pontok és nyeremények felfüggesztve ${COUNT} napig.",
+      "Connection rejected.": "Csatlakozás visszautasítva.",
       "Could not establish a secure connection.": "Nem lehet megbízható kapcsolatot létesíteni.",
       "Daily maximum reached.": "Napi maximum elérve.",
       "Daily sign-in reward": "Napi belépésért járó jutalom",

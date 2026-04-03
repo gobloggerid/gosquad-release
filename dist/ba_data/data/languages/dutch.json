@@ -1827,6 +1827,7 @@
       "Can't link 2 diamond league accounts.": "Kan geen 2 diamanten competitie accounts linken.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Kan niet linken; dit zou het maximum van ${COUNT} gelinkte accounts overschrijden.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Valsspelen ontdekt; scores en prijzen geschorst voor ${COUNT} dagen.",
+      "Connection rejected.": "Verbinding geweigerd.",
       "Could not establish a secure connection.": "Kon geen beveiligde verbinding tot stand brengen.",
       "Daily maximum reached.": "Dagelijkse maximum bekijkt.",
       "Daily sign-in reward": "Dagelijkse inlog beloning",

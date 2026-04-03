@@ -102,11 +102,11 @@
         "Tandaan: hindi lahat ng commands may free role."
     ],
     "effectCmdHelp": [
-        "/effect add spark: nagdadagdag ng spark effect sa inventory.",
-        "/effect add spark 3: pinahahaba ang spark ng 3 araw.",
+        "/effect spark: nagdadagdag ng spark effect sa inventory.",
+        "/effect spark 3: pinahahaba ang spark ng 3 araw.",
         "/effect price: tinitingnan ang presyo ng effect.",
         "/effect limit: tinitingnan ang max effect.",
-        "/effect <cl>: tinitingnan ang effects ng player.",
+        "/effect check <cl>: tinitingnan ang effects ng player.",
         "/effect remove 2: inaalis ang 2nd effect sa inventory."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: pinapatakbo sa 4 random na players."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: nagdadagdag ng crown icon sa inventory.",
-        "/icon add \\indonesia: nagdadagdag ng Indonesia flag ng 2 araw.",
+        "/icon \\crown: nagdadagdag ng crown icon sa inventory.",
+        "/icon \\indonesia: nagdadagdag ng Indonesia flag ng 2 araw.",
         "/icon price: tinitingnan ang presyo ng icon.",
         "/icon limit: tinitingnan ang max number at length.",
-        "/icon <cl>: tinitingnan ang icons ng player.",
+        "/icon check <cl>: tinitingnan ang icons ng player.",
         "/icon remove 2: inaalis ang 2nd icon sa inventory."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: inaalis ang password ng player."
     ],
     "petCmdHelp": [
-        "/pet add taobao: nagdadagdag ng taobao pet sa inventory.",
-        "/pet add taobao 3: pinahahaba ang taobao ng 3 araw.",
+        "/pet taobao: nagdadagdag ng taobao pet sa inventory.",
+        "/pet taobao 3: pinahahaba ang taobao ng 3 araw.",
         "/pet price: tinitingnan ang presyo ng pet.",
         "/pet limit: tinitingnan ang max pet number.",
-        "/pet <cl>: tinitingnan ang pets ng player.",
+        "/pet check <cl>: tinitingnan ang pets ng player.",
         "/pet remove 2: inaalis ang 2nd pet sa inventory."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: ibinabalik sina sita, hafsah, aura."
     ],
     "roleCmdHelp": [
-        "/role <cl>: tinitingnan ang roles ng player.",
+        "/role check <cl>: tinitingnan ang roles ng player.",
         "/role price: tinitingnan ang presyo at detalye ng roles.",
-        "/role add admin 1: ginagawa kang admin sa 1 buwan.",
+        "/role admin 1: ginagawa kang admin sa 1 buwan.",
         "/role remove admin: inaalis ang admin role.",
         "/role tag admin cool: pinapalitan ang default tag ng admin sa cool.",
         "/role remtag admin: ibinabalik ang default tag ng admin.",
@@ -289,19 +289,19 @@
         "/status <clid>: tinitingnan ang status ng player."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: nagdadagdag ng trophy symbol sa inventory.",
+        "/symbol \\trophy: nagdadagdag ng trophy symbol sa inventory.",
         "/symbol price: tinitingnan ang presyo ng symbol.",
         "/symbol limit: tinitingnan ang max number at length.",
-        "/symbol <cl>: tinitingnan ang symbols ng player.",
+        "/symbol check <cl>: tinitingnan ang symbols ng player.",
         "/symbol remove 2: inaalis ang 2nd symbol sa inventory.",
         "Ang emoji/smiley ay puwede ring symbol."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: nagdadagdag ng 'Winner' tag sa inventory.",
-        "/tag add \"Top Win\": lagyan ng quotes para gumamit ng space.",
+        "/tag Winner: nagdadagdag ng 'Winner' tag sa inventory.",
+        "/tag \"Top Win\": lagyan ng quotes para gumamit ng space.",
         "/tag price: tinitingnan ang presyo ng tag.",
         "/tag limit: tinitingnan ang max number at length.",
-        "/tag <cl>: tinitingnan ang tags ng player.",
+        "/tag check <cl>: tinitingnan ang tags ng player.",
         "/tag remove 2: inaalis ang 2nd tag.",
         "/tag color 1 red: pinapalitan ang kulay ng 1st tag sa red.",
         "Available na kulay ng tag:"

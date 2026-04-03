@@ -102,11 +102,11 @@
         "Note: हर command का free role नहीं होता।"
     ],
     "effectCmdHelp": [
-        "/effect add spark: spark effect को inventory में जोड़ता है।",
-        "/effect add spark 3: spark की वैधता 3 दिन बढ़ाता है।",
+        "/effect spark: spark effect को inventory में जोड़ता है।",
+        "/effect spark 3: spark की वैधता 3 दिन बढ़ाता है।",
         "/effect price: effect की कीमत देखता है।",
         "/effect limit: max effect देखता है।",
-        "/effect <cl>: खिलाड़ी के effects देखता है।",
+        "/effect check <cl>: खिलाड़ी के effects देखता है।",
         "/effect remove 2: inventory से 2nd effect हटाता है।"
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: 4 random खिलाड़ियों पर चलता है।"
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: crown icon को inventory में जोड़ता है।",
-        "/icon add \\indonesia: Indonesia flag 2 दिन जोड़ता है।",
+        "/icon \\crown: crown icon को inventory में जोड़ता है।",
+        "/icon \\indonesia: Indonesia flag 2 दिन जोड़ता है।",
         "/icon price: icon की कीमत देखता है।",
         "/icon limit: max संख्या और length देखता है।",
-        "/icon <cl>: खिलाड़ी के icons देखता है।",
+        "/icon check <cl>: खिलाड़ी के icons देखता है।",
         "/icon remove 2: inventory से 2nd icon हटाता है।"
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: खिलाड़ी का पासवर्ड हटाता है।"
     ],
     "petCmdHelp": [
-        "/pet add taobao: taobao pet को inventory में जोड़ता है।",
-        "/pet add taobao 3: taobao को 3 दिन बढ़ाता है।",
+        "/pet taobao: taobao pet को inventory में जोड़ता है।",
+        "/pet taobao 3: taobao को 3 दिन बढ़ाता है।",
         "/pet price: pet की कीमत देखता है।",
         "/pet limit: max pet number देखता है।",
-        "/pet <cl>: खिलाड़ी के pets देखता है।",
+        "/pet check <cl>: खिलाड़ी के pets देखता है।",
         "/pet remove 2: inventory से 2nd pet हटाता है।"
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: sita, hafsah, aura को lobby भेजता है।"
     ],
     "roleCmdHelp": [
-        "/role <cl>: खिलाड़ी के roles देखता है।",
+        "/role check <cl>: खिलाड़ी के roles देखता है।",
         "/role price: roles के दाम और विवरण देखता है।",
-        "/role add admin 1: आपको 1 महीने के लिए admin बनाता है।",
+        "/role admin 1: आपको 1 महीने के लिए admin बनाता है।",
         "/role remove admin: admin role हटाता है।",
         "/role tag admin cool: admin का default tag cool करता है।",
         "/role remtag admin: admin tag वापस default करता है।",
@@ -289,19 +289,19 @@
         "/status <clid>: खिलाड़ी का status देखता है।"
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: trophy symbol को inventory में जोड़ता है।",
+        "/symbol \\trophy: trophy symbol को inventory में जोड़ता है।",
         "/symbol price: symbol की कीमत देखता है।",
         "/symbol limit: max संख्या और length देखता है।",
-        "/symbol <cl>: खिलाड़ी के symbols देखता है।",
+        "/symbol check <cl>: खिलाड़ी के symbols देखता है।",
         "/symbol remove 2: inventory से 2nd symbol हटाता है।",
         "Emoji/smiley भी symbol के लिए ठीक है।"
     ],
     "tagCmdHelp": [
-        "/tag add Winner: 'Winner' tag को inventory में जोड़ता है।",
-        "/tag add \"Top Win\": space के लिए quotes लगाएं।",
+        "/tag Winner: 'Winner' tag को inventory में जोड़ता है।",
+        "/tag \"Top Win\": space के लिए quotes लगाएं।",
         "/tag price: tag की कीमत देखता है।",
         "/tag limit: max संख्या और length देखता है।",
-        "/tag <cl>: खिलाड़ी के tags देखता है।",
+        "/tag check <cl>: खिलाड़ी के tags देखता है।",
         "/tag remove 2: 2nd tag हटाता है।",
         "/tag color 1 red: 1st tag का रंग red करता है।",
         "उपलब्ध tag रंग:"

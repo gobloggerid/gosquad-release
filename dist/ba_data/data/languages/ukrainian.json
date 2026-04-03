@@ -1738,6 +1738,7 @@
       "Can't link 2 diamond league accounts.": "Неможливо зв'язати 2 акаунти діамантовою ліги.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Неможливо зв'язати; буде перевищено максимум ${COUNT} зв'язаних акаунтів.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Ах ти, чітер; Очки і нагороди заморожені на ${COUNT} днів.",
+      "Connection rejected.": "З'єднання відхилено.",
       "Could not establish a secure connection.": "Не вдалося встановити безпечне з'єднання.",
       "Daily maximum reached.": "Досить на сьогодні.",
       "Daily sign-in reward": "Щоденна Винагорода",

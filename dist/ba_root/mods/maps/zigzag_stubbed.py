@@ -42,7 +42,7 @@ class ZigZagStubbed(bs.Map):
             'bg_vr_fill_mesh': bs.getmesh('natureBackgroundVRFill'),
             'collision_mesh': bs.getcollisionmesh('zigZagLevelCollide'),
             'tex': bs.gettexture('zigZagLevelColor'),
-            'mesh_bg_tex': bs.gettexture('eggTex1'),
+            'mesh_bg_tex': bs.gettexture('impactBombColorLit'),
             'collide_bg': bs.getcollisionmesh('natureBackgroundCollide'),
             'railing_collision_mesh': bs.getcollisionmesh('zigZagLevelBumper'),
             'bg_material': bs.Material(),

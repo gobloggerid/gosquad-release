@@ -1523,7 +1523,7 @@
       "Taobao Mascot": "Toabao Mascot",
       "Todd McBurton": "Todd McBurton",
       "Zoe": "Zoe",
-      "Zola": "Zola"
+      "Zola": "Şanslı"
     },
     "coopLevelNames": {
       "${GAME} Training": "${GAME} Alıştırması",
@@ -1738,6 +1738,7 @@
       "Can't link 2 diamond league accounts.": "2 elmas ligi hesabı birleştirilemez.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Bağlanamıyor; maksimum ${COUNT} bağlı hesap sınırına ulaşıldı.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Hile algılandı; skorlar ve ödüller ${COUNT} gün için askıya alındı.",
+      "Connection rejected.": "Bağlantı reddedildi.",
       "Could not establish a secure connection.": "Güvenli bir bağlantı sağlanamadı.",
       "Daily maximum reached.": "Günlük sınıra ulaşıldı.",
       "Daily sign-in reward": "Günlük giriş ödülü",

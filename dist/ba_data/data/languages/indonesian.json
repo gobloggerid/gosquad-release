@@ -1746,6 +1746,7 @@
       "Can't link 2 diamond league accounts.": "Tidak dapat menghubungkan 2 akun liga berlian.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Tidak dapat menghubungkan; akan melampaui batas maksimum ${COUNT} akun yang dihubungkan.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Kecurangan terdeteksi; skor dan hadiah ditahan selama ${COUNT} hari.",
+      "Connection rejected.": "Koneksi ditolak.",
       "Could not establish a secure connection.": "Tidak dapat menyeimbangkan koneksi yang aman.",
       "Daily maximum reached.": "Batas maksimal tercapai.",
       "Daily sign-in reward": "Hadiah masuk harian",

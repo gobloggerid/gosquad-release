@@ -102,11 +102,11 @@
         "Nota: no todos los comandos tienen rol gratis."
     ],
     "effectCmdHelp": [
-        "/effect add spark: agrega efecto spark al inventario.",
-        "/effect add spark 3: extiende spark 3 días.",
+        "/effect spark: agrega efecto spark al inventario.",
+        "/effect spark 3: extiende spark 3 días.",
         "/effect price: revisa precio del efecto.",
         "/effect limit: revisa máximo de efectos.",
-        "/effect <cl>: revisa efectos del jugador.",
+        "/effect check <cl>: revisa efectos del jugador.",
         "/effect remove 2: elimina el 2.º efecto del inventario."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: en 4 jugadores aleatorios."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: agrega icono crown al inventario.",
-        "/icon add \\indonesia: agrega bandera Indonesia 2 días.",
+        "/icon \\crown: agrega icono crown al inventario.",
+        "/icon \\indonesia: agrega bandera Indonesia 2 días.",
         "/icon price: revisa precio.",
         "/icon limit: revisa máximo y longitud.",
-        "/icon <cl>: revisa iconos del jugador.",
+        "/icon check <cl>: revisa iconos del jugador.",
         "/icon remove 2: elimina el 2.º icono."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: quita contraseña del jugador."
     ],
     "petCmdHelp": [
-        "/pet add taobao: agrega mascota taobao al inventario.",
-        "/pet add taobao 3: extiende taobao 3 días.",
+        "/pet taobao: agrega mascota taobao al inventario.",
+        "/pet taobao 3: extiende taobao 3 días.",
         "/pet price: revisa precio.",
         "/pet limit: revisa máximo de mascotas.",
-        "/pet <cl>: revisa mascotas del jugador.",
+        "/pet check <cl>: revisa mascotas del jugador.",
         "/pet remove 2: elimina la 2.ª mascota."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: envía a sita, hafsah y aura."
     ],
     "roleCmdHelp": [
-        "/role <cl>: revisa roles del jugador.",
+        "/role check <cl>: revisa roles del jugador.",
         "/role price: revisa precios y detalles.",
-        "/role add admin 1: te hace admin 1 mes.",
+        "/role admin 1: te hace admin 1 mes.",
         "/role remove admin: quita rol admin.",
         "/role tag admin cool: cambia tag default a cool.",
         "/role remtag admin: vuelve tag default.",
@@ -289,19 +289,19 @@
         "/status <clid>: revisa estado del jugador."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: agrega símbolo trophy al inventario.",
+        "/symbol \\trophy: agrega símbolo trophy al inventario.",
         "/symbol price: revisa precio.",
         "/symbol limit: revisa máximo y longitud.",
-        "/symbol <cl>: revisa símbolos del jugador.",
+        "/symbol check <cl>: revisa símbolos del jugador.",
         "/symbol remove 2: elimina el 2.º símbolo.",
         "Emoji/smiley también sirve como símbolo."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: agrega tag 'Winner' al inventario.",
-        "/tag add \"Top Win\": pon comillas para usar espacio.",
+        "/tag Winner: agrega tag 'Winner' al inventario.",
+        "/tag \"Top Win\": pon comillas para usar espacio.",
         "/tag price: revisa precio.",
         "/tag limit: revisa máximo y longitud.",
-        "/tag <cl>: revisa tags del jugador.",
+        "/tag check <cl>: revisa tags del jugador.",
         "/tag remove 2: elimina el 2.º tag.",
         "/tag color 1 red: cambia color del 1.º tag a red.",
         "Colores de tag disponibles:"

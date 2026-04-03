@@ -262,5 +262,162 @@
         "activemeteor": 175,
         "spike": 175,
         "activespike": 200
+    },
+    "buffLimit": 3,
+    "buffPriceMultiplier": 25,
+    "buffCatalog": {
+        "armor": {
+            "enabled": true,
+            "description": "Spawn with Damage Armor."
+        },
+        "avenge": {
+            "enabled": true,
+            "description": "Spawn Avenge Death when killed."
+        },
+        "singularity": {
+            "enabled": true,
+            "description": "Spawn Singularity when killed."
+        },
+        "reflector": {
+            "enabled": true,
+            "description": "Spawn with Reflector Shield."
+        },
+        "invincible": {
+            "enabled": true,
+            "description": "Spawn with Invincibility."
+        },
+        "chance": {
+            "enabled": true,
+            "description": "Spawn with Second Chance."
+        },
+        "shield": {
+            "enabled": true,
+            "description": "Spawn with Energy Shield."
+        },
+        "gloves": {
+            "enabled": true,
+            "description": "Spawn with Boxing/Golden Gloves."
+        },
+        "snowball": {
+            "enabled": true,
+            "description": "Spawn with Snowball."
+        },
+        "iceman": {
+            "enabled": true,
+            "description": "Spawn with Ice Man."
+        },
+        "dynamite": {
+            "enabled": true,
+            "description": "Spawn with Dynamite Punch."
+        },
+        "dash": {
+            "enabled": true,
+
+            "description": "Spawn with Power Dash."
+        },
+        "teleport": {
+            "enabled": true,
+            "description": "Spawn with Teleportation."
+        },
+        "jump": {
+            "enabled": true,
+            "description": "Spawn with Super Jump."
+        },
+        "triple": {
+            "enabled": true,
+            "description": "Spawn with Triple Bombs."
+        },
+        "bigger": {
+            "enabled": true,
+            "description": "Spawn with Bigger Bombs."
+        },
+        "shorter": {
+            "enabled": true,
+            "description": "Spawn with Shorter Fuse."
+        },
+        "autoaim": {
+            "enabled": true,
+            "description": "Spawn with Auto Aim."
+        },
+        "ice": {
+            "enabled": true,
+            "description": "Spawn with Ice bombs."
+        },
+        "sticky": {
+            "enabled": true,
+            "description": "Spawn with Sticky bombs."
+        },
+        "trigger": {
+            "enabled": true,
+            "description": "Spawn with Trigger bombs."
+        },
+        "hyper": {
+            "enabled": true,
+            "description": "Spawn with Hyper bombs."
+        },
+        "spring": {
+            "enabled": true,
+            "description": "Spawn with Spring bombs."
+        },
+        "fire": {
+            "enabled": true,
+            "description": "Spawn with Fire bombs."
+        },
+        "vacuum": {
+            "enabled": true,
+            "description": "Spawn with Vacuum bombs."
+        },
+        "breaker": {
+            "enabled": true,
+            "description": "Spawn with Breaker bombs."
+        },
+        "cluster": {
+            "enabled": true,
+            "description": "Spawn with Cluster bombs."
+        },
+        "curser": {
+            "enabled": true,
+            "description": "Spawn with Curser bombs."
+        },
+        "knockout": {
+            "enabled": true,
+            "description": "Spawn with Knockout bombs."
+        },
+        "stripper": {
+            "enabled": true,
+            "description": "Spawn with Stripper bombs."
+        },
+        "invisible": {
+            "enabled": true,
+            "description": "Spawn with Invisibility."
+        },
+        "skin": {
+            "enabled": true,
+            "description": "Spawn with Random Skin."
+        },
+        "color": {
+            "enabled": true,
+            "description": "Spawn with Random Color."
+        },
+        "texture": {
+            "enabled": true,
+            "description": "Spawn with Random Texture."
+        },
+        "frankenstein": {
+            "enabled": true,
+            "description": "Rebuild your spaz body."
+        },
+        "zombie": {
+            "enabled": true,
+            "description": "Spawn as a zombie."
+        },
+        "box": {
+            "enabled": true,
+            "description": "Spawn as a tnt box."
+        },
+        "mine": {
+            "enabled": true,
+            "description": "Spawn as a land mine."
+        }
     }
 }

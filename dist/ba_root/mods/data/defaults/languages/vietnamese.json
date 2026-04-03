@@ -102,11 +102,11 @@
         "Lưu ý: không phải lệnh nào cũng có role miễn phí."
     ],
     "effectCmdHelp": [
-        "/effect add spark: thêm hiệu ứng spark vào kho.",
-        "/effect add spark 3: kéo dài spark 3 ngày.",
+        "/effect spark: thêm hiệu ứng spark vào kho.",
+        "/effect spark 3: kéo dài spark 3 ngày.",
         "/effect price: xem giá hiệu ứng.",
         "/effect limit: xem giới hạn hiệu ứng.",
-        "/effect <cl>: xem hiệu ứng của người chơi.",
+        "/effect check <cl>: xem hiệu ứng của người chơi.",
         "/effect remove 2: xóa hiệu ứng thứ 2 trong kho."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: chạy cho 4 người chơi ngẫu nhiên."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: thêm icon crown vào kho.",
-        "/icon add \\indonesia: thêm cờ Indonesia trong 2 ngày.",
+        "/icon \\crown: thêm icon crown vào kho.",
+        "/icon \\indonesia: thêm cờ Indonesia trong 2 ngày.",
         "/icon price: xem giá icon.",
         "/icon limit: xem giới hạn số lượng và độ dài.",
-        "/icon <cl>: xem icon của người chơi.",
+        "/icon check <cl>: xem icon của người chơi.",
         "/icon remove 2: xóa icon thứ 2 trong kho."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: xóa mật khẩu của người chơi."
     ],
     "petCmdHelp": [
-        "/pet add taobao: thêm thú cưng taobao vào kho.",
-        "/pet add taobao 3: kéo dài taobao 3 ngày.",
+        "/pet taobao: thêm thú cưng taobao vào kho.",
+        "/pet taobao 3: kéo dài taobao 3 ngày.",
         "/pet price: xem giá thú cưng.",
         "/pet limit: xem giới hạn thú cưng.",
-        "/pet <cl>: xem thú cưng của người chơi.",
+        "/pet check <cl>: xem thú cưng của người chơi.",
         "/pet remove 2: xóa thú cưng thứ 2 trong kho."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: đưa sita, hafsah, aura về lobby."
     ],
     "roleCmdHelp": [
-        "/role <cl>: xem role của người chơi.",
+        "/role check <cl>: xem role của người chơi.",
         "/role price: xem giá và chi tiết role.",
-        "/role add admin 1: bạn thành admin trong 1 tháng.",
+        "/role admin 1: bạn thành admin trong 1 tháng.",
         "/role remove admin: xóa role admin.",
         "/role tag admin cool: đổi tag mặc định của admin thành cool.",
         "/role remtag admin: trả tag admin về mặc định.",
@@ -289,19 +289,19 @@
         "/status <clid>: xem trạng thái của người chơi."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: thêm symbol trophy vào kho.",
+        "/symbol \\trophy: thêm symbol trophy vào kho.",
         "/symbol price: xem giá symbol.",
         "/symbol limit: xem giới hạn số lượng và độ dài.",
-        "/symbol <cl>: xem symbol của người chơi.",
+        "/symbol check <cl>: xem symbol của người chơi.",
         "/symbol remove 2: xóa symbol thứ 2 trong kho.",
         "Emoji/smiley cũng phù hợp làm symbol."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: thêm tag 'Winner' vào kho.",
-        "/tag add \"Top Win\": dùng dấu nháy để có khoảng trắng.",
+        "/tag Winner: thêm tag 'Winner' vào kho.",
+        "/tag \"Top Win\": dùng dấu nháy để có khoảng trắng.",
         "/tag price: xem giá tag.",
         "/tag limit: xem giới hạn số lượng và độ dài.",
-        "/tag <cl>: xem tag của người chơi.",
+        "/tag check <cl>: xem tag của người chơi.",
         "/tag remove 2: xóa tag thứ 2.",
         "/tag color 1 red: đổi màu tag đầu tiên thành red.",
         "Màu tag có sẵn:"

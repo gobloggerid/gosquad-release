@@ -1224,7 +1224,7 @@
   "purchasingText": "正在購買...",
   "quitGameText": "退出 ${APP_NAME}?",
   "quittingIn5SecondsText": "將於5秒後退出...",
-  "randomPlayerNamesText": "爆破鬼才,ZACK,炸蛋小分隊,隊友摧毀者,炸彈吞噬者,TNT的朋友,冰凍使者,拳擊高手,創世神,炸彈人,機械狂人,大發明家,吹噓海盜,末日預言者",
+  "randomPlayerNamesText": "爆破鬼才,ZACK,炸蛋小分隊,隊友摧毀者,炸彈吞噬者,TNT的朋友,冰凍使者,拳擊高手,創世神,炸彈人,機械狂人,大發明家,吹噓海盜,末日預言者,刺殺者佐拉",
   "randomText": "隨機",
   "rankText": "排行",
   "ratingText": "排名",
@@ -1519,7 +1519,7 @@
       "Taobao Mascot": "淘公仔",
       "Todd McBurton": "托德馬克波頓",
       "Zoe": "遊俠佐伊",
-      "Zola": "刺殺者佐拉"
+      "Zola": "幸運地精"
     },
     "coopLevelNames": {
       "${GAME} Training": "${GAME}訓練",
@@ -1734,6 +1734,7 @@
       "Can't link 2 diamond league accounts.": "無法連接兩個鑽石聯賽的賬號",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "無法連接，已超過關聯上線${COUNT}個賬號",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "發現賬號作弊行為；得分及獎勵在${COUNT}天內暫停",
+      "Connection rejected.": "連線被拒絕。",
       "Could not establish a secure connection.": "無法建立安全連接",
       "Daily maximum reached.": "已達今日上限",
       "Daily sign-in reward": "每天登入獎勵",

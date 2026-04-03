@@ -1742,6 +1742,7 @@
       "Can't link 2 diamond league accounts.": "نمی‌توان حساب دو لیگ الماس را پیوند داد.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "پیوند نمی‌شود; حداکثر از ${COUNT} پیوند پشتیبانی می‌شود.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "⁦.روز تعلیق شد ${COUNT} تقلب شناسایی شد؛ امتیازها و جایزه‌ها برای",
+      "Connection rejected.": "اتصال رد شد.",
       "Could not establish a secure connection.": "نمیتوان یک اتصال امن ایجاد کرد",
       "Daily maximum reached.": "به حداکثر ارقام روزانه رسیدید",
       "Daily sign-in reward": "پاداش ورود روزانه",

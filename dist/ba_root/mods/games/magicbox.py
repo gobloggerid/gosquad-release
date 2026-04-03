@@ -120,6 +120,7 @@ class MagicBox(Bomb):
 
         # self.node.extraAcceleration = (0, 40, 0)
         self.held_by = 0
+        self._held_by_spaz = False
         self._is_dead: bool = False
 
         if self.bomb_type == 'tnt':
@@ -181,12 +182,14 @@ class MagicBox(Bomb):
 
     def handlemessage(self, msg: Any) -> Any:
         if isinstance(msg, bs.PickedUpMessage):
+            self._held_by_spaz = True
             self._activity()._update_box_state()
             if self.bomb_type != 'tnt':
                 self.owner = msg.node
                 self._animate_impact()
                 bs.timer(0.25, self.arm)
         elif isinstance(msg, bs.DroppedMessage):
+            self._held_by_spaz = False
             if self.bomb_type != 'tnt':
                 self.owner = None
             self.held_by -= 1
@@ -195,6 +198,7 @@ class MagicBox(Bomb):
         elif isinstance(msg, bs.DieMessage):
             if self._is_dead:
                 return
+            self._held_by_spaz = False
             bs.timer(1.0, self._activity()._spawn_box)
             self._is_dead = True
         super().handlemessage(msg)

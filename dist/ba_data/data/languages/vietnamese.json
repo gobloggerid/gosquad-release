@@ -1740,6 +1740,7 @@
       "Can't link 2 diamond league accounts.": "Không thể liên kết 2 tài khoản ở giải đấu kim cương.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Không thể liên kết; đã vượt qua tối đa ${COUNT} liên kết tài khoản.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Phát hiện gian lận; không được ghi điểm số và nhận giải thưởng trong ${COUNT} ngày.",
+      "Connection rejected.": "Kết nối bị từ chối.",
       "Could not establish a secure connection.": "Không thể thiết lập kết nối an toàn.",
       "Daily maximum reached.": "Đã đạt tối đa số lượng hàng ngày.",
       "Daily sign-in reward": "Phần thưởng đăng nhập hàng ngày",

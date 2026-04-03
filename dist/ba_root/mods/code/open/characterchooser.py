@@ -303,7 +303,7 @@ def _set_ready(self, ready: bool) -> None:
         bs.getsession().handlemessage(PlayerReadyMessage(self))
         # Store name to profile
         self._store_name(
-            self._sessionplayer.get_v1_account_id(), self._getname(full=True)
+            self._sessionplayer.get_account_id(), self._getname(full=True)
         )
 
 

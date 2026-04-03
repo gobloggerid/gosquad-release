@@ -124,7 +124,8 @@ class BotShowerGame(bs.TeamGameActivity[Player, Team]):
 
     @override
     def spawn_player(self, player: Player) -> None:
-        spaz = self.spawn_player_spaz(player)
+        position = self.map.get_ffa_start_position(self.players)
+        spaz = self.spawn_player_spaz(player, position)
         if self._curse_player:
             spaz.curse_time = None
             spaz.curse()

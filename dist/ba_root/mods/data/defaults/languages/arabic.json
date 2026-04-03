@@ -102,11 +102,11 @@
         "ملاحظة: ليست كل الأوامر لها رتبة وصول مجاني."
     ],
     "effectCmdHelp": [
-        "/effect add spark: يضيف تأثير spark للمخزون.",
-        "/effect add spark 3: يمدد صلاحية spark لثلاثة أيام.",
+        "/effect spark: يضيف تأثير spark للمخزون.",
+        "/effect spark 3: يمدد صلاحية spark لثلاثة أيام.",
         "/effect price: يفحص سعر التأثير.",
         "/effect limit: يفحص الحد الأقصى للتأثيرات.",
-        "/effect <cl>: يفحص تأثيرات اللاعب.",
+        "/effect check <cl>: يفحص تأثيرات اللاعب.",
         "/effect remove 2: يزيل التأثير الثاني من المخزون."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: يشغّله على 4 لاعبين عشوائيين."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: يضيف أيقونة crown للمخزون.",
-        "/icon add \\indonesia: يضيف علم Indonesia لمدة يومين.",
+        "/icon \\crown: يضيف أيقونة crown للمخزون.",
+        "/icon \\indonesia: يضيف علم Indonesia لمدة يومين.",
         "/icon price: يفحص سعر الأيقونة.",
         "/icon limit: يفحص الحد الأقصى لعدد الأيقونات والطول.",
-        "/icon <cl>: يفحص أيقونات اللاعب.",
+        "/icon check <cl>: يفحص أيقونات اللاعب.",
         "/icon remove 2: يزيل الأيقونة الثانية من المخزون."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: يزيل كلمة مرور اللاعب."
     ],
     "petCmdHelp": [
-        "/pet add taobao: يضيف حيوان taobao للمخزون.",
-        "/pet add taobao 3: يمدد صلاحية taobao لثلاثة أيام.",
+        "/pet taobao: يضيف حيوان taobao للمخزون.",
+        "/pet taobao 3: يمدد صلاحية taobao لثلاثة أيام.",
         "/pet price: يفحص سعر الحيوان.",
         "/pet limit: يفحص الحد الأقصى للحيوانات.",
-        "/pet <cl>: يفحص حيوانات اللاعب.",
+        "/pet check <cl>: يفحص حيوانات اللاعب.",
         "/pet remove 2: يزيل الحيوان الثاني من المخزون."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: يعيد sita و hafsah و aura."
     ],
     "roleCmdHelp": [
-        "/role <cl>: يفحص أدوار اللاعب.",
+        "/role check <cl>: يفحص أدوار اللاعب.",
         "/role price: يفحص أسعار الأدوار وتفاصيلها.",
-        "/role add admin 1: يجعلك admin لمدة شهر.",
+        "/role admin 1: يجعلك admin لمدة شهر.",
         "/role remove admin: يزيل دور admin.",
         "/role tag admin cool: يغيّر تاج admin الافتراضي إلى cool.",
         "/role remtag admin: يعيد تاج admin إلى الافتراضي.",
@@ -289,19 +289,19 @@
         "/status <clid>: يفحص حالة اللاعب."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: يضيف رمز trophy للمخزون.",
+        "/symbol \\trophy: يضيف رمز trophy للمخزون.",
         "/symbol price: يفحص سعر الرمز.",
         "/symbol limit: يفحص الحد الأقصى لعدد الرموز والطول.",
-        "/symbol <cl>: يفحص رموز اللاعب.",
+        "/symbol check <cl>: يفحص رموز اللاعب.",
         "/symbol remove 2: يزيل الرمز الثاني من المخزون.",
         "الإيموجي/الابتسامة مناسبة كرمز أيضًا."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: يضيف تاج 'Winner' للمخزون.",
-        "/tag add \"Top Win\": ضعها بين اقتباس لاستخدام مسافة.",
+        "/tag Winner: يضيف تاج 'Winner' للمخزون.",
+        "/tag \"Top Win\": ضعها بين اقتباس لاستخدام مسافة.",
         "/tag price: يفحص سعر التاج.",
         "/tag limit: يفحص الحد الأقصى لعدد التيجان والطول.",
-        "/tag <cl>: يفحص تيجان اللاعب.",
+        "/tag check <cl>: يفحص تيجان اللاعب.",
         "/tag remove 2: يزيل التاج الثاني من المخزون.",
         "/tag color 1 red: يغيّر لون التاج الأول إلى red.",
         "ألوان التيجان المتاحة:"

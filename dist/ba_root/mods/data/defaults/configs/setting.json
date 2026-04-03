@@ -1,9 +1,18 @@
 {
     "autoBalanceTeam": true,
+    "autoAdminEligible": {
+        "enabled": true,
+        "atLevel": 25
+    },
     "broadcastCommand": true,
     "banBetrayer": true,
     "banDurationInDay": 3,
     "coinLogo": "",
+    "customScoreScreen": {
+        "enabled": true,
+        "logo": ["coin", "discordLogo", "star", "touchArrowsActions"],
+        "background": ["shield", "menuBG", "alwaysLandBGColor"]
+    },
     "defaultLanguage": "english",
     "discordIntegration": {
         "enabled": false,
@@ -14,11 +23,12 @@
     },
     "dbSettings": {
         "unixSocket": true,
+        "database": 0,
         "socketTimeout": 1,
         "socketConnectTimeout": 1,
         "socketKeepalive": true,
         "maxConnection": 100,
-        "healthCheck": 30,
+        "healthCheck": 300,
         "persistence": true
     },
     "endRoundMessage": true,
@@ -31,13 +41,14 @@
         "Don't play in a dark room.",
         "Stop before you're tired.",
         "Take a deep breath and exhale ... slowly.",
-        "Read server rules in our discord (https://cutt.cx/gosquad).",
+        "Read server rules on our discord (https://cutt.cx/gosquad).",
         "Join our discord to get 10000 and 20000 coins for free.",
         "Save the IPs and ports so you can join our servers quickly.",
         "Leaving in a mid-fight doesn't work anymore. Now it counts as kill for opponent.",
         "Doesn't matter who started it, if you break the rules, you'll face punishment as well.",
         "Start message with prefix dot (.) to send it only to teammates. E.g.: .Hello",
         "Try /coin help, /stats help, /tag help, or other /<command> followed by help.",
+        "Activate cheats automatically with /buff command.",
         "Rejoin with your previous name to restore your game records.",
         "Play until a series ends to earn coins, regardless your position.",
         "Upgrade level with coins by /level upgrade, or for free by score (automatically).",
@@ -45,18 +56,14 @@
         "Secure your account with password from spoofer. Type /password help.",
         "Don't be AFK for too long. Press a button or get kicked by system.",
         "Type /language indonesian to change help language to Bahasa Indonesia.",
-        "Please be safe. Be aware of your surroundings.",
+        "Please be aware of your surroundings. Your safety is more important than the game.",
         "Script by n00bility.",
+        "Season resets every 1 week.",
+        "Claim your rewards on our Discord after joining YouTube.",
         "Get this script from: https://github.com/n00bility/gosquad",
         "LET'S GO!"
     ],
     "firstJoinMessage": "Hello. Please wait while we're creating/updating your profile.",
-    "characterSettings": {
-        "builtinNames": true,
-        "customNames": true,
-        "characterChooser": true,
-        "customCharacter": true
-    },
     "highlight": true,
     "highlightText": [
         "Type /help to get basic help.",
@@ -75,17 +82,21 @@
         "Convert your coin to score. Type /coin help.",
         "Convert your score to coin. Type /stats help.",
         "Try /tag help, /effect help, /pet help, /icon help, /symbol help.",
+        "Activate cheats automatically with /buff command.",
         "Type /role add vip 1 to make yourself VIP for 1 month.",
         "Always provide reason for admin commands, otherwise they will use your coins.",
-        "reason consists of one or multiple words and placed at the end of commands.",
-        "E.g. /end server error | /kick <clientid> killing teammates.",
+        "Reason consists of one or multiple words and is placed at the end of commands.",
+        "E.g. /end server error OR /kick <clientid> killing teammates.",
         "Don't be AFK for too long. Press a button or get kicked by system.",
         "Using admin commands without a valid reason will result in demotion.",
         "Everyone is free to use any commands with coins."
     ],
-    "hitMessage": true,
+    "hitMessage": false,
     "kickIdlePlayer": true,
-    "leaderboard": true,
+    "leaderboard": { 
+        "enabled": true,
+        "fancy": false
+    },
     "multiPlayerPerDevice": {
         "enabled": true,
         "maxPlayer": 3,
@@ -94,10 +105,11 @@
     "mapSettings": {
         "disableAll": false,
         "ambientLight": true,
-        "ambientColor": [5.0, 3.0, 4.0],
+        "ambientColor": [5.0, 5.0, 2.5],
         "tint": null,
         "vignetteOuter": null,
         "vignetteInner": null,
+        "customBackground": true,
         "firefly": true,
         "bubble": true,
         "skyland": true,
@@ -168,33 +180,39 @@
     "printPlayerCount": false,
     "quizCoin": true,
     "quizQuestion": [
-        ["What's the name of this server?", "gosquad"],
-        ["Will you join gosquad discord server?", "yes"],
-        ["Who's the owner of this server?", "n00bility"],
-        ["What's your most favorite bombsquad server?", "gosquad"],
-        ["type I am a winner.", "i am a winner"]
+        ["What's the name of this server?", ["gosquad", "go squad"]],
+        ["Will you join gosquad discord server?", ["yes", "yep", "yeah", "of course", "sure"]],
+        ["Who's the owner of this server?", ["n00bility", "noobility", "goblogger", "soyaboy"]],
+        ["What's your most favorite bombsquad server?", ["gosquad", "go squad", "goserver", "go server"]],
+        ["type I am a winner.", ["i am a winner"]]
     ],
     "serverID": {
-        "name": "GO SQUAD",
+        "name": "GOSQUAD",
         "nameChat": "\ue05bgosquad",
         "owner": "\ue03dnΘΘbiliτγ",
         "ownerTitle": "Owner",
-        "outline": "________________________\n\n\n________________________"
+        "outline": "______________________\n\n\n______________________"
     },
     "spazSettings": {
         "bombCount": 2,
         "bombType": "normal",
         "overrideRandomCharacter": false,
-        "character": "Bombman",
+        "overrideCharacter": "Bombman",
         "hitpoints": 2000,
         "gloves": true,
-        "shield": false
+        "shield": false,
+        "brightenColor": true,
+        "builtinNames": true,
+        "customNames": true,
+        "characterChooser": true,
+        "customCharacter": true
     },
     "statsCleanup": {
         "intervalWeek": 1,
         "intervalMonth": null
     },
     "statistics": true,
+    "syncProtocolData": false,
     "textOnMap": false,
     "useV2Account": true,
     "verifyRetryMinutes": 60,

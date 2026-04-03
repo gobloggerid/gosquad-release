@@ -102,11 +102,11 @@
         "注意: 并非所有命令都有免费角色。"
     ],
     "effectCmdHelp": [
-        "/effect add spark: 添加 spark 效果到背包。",
-        "/effect add spark 3: 延长 spark 3 天。",
+        "/effect spark: 添加 spark 效果到背包。",
+        "/effect spark 3: 延长 spark 3 天。",
         "/effect price: 查看效果价格。",
         "/effect limit: 查看效果上限。",
-        "/effect <cl>: 查看玩家效果。",
+        "/effect check <cl>: 查看玩家效果。",
         "/effect remove 2: 移除背包中第 2 个效果。"
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: 对 4 名随机玩家执行。"
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: 添加 crown 图标到背包。",
-        "/icon add \\indonesia: 添加 Indonesia 旗帜 2 天。",
+        "/icon \\crown: 添加 crown 图标到背包。",
+        "/icon \\indonesia: 添加 Indonesia 旗帜 2 天。",
         "/icon price: 查看图标价格。",
         "/icon limit: 查看图标数量和长度上限。",
-        "/icon <cl>: 查看玩家图标。",
+        "/icon check <cl>: 查看玩家图标。",
         "/icon remove 2: 移除背包中第 2 个图标。"
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: 移除玩家密码。"
     ],
     "petCmdHelp": [
-        "/pet add taobao: 添加 taobao 宠物到背包。",
-        "/pet add taobao 3: 延长 taobao 3 天。",
+        "/pet taobao: 添加 taobao 宠物到背包。",
+        "/pet taobao 3: 延长 taobao 3 天。",
         "/pet price: 查看宠物价格。",
         "/pet limit: 查看宠物上限。",
-        "/pet <cl>: 查看玩家宠物。",
+        "/pet check <cl>: 查看玩家宠物。",
         "/pet remove 2: 移除背包中第 2 个宠物。"
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: 送回 sita、hafsah、aura。"
     ],
     "roleCmdHelp": [
-        "/role <cl>: 查看玩家角色。",
+        "/role check <cl>: 查看玩家角色。",
         "/role price: 查看角色价格和详情。",
-        "/role add admin 1: 让你成为 admin 1 个月。",
+        "/role admin 1: 让你成为 admin 1 个月。",
         "/role remove admin: 移除 admin 角色。",
         "/role tag admin cool: 将 admin 默认标签改为 cool。",
         "/role remtag admin: 将 admin 标签恢复为默认。",
@@ -289,19 +289,19 @@
         "/status <clid>: 查看玩家状态。"
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: 添加 trophy 符号到背包。",
+        "/symbol \\trophy: 添加 trophy 符号到背包。",
         "/symbol price: 查看符号价格。",
         "/symbol limit: 查看符号数量和长度上限。",
-        "/symbol <cl>: 查看玩家符号。",
+        "/symbol check <cl>: 查看玩家符号。",
         "/symbol remove 2: 移除背包中第 2 个符号。",
         "Emoji/表情也适合作为符号。"
     ],
     "tagCmdHelp": [
-        "/tag add Winner: 添加 'Winner' 标签到背包。",
-        "/tag add \"Top Win\": 用引号以使用空格。",
+        "/tag Winner: 添加 'Winner' 标签到背包。",
+        "/tag \"Top Win\": 用引号以使用空格。",
         "/tag price: 查看标签价格。",
         "/tag limit: 查看标签数量和长度上限。",
-        "/tag <cl>: 查看玩家标签。",
+        "/tag check <cl>: 查看玩家标签。",
         "/tag remove 2: 移除第 2 个标签。",
         "/tag color 1 red: 将第 1 个标签颜色改为 red。",
         "可用标签颜色:"

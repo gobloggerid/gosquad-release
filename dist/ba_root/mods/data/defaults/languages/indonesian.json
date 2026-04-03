@@ -102,11 +102,11 @@
         "Catatan: tidak setiap perintah memiliki akses bebas."
     ],
     "effectCmdHelp": [
-        "/effect add spark: tambah efek spark ke inventori.",
-        "/effect add spark 3: perpanjang masa spark untuk 3 hari.",
+        "/effect spark: tambah efek spark ke inventori.",
+        "/effect spark 3: perpanjang masa spark untuk 3 hari.",
         "/effect price: periksa harga efek.",
         "/effect limit: periksa maksimum efek.",
-        "/effect <cl>: periksa efek pemain.",
+        "/effect check <cl>: periksa efek pemain.",
         "/effect remove 2: hapus efek ke-2 dari inventori."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: jalankan perintah untuk 4 pemain acak."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: tambah ikon mahkota ke inventori.",
-        "/icon add \\indonesia 2: tambah bendera Indonesia 2 hari.",
+        "/icon \\crown: tambah ikon mahkota ke inventori.",
+        "/icon \\indonesia 2: tambah bendera Indonesia 2 hari.",
         "/icon price: periksa harga ikon.",
         "/icon limit: periksa maks jumlah ikon dan panjang.",
-        "/icon <cl>: periksa ikon pemain.",
+        "/icon check <cl>: periksa ikon pemain.",
         "/icon remove 2: hapus ikon ke-2 dari inventori."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: hapus sandi pemain."
     ],
     "petCmdHelp": [
-        "/pet add taobao: tambah peliharaan taobao ke inventori.",
-        "/pet add taobao 3: perpanjang masa taobao 3 hari.",
+        "/pet taobao: tambah peliharaan taobao ke inventori.",
+        "/pet taobao 3: perpanjang masa taobao 3 hari.",
         "/pet price: periksa harga peliharaan.",
         "/pet limit: periksa maks jumlah peliharaan.",
-        "/pet <cl>: periksa peliharaan pemain.",
+        "/pet check <cl>: periksa peliharaan pemain.",
         "/pet remove 2: hapus peliharaan ke-2 dari inventori."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: singkirkan sita, hafsah, aura."
     ],
     "roleCmdHelp": [
-        "/role <cl>: cek peran pemain.",
+        "/role check <cl>: cek peran pemain.",
         "/role price: cek harga peran dan detailnya.",
-        "/role add admin 1: jadikan sendiri admin 1 bulan.",
+        "/role admin 1: jadikan sendiri admin 1 bulan.",
         "/role remove admin: hapus peran admin.",
         "/role tag admin keren: ganti tag bawaan admin ke keren.",
         "/role remtag admin: kembalikan tag bawaan admin.",
@@ -289,19 +289,19 @@
         "/status <clid>: periksa status pemain."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy 2: tambah simbol piala ke inventori.",
+        "/symbol \\trophy 2: tambah simbol piala ke inventori.",
         "/symbol price: periksa harga simbol.",
         "/symbol limit: periksa maks jumlah dan panjang simbol.",
-        "/symbol <cl>: periksa simbol pemain.",
+        "/symbol check <cl>: periksa simbol pemain.",
         "/symbol remove 2: hapus simbol ke-2 dari inventori.",
         "Emoji/smiley juga cocok untuk simbol."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: tambah tag 'Winner' ke inventori.",
-        "/tag add \"Top Win\": gunakan kutipan untuk pakai spasi.",
+        "/tag Winner: tambah tag 'Winner' ke inventori.",
+        "/tag \"Top Win\": gunakan kutipan untuk pakai spasi.",
         "/tag price: periksa harga tag.",
         "/tag limit: periksa maks jumlah dan panjang tag.",
-        "/tag <cl>: periksa tag pemain.",
+        "/tag check <cl>: periksa tag pemain.",
         "/tag remove 2: hapus tag ke-2 dari inventori.",
         "/tag color 1 red: ganti warna tag ke-1 jadi merah.",
         "Warna yang tersedia:"

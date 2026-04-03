@@ -1509,7 +1509,7 @@
       "Taobao Mascot": "タオバオのキャラクター",
       "Todd McBurton": "トッド・マクバートン",
       "Zoe": "ゾーイ",
-      "Zola": "ゾラ"
+      "Zola": "ラッキー"
     },
     "coopLevelNames": {
       "${GAME} Training": "${GAME} トレーニング",
@@ -1724,6 +1724,7 @@
       "Can't link 2 diamond league accounts.": "2 つのダイヤモンド リーグ アカウントをリンクできません。",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "リンクできません。リンクされたアカウントの数が最大 ${COUNT} 個を超えます。",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "不正行為が検出されました。スコアと賞品は ${COUNT} 日間停止されます。",
+      "Connection rejected.": "接続が拒否されました。",
       "Could not establish a secure connection.": "安全な接続を確立できませんでした。",
       "Daily maximum reached.": "1日の最大値に達しました。",
       "Daily sign-in reward": "毎日のサインイン報酬",

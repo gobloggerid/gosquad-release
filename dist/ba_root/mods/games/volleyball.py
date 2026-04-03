@@ -634,6 +634,8 @@ class VolleyBallGame(bs.TeamGameActivity[Player, Team]):
             # We want the button to work, just no bombs...
             spaz.bomb_count = 0
             # Imagine not being able to swipe those colorful buttons ;(
+        else:
+            spaz.bomb_count = 1
 
         if self._punchie_:
             spaz.connect_controls_to_player(enable_punch=False)

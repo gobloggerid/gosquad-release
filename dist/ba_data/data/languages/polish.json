@@ -1184,6 +1184,7 @@
   "openNowText": "Otwórz Teraz",
   "openText": "Otwórz",
   "orText": "${A} lub ${B}",
+  "otherOptionsText": "Inne opcje",
   "otherText": "Inny...",
   "outOfText": "(#${RANK} na ${ALL})",
   "ownFlagAtYourBaseWarning": "Twoja flaga musi być w\nTwojej bazie aby zapunktować!",
@@ -1589,7 +1590,7 @@
       "Todd McBurton": "Todd McBurton",
       "Xara": "Xara",
       "Zoe": "Zoe",
-      "Zola": "Zola"
+      "Zola": "Fuks"
     },
     "coopIconNames": {
       "Infinite\nOnslaught": "Nieskończony\nAtak",
@@ -1823,6 +1824,7 @@
       "Can't link 2 diamond league accounts.": "Nie można połączyć dwóch kont w diamentowej lidze.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Nie można połączyć; przekroczono limit ${COUNT} połączonych kont.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Oszukiwanie wykryte; punkty i nagrody zawieszone na ${COUNT} dni.",
+      "Connection rejected.": "Połączenie odrzucone.",
       "Could not establish a secure connection.": "Nie udało się nawiązać bezpiecznego połączenia.",
       "Daily maximum reached.": "Dzienne maksimum wykorzystane.",
       "Daily sign-in reward": "Nagroda za codzienne logowanie",

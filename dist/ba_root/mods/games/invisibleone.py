@@ -138,7 +138,7 @@ class InvisibleOneGame(bs.TeamGameActivity[Player, Team]):
         self.default_music = (
             bs.MusicType.EPIC if self._epic_mode else bs.MusicType.CHOSEN_ONE
         )
-        self.customdata['hide_player_decorators'] = True
+        self.hide_player_decorators = True
 
     @override
     def get_instance_description(self) -> str | Sequence:

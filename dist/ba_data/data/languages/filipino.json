@@ -1354,7 +1354,7 @@
     "translationFetchingStatusText": "sinusuri ang kalagayan ng lengguwahe…",
     "translationInformMe": "Ipaalam sa akin kapag ang aking wika ay nangangailangan ng pagbabago",
     "translationNoUpdateNeededText": "Ang kasalukuyang wika ay makabago na muli; yehey!",
-    "translationUpdateNeededText": "** Ang kasalukuyang wika ay nangangailangan ng pagbabago!! **",
+    "translationUpdateNeededText": "** Ikinailangan na ng pagbabago ang wikang ito!! **",
     "vrTestingText": "Testing ng VR"
   },
   "shareText": "I-share",
@@ -1526,7 +1526,7 @@
       "Taobao Mascot": "Taobao Maskot",
       "Todd McBurton": "Todd McBurton",
       "Zoe": "Dalagang Bombero",
-      "Zola": "Gererong Babae"
+      "Zola": "Mapalad"
     },
     "coopLevelNames": {
       "${GAME} Training": "Pagsasanay Sa ${GAME}",
@@ -1741,6 +1741,7 @@
       "Can't link 2 diamond league accounts.": "Hindi ma-link ang 2 dyamante na ligang account.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Hindi ma-link; ito ay lalampas sa maximum na ${COUNT} na naka-link na account.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Natukoy ang pagdadaya; nasuspinde ang mga iskor at premyo sa loob ng ${COUNT} (na) araw.",
+      "Connection rejected.": "Tinanggihan ang Koneksyon.",
       "Could not establish a secure connection.": "Hindi makapagtatag ng secure na koneksyon.",
       "Daily maximum reached.": "Naabot na ang pang-araw-araw ng request.",
       "Daily sign-in reward": "Pangaraw-araw na gantimpala",

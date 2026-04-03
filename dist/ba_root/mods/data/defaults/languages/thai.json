@@ -102,11 +102,11 @@
         "หมายเหตุ: ไม่ใช่ทุกคำสั่งมีบทบาทใช้ฟรี."
     ],
     "effectCmdHelp": [
-        "/effect add spark: เพิ่มเอฟเฟกต์ spark ในคลัง.",
-        "/effect add spark 3: ต่ออายุ spark 3 วัน.",
+        "/effect spark: เพิ่มเอฟเฟกต์ spark ในคลัง.",
+        "/effect spark 3: ต่ออายุ spark 3 วัน.",
         "/effect price: ตรวจราคาเอฟเฟกต์.",
         "/effect limit: ตรวจจำนวนเอฟเฟกต์สูงสุด.",
-        "/effect <cl>: ตรวจเอฟเฟกต์ของผู้เล่น.",
+        "/effect check <cl>: ตรวจเอฟเฟกต์ของผู้เล่น.",
         "/effect remove 2: ลบเอฟเฟกต์ที่ 2 จากคลัง."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: ใช้กับผู้เล่นสุ่ม 4 คน."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: เพิ่มไอคอน crown ในคลัง.",
-        "/icon add \\indonesia: เพิ่มธง Indonesia 2 วัน.",
+        "/icon \\crown: เพิ่มไอคอน crown ในคลัง.",
+        "/icon \\indonesia: เพิ่มธง Indonesia 2 วัน.",
         "/icon price: ตรวจราคาไอคอน.",
         "/icon limit: ตรวจจำนวนและความยาวสูงสุด.",
-        "/icon <cl>: ตรวจไอคอนของผู้เล่น.",
+        "/icon check <cl>: ตรวจไอคอนของผู้เล่น.",
         "/icon remove 2: ลบไอคอนที่ 2 จากคลัง."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: ลบรหัสผ่านของผู้เล่น."
     ],
     "petCmdHelp": [
-        "/pet add taobao: เพิ่ม taobao pet ในคลัง.",
-        "/pet add taobao 3: ต่ออายุ taobao 3 วัน.",
+        "/pet taobao: เพิ่ม taobao pet ในคลัง.",
+        "/pet taobao 3: ต่ออายุ taobao 3 วัน.",
         "/pet price: ตรวจราคาสัตว์เลี้ยง.",
         "/pet limit: ตรวจจำนวนสัตว์เลี้ยงสูงสุด.",
-        "/pet <cl>: ตรวจสัตว์เลี้ยงของผู้เล่น.",
+        "/pet check <cl>: ตรวจสัตว์เลี้ยงของผู้เล่น.",
         "/pet remove 2: ลบสัตว์เลี้ยงที่ 2 จากคลัง."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: ส่ง sita, hafsah, aura กลับ lobby."
     ],
     "roleCmdHelp": [
-        "/role <cl>: ตรวจ role ของผู้เล่น.",
+        "/role check <cl>: ตรวจ role ของผู้เล่น.",
         "/role price: ตรวจราคาและรายละเอียดของ role.",
-        "/role add admin 1: ทำให้คุณเป็น admin 1 เดือน.",
+        "/role admin 1: ทำให้คุณเป็น admin 1 เดือน.",
         "/role remove admin: ลบ role admin.",
         "/role tag admin cool: เปลี่ยน tag admin เป็น cool.",
         "/role remtag admin: รีเซ็ต tag admin เป็นค่าเดิม.",
@@ -289,19 +289,19 @@
         "/status <clid>: ตรวจสถานะของผู้เล่น."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: เพิ่ม symbol trophy ในคลัง.",
+        "/symbol \\trophy: เพิ่ม symbol trophy ในคลัง.",
         "/symbol price: ตรวจราคาสัญลักษณ์.",
         "/symbol limit: ตรวจจำนวนและความยาวสูงสุด.",
-        "/symbol <cl>: ตรวจสัญลักษณ์ของผู้เล่น.",
+        "/symbol check <cl>: ตรวจสัญลักษณ์ของผู้เล่น.",
         "/symbol remove 2: ลบสัญลักษณ์ที่ 2 จากคลัง.",
         "Emoji/smiley ก็เหมาะเป็นสัญลักษณ์."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: เพิ่ม tag 'Winner' ในคลัง.",
-        "/tag add \"Top Win\": ใช้เครื่องหมายคำพูดเพื่อเว้นวรรค.",
+        "/tag Winner: เพิ่ม tag 'Winner' ในคลัง.",
+        "/tag \"Top Win\": ใช้เครื่องหมายคำพูดเพื่อเว้นวรรค.",
         "/tag price: ตรวจราคาแท็ก.",
         "/tag limit: ตรวจจำนวนและความยาวสูงสุด.",
-        "/tag <cl>: ตรวจแท็กของผู้เล่น.",
+        "/tag check <cl>: ตรวจแท็กของผู้เล่น.",
         "/tag remove 2: ลบแท็กที่ 2.",
         "/tag color 1 red: เปลี่ยนสีแท็กแรกเป็น red.",
         "สีแท็กที่มีให้ใช้:"

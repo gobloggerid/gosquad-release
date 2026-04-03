@@ -32,7 +32,7 @@
         "Brostos, Loupie, BrotherBord, SoK, Emperor;",
         "Dliwk, Cross Joy, FluffyPal, Vortex, Zeenppay;",
         "Plasma Boson, Myth B, Mrmaxmeier, Awesome Logic,",
-        "HWProgram, Nate, Jetz, Vishyy, Drooopy",
+        "HWProgram, Nate, Jetz, Vishal, Drooopy",
         "All modders and players whose code, logic, and ideas",
         "are used in gosquad's minigames, core, and features;",
         "And especially all gosquad owners and players 🚀🚘",
@@ -153,12 +153,23 @@
         "Note: not every command has free access role."
     ],
     "effectCmdHelp": [
-        "/effect add spark: adds spark effect to inventory.",
-        "/effect add spark 3: extends spark validity by 3 days.",
+        "/effect spark: adds spark effect for 1 day.",
+        "/effect spark 3: extends spark validity by 3 days.",
         "/effect price: checks effect price.",
         "/effect limit: checks max effect.",
-        "/effect <cl>: check player's effects.",
+        "/effect check <cl>: check player's effects.",
         "/effect remove 2: removes 2nd effect from inventory."
+    ],
+    "buffCmdHelp": [
+        "/buff armor: adds armor buff for 1 day.",
+        "/buff ice 3: adds ice bombs buff for 3 days.",
+        "/buff price: checks available buff prices.",
+        "/buff limit: checks max buff count.",
+        "/buff check <cl>: checks another player's buffs.",
+        "/buff remove 1: removes the 1st buff from inventory.",
+        "Buffs apply automatically every time your spaz spawns.",
+        "Some buffs can't be combined. E.g.: gloves vs snowball.",
+        "triple vs bigger, bombs vs bombs."
     ],
     "funCmdHelp": [
         "/<cmd>: runs command on self.",
@@ -203,11 +214,11 @@
         "/<cmd> 4: runs command on 4 random players."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: adds crown icon to inventory.",
-        "/icon add \\indonesia: adds Indonesian flag 2 days.",
+        "/icon \\crown 2: adds crown icon for 2 days.",
+        "/icon \\indonesia 3: Indonesian flag for 3 days.",
         "/icon price: checks icon price.",
         "/icon limit: checks max icon number and length.",
-        "/icon <cl>: check player's icons.",
+        "/icon check <cl>: check player's icons.",
         "/icon remove 2: removes 2nd icon from inventory."
     ],
     "kickCmdHelp": [
@@ -288,11 +299,11 @@
         "/password reset <cl>: removes player's password."
     ],
     "petCmdHelp": [
-        "/pet add taobao: adds taobao pet to inventory.",
-        "/pet add taobao 3: extends taobao validity by 3 days.",
+        "/pet taobao: adds taobao pet for 1 day.",
+        "/pet taobao 3: extends taobao validity by 3 days.",
         "/pet price: checks pet price.",
         "/pet limit: checks max pet number.",
-        "/pet <cl>: check player's pets.",
+        "/pet check <cl>: check player's pets.",
         "/pet remove 2: removes 2nd pet from inventory."
     ],
     "pingCmdHelp": [
@@ -311,9 +322,9 @@
         "/remove sita haf aur: removes sita, hafsah, aura."
     ],
     "roleCmdHelp": [
-        "/role <cl>: checks player's roles.",
+        "/role check <cl>: checks player's roles.",
         "/role price: check roles' prices and details.",
-        "/role add admin 1: makes self admin for 1 month.",
+        "/role admin 1: makes self admin for 1 month.",
         "/role remove admin: removes role admin.",
         "/role tag admin cool: overrides admin's default tag to cool.",
         "/role remtag admin: changes admin's tag back to default.",
@@ -326,6 +337,7 @@
         "/role delete staff: delete role staff.",
         "/role eligible <cl> true: makes player eligible for admin.",
         "/role deftag owner cool: changes default owner tag to cool.",
+        "/role active vvip: checks active vvip status.",
         "/role import: make self as owner (please read hint)."
     ],
     "statsCmdHelp": [
@@ -340,19 +352,19 @@
         "/status <clid>: checks player's status."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: adds trophy symbol to inventory.",
+        "/symbol \\trophy 2: adds trophy symbol for 2 days.",
         "/symbol price: checks symbol price.",
         "/symbol limit: checks max symbol number and length.",
-        "/symbol <cl>: check player's symbols.",
+        "/symbol check <cl>: check player's symbols.",
         "/symbol remove 2: removes 2nd symbol from inventory.",
         "Emoji/smiley is also suitable for symbol."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: adds 'Winner' tag to inventory.",
-        "/tag add \"Top Win\": quotes it to use space.",
+        "/tag Winner 2: adds 'Winner' tag for 2 days.",
+        "/tag \"Top Win\": quotes it to use space.",
         "/tag price: checks tag price.",
         "/tag limit: checks max tag number and length.",
-        "/tag <cl>: checks player's tags.",
+        "/tag check <cl>: checks player's tags.",
         "/tag remove 2: removes 2nd tag from inventory.",
         "/tag color 1 red: changes 1st tag color to red.",
         "Available tag colors:"

@@ -102,11 +102,11 @@
         "குறிப்பு: எல்லா commands கும் free role இல்லை."
     ],
     "effectCmdHelp": [
-        "/effect add spark: spark effect ஐ inventoryக்கு சேர்க்கும்.",
-        "/effect add spark 3: spark validity 3 நாட்கள் நீட்டிக்கும்.",
+        "/effect spark: spark effect ஐ inventoryக்கு சேர்க்கும்.",
+        "/effect spark 3: spark validity 3 நாட்கள் நீட்டிக்கும்.",
         "/effect price: effect விலை பார்க்கும்.",
         "/effect limit: max effect பார்க்கும்.",
-        "/effect <cl>: player effects பார்க்கும்.",
+        "/effect check <cl>: player effects பார்க்கும்.",
         "/effect remove 2: inventory ல் 2வது effect நீக்கும்."
     ],
     "funCmdHelp": [
@@ -152,11 +152,11 @@
         "/<cmd> 4: 4 random players மீது இயக்கும்."
     ],
     "iconCmdHelp": [
-        "/icon add \\crown: crown icon ஐ inventoryக்கு சேர்க்கும்.",
-        "/icon add \\indonesia: Indonesia flag 2 நாட்கள் சேர்க்கும்.",
+        "/icon \\crown: crown icon ஐ inventoryக்கு சேர்க்கும்.",
+        "/icon \\indonesia: Indonesia flag 2 நாட்கள் சேர்க்கும்.",
         "/icon price: icon விலை பார்க்கும்.",
         "/icon limit: max எண்ணிக்கையும் length ஐவும் பார்க்கும்.",
-        "/icon <cl>: player icons பார்க்கும்.",
+        "/icon check <cl>: player icons பார்க்கும்.",
         "/icon remove 2: inventory ல் 2வது icon நீக்கும்."
     ],
     "kickCmdHelp": [
@@ -237,11 +237,11 @@
         "/password reset <cl>: player password நீக்கும்."
     ],
     "petCmdHelp": [
-        "/pet add taobao: taobao pet ஐ inventoryக்கு சேர்க்கும்.",
-        "/pet add taobao 3: taobao ஐ 3 நாட்கள் நீட்டிக்கும்.",
+        "/pet taobao: taobao pet ஐ inventoryக்கு சேர்க்கும்.",
+        "/pet taobao 3: taobao ஐ 3 நாட்கள் நீட்டிக்கும்.",
         "/pet price: pet விலை பார்க்கும்.",
         "/pet limit: max pet number பார்க்கும்.",
-        "/pet <cl>: player pets பார்க்கும்.",
+        "/pet check <cl>: player pets பார்க்கும்.",
         "/pet remove 2: inventory ல் 2வது pet நீக்கும்."
     ],
     "pingCmdHelp": [
@@ -260,9 +260,9 @@
         "/remove sita haf aur: sita, hafsah, aura ஐ lobbyக்கு அனுப்பும்."
     ],
     "roleCmdHelp": [
-        "/role <cl>: player roles பார்க்கும்.",
+        "/role check <cl>: player roles பார்க்கும்.",
         "/role price: roles விலையும் விவரமும் பார்க்கும்.",
-        "/role add admin 1: உங்களை 1 மாதம் admin ஆக்கும்.",
+        "/role admin 1: உங்களை 1 மாதம் admin ஆக்கும்.",
         "/role remove admin: admin role நீக்கும்.",
         "/role tag admin cool: admin default tag ஐ cool ஆக மாற்றும்.",
         "/role remtag admin: admin tag ஐ default ஆக மாற்றும்.",
@@ -289,19 +289,19 @@
         "/status <clid>: player status பார்க்கும்."
     ],
     "symbolCmdHelp": [
-        "/symbol add \\trophy: trophy symbol ஐ inventoryக்கு சேர்க்கும்.",
+        "/symbol \\trophy: trophy symbol ஐ inventoryக்கு சேர்க்கும்.",
         "/symbol price: symbol விலை பார்க்கும்.",
         "/symbol limit: max எண்ணிக்கையும் length ஐவும் பார்க்கும்.",
-        "/symbol <cl>: player symbols பார்க்கும்.",
+        "/symbol check <cl>: player symbols பார்க்கும்.",
         "/symbol remove 2: inventory ல் 2வது symbol நீக்கும்.",
         "Emoji/smiley கூட symbol ஆக பயன்படுத்தலாம்."
     ],
     "tagCmdHelp": [
-        "/tag add Winner: 'Winner' tag ஐ inventoryக்கு சேர்க்கும்.",
-        "/tag add \"Top Win\": space க்கு quotes பயன்படுத்தவும்.",
+        "/tag Winner: 'Winner' tag ஐ inventoryக்கு சேர்க்கும்.",
+        "/tag \"Top Win\": space க்கு quotes பயன்படுத்தவும்.",
         "/tag price: tag விலை பார்க்கும்.",
         "/tag limit: max எண்ணிக்கையும் length ஐவும் பார்க்கும்.",
-        "/tag <cl>: player tags பார்க்கும்.",
+        "/tag check <cl>: player tags பார்க்கும்.",
         "/tag remove 2: 2வது tag நீக்கும்.",
         "/tag color 1 red: 1வது tag நிறத்தை red ஆக மாற்றும்.",
         "கிடைக்கும் tag நிறங்கள்:"

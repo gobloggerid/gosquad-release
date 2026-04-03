@@ -43,11 +43,11 @@ uname -m
 Download the server:
 - If `x86_64`:
 ```bash
-git clone -b main --single-branch https://github.com/n00bility/gosquad.git
+git clone -b main --single-branch --depth 1 https://github.com/n00bility/gosquad.git
 ```
 - If `aarch64`:
 ```bash
-git clone -b aarch --single-branch https://github.com/n00bility/gosquad.git
+git clone -b aarch --single-branch --depth 1 https://github.com/n00bility/gosquad.git
 ```
 
 Go to the project folder:
@@ -93,6 +93,11 @@ tmux new -s gosquad
 Else:
 ```bash
 tmux attach-session -t gosquad
+```
+
+Activate virtual environment:
+```bash
+source venv/bin/activate
 ```
 
 Start the server:

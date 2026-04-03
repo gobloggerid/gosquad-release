@@ -1542,7 +1542,7 @@
       "Taobao Mascot": "Taobao maskot",
       "Todd McBurton": "Todd McBurton",
       "Zoe": "Zoe",
-      "Zola": "Zola"
+      "Zola": "Šťastný"
     },
     "coopLevelNames": {
       "${GAME} Training": "${GAME} - Trénink",
@@ -1757,6 +1757,7 @@
       "Can't link 2 diamond league accounts.": "Nelze spojit 2 účty diamantové ligy.",
       "Can't link; would surpass maximum of ${COUNT} linked accounts.": "Nelze propojit; převýšily maximum ${COUNT} propojených účtů.",
       "Cheating detected; scores and prizes suspended for ${COUNT} days.": "Detekováno podvádění; skóre a ceny pozastaveny na ${COUNT} dní",
+      "Connection rejected.": "Spojení zamítnuto.",
       "Could not establish a secure connection.": "Nelze navázat bezpečné připojení.",
       "Daily maximum reached.": "Dosaženo denní maximum.",
       "Daily sign-in reward": "Denní odměna za přihlášení",
