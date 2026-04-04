@@ -193,7 +193,7 @@ enable_queue = true
 # 36 enables V2 account ids (a-XXX) for client authentication, which
 # does not suffer from spoofing vulnerabilities that V1 account ids
 # (pb-XXX) did.
-protocol_version = 35
+protocol_version = 36
 
 # How many seconds individual players from a given account must wait
 # before rejoining the game. This can help suppress exploits
