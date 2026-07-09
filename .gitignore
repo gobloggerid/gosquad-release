@@ -7,7 +7,7 @@ __pycache__/
 .idea/
 .ruff_cache/
 venv/
-build/*/
+build/*
 tests/
 obf_out/
 pylsp.env
