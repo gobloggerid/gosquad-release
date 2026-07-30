@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="n00bility/gosquad"
+REPO="gobloggerid/gosquad-release"
 
 ARCH="$(uname -m)"
 
