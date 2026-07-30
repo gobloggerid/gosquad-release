@@ -41,7 +41,7 @@ tmux new -s gosquad
 
 4. Download the files:
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/gobloggerid/gosquad-release/main/download_gosquad.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/gobloggerid/gosquad-release/main/download-gosquad.sh)
 ```
 
 
