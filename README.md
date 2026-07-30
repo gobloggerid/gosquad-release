@@ -15,6 +15,14 @@ Simple guide to install and run the GoSquad server.
 - Please read the LICENSE file
 
 
+## Main features
+- Advanced coin system.
+- Advanced command and moderation system.
+- Plenty of unique powerups.
+- Player decorators.
+- Visual effects.
+
+
 ## Instruction
 Run the following commands one by one.
 - Copy each command or (CTRL + c).
@@ -53,7 +61,7 @@ cd gosquad
 
 7. Make setup files executable:
 ```bash
-sudo chmod +x prepare-files.sh install-python.sh install-requirements.sh install-database.sh
+sudo chmod +x prepare-files.sh setup-python.sh setup-requirements.sh setup-database.sh
 ```
 
 8. Prepare program files:
@@ -61,19 +69,19 @@ sudo chmod +x prepare-files.sh install-python.sh install-requirements.sh install
 bash prepare-files.sh
 ```
 
-9. Install python3.13:
+9. Setup python3.13:
 ```bash
-bash install-python.sh
+bash setup-python.sh
 ```
 
-10. Install required packages:
+10. Setup required packages:
 ```bash
-bash install-requirements.sh
+bash setup-requirements.sh
 ```
 
-11. Install database (system will reboot to take effect):
+11. Setup database (system will reboot to take effect):
 ```bash
-bash install-database.sh
+bash setup-database.sh
 ```
 
 
@@ -109,14 +117,13 @@ nano ./dist/ba_root/mods/data/live/playlists/config.toml
 - Press CTRL + s
 - Press y then ENTER
 - Press CTRL + x to close the file.
-
-- Stop the game or restart.
-
+- Press CTRL + d to stop the game then start again.
+- Or restart it with `mgr.restart()`
 - Join the game, then run this command in the chat box:
 ```bash
 /role import
 ```
-- You are owner for permanently.
+- Now you are the owner for permanently.
 
 
 ## Commands
@@ -155,12 +162,12 @@ Two ways to browse commands:
 
 
 ## Notes 2
-- Avoid rookie mistake by creating tmux session again and again everytime you log in into your instance/server.
-- Do this `tmux a` to log in to the last active session.
+- Avoid rookie mistake by creating tmux session again and again every time you log in into your instance/server.
+- Instead, do this `tmux a` to log in to the last active session.
 - GoSquad is multi-instances ready. Meaning, you can run as many server as you want at the same time on the same machine. All of them will share the same/unified database.
   - Learn about tmux pane/window to manage instance efficiently.
-- Discord module may not ready. We have not tested it. You have to test it yourself and edit it if needed to make it work.
-- This module is taken from HeyFang bombsquad repository.
+- Discord module may not be ready. We have not tested it yet. You have to test it yourself and edit it if needed to make it work.
+- It is taken from HeyFang bombsquad repository.
 - You may want to explore the server features for a while privately before you make the server public.
 - It is recommended to use V2 Account. With it, you can use ballistica cloud console to manage your server without joining.
   - Do this by logging in with your V2 account when the server starts.
@@ -223,3 +230,25 @@ Run multiple playlists on one port (rotates on restart):
 Playlist files:
 - Defaults: `./dist/ba_root/mods/data/defaults/playlists/` | It is not recommended to edit these. Instead:
 - Live edits: `./dist/ba_root/mods/data/live/playlists/` | These are the ones to edit.
+
+
+## Credits
+- Eric Froemling for creating BombSquad.
+- Players involved in the improvement of BombSquad.
+- Mr. Smoothy, BCS, and all its contributors.
+- BombDash creator and all its contributors.
+- PatronModz, EraOS, JoseAngel, Vladdos.
+- Sebastian2059, ZackerTz, Freaku, Mattz.
+- Froshlee, HeyFang, Mikirog, Snowee, Itsre.
+- Brostos, Loupie, BrotherBord, SoK, Emperor.
+- Dliwk, Cross Joy, FluffyPal, Vortex, Zeenppay.
+- Plasma Boson, Myth B, Mrmaxmeier, Awesome Logic.
+- HWProgram, Neutro, Nate, Jetz, Vishal, Drooopy.
+- Selocuk, odx, Anas, Ash.
+- All modders and players whose code, logic, and ideas.
+- are used in gosquad's minigames, core, and features.
+- And especially all gosquad players and owners.
+
+
+## Another information
+Please visit our Discord server: https://discord.gg/QmzTtvyUvd
